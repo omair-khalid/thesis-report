@@ -26,8 +26,12 @@
 \contentsline {subsubsection}{modReLU}{11}{section*.12}
 \contentsline {subsubsection}{$z$ReLU}{11}{section*.13}
 \contentsline {subsubsection}{$\mathbb {C}$ReLU}{11}{section*.14}
-\contentsline {subsection}{\numberline {4.2.4}Complex Weight Initialization}{11}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.4}Weight Initialization}{11}{subsection.4.2.4}
+\contentsline {subsubsection}{Real-Valued Activation Functions}{11}{section*.15}
+\contentsline {subsubsection}{Complex-Valued Activation Functions}{11}{section*.16}
 \contentsline {subsection}{\numberline {4.2.5}Output Layer and Loss Function}{11}{subsection.4.2.5}
+\contentsline {subsubsection}{Real-Valued CNNs}{11}{section*.17}
+\contentsline {subsubsection}{Complex-Valued CNNs}{11}{section*.18}
 \contentsline {subsection}{\numberline {4.2.6}Optimization through Backpropagation}{11}{subsection.4.2.6}
 \contentsline {chapter}{\numberline {5}Methodology}{12}{chapter.5}
 \contentsline {section}{\numberline {5.1}Experimental setups}{12}{section.5.1}
@@ -36,4 +40,4 @@
 \contentsline {chapter}{\numberline {6}Conclusion}{13}{chapter.6}
 \contentsline {chapter}{\numberline {7}Experimental Results}{14}{chapter.7}
 \contentsline {chapter}{\numberline {A}The first appendix}{15}{appendix.A}
-\contentsline {chapter}{\numberline {Bibliography\hspace {-96pt}}}{17}{appendix*.15}
+\contentsline {chapter}{\numberline {Bibliography\hspace {-96pt}}}{17}{appendix*.19}

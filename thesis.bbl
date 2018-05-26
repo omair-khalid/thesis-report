@@ -24,6 +24,12 @@ Nitzan Guberman.
 \newblock On complex valued convolutional neural networks.
 \newblock {\em CoRR}, abs/1602.09046, 2016.
 
+\bibitem{hansch2009classification}
+Ronny H{\"a}nsch and Olaf Hellwich.
+\newblock Classification of polarimetric sar data by complex valued neural
+  networks.
+\newblock In {\em Proceedings of ISPRS Workshop, Hannover, Germany}, 2009.
+
 \bibitem{hubel1959receptive}
 David~H Hubel and Torsten~N Wiesel.
 \newblock Receptive fields of single neurones in the cat's striate cortex.

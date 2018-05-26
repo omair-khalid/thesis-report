@@ -14,45 +14,45 @@ Warning--empty author in bloggg
 Warning--empty journal in bloggg
 Warning--empty year in bloggg
 Warning--can't use both author and editor fields in LeCun1998
-You've used 15 entries,
+You've used 16 entries,
             2118 wiz_defined-function locations,
-            591 strings with 6657 characters,
-and the built_in function-call counts, 5704 in all, are:
-= -- 545
-> -- 317
+            596 strings with 6842 characters,
+and the built_in function-call counts, 5976 in all, are:
+= -- 568
+> -- 330
 < -- 4
-+ -- 125
-- -- 110
-* -- 427
-:= -- 941
-add.period$ -- 43
-call.type$ -- 15
-change.case$ -- 98
++ -- 130
+- -- 114
+* -- 440
+:= -- 986
+add.period$ -- 46
+call.type$ -- 16
+change.case$ -- 103
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 207
-empty$ -- 408
-format.name$ -- 110
-if$ -- 1177
+cite$ -- 21
+duplicate$ -- 221
+empty$ -- 436
+format.name$ -- 114
+if$ -- 1236
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 17
-newline$ -- 76
-num.names$ -- 28
-pop$ -- 105
+int.to.str$ -- 16
+missing$ -- 18
+newline$ -- 81
+num.names$ -- 30
+pop$ -- 114
 preamble$ -- 1
-purify$ -- 85
+purify$ -- 89
 quote$ -- 0
-skip$ -- 156
+skip$ -- 164
 stack$ -- 0
-substring$ -- 329
-swap$ -- 52
+substring$ -- 334
+swap$ -- 54
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
+type$ -- 60
 warning$ -- 5
-while$ -- 50
-width$ -- 17
-write$ -- 161
+while$ -- 52
+width$ -- 18
+write$ -- 171
 (There was 1 error message)
