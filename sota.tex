@@ -1,29 +1,26 @@
 \chapter{State of the art}\label{chap:comp}
 
-history
+History
 
-rnn
 
 Guberman
 
-Synthetic Aperture Radars is an imaging technology
-
+rnn
  
-hansch 2010 hansch 2010 zhang wide sar atr
-
-The incorporation of complex-valued blocks in the classification of Synthetic Aperture Radar (SAR) data has been very promising. 
-
-Inspired by the success of Multilayer Perceptrons (MLP) in computer vision, H\"{a}nsch and Hellwich (2009) \cite{hansch2009classification} employed the $\mathbb{C}$-CNNs to classify the complex-valued Polarimetric Synthetic Aperture Radar (PolSAR) data to perform a 3-class classification (forest, fields and urban areas). The authors test there architectures using different error functions for $\mathbb{C}$-CNNs, and compare $\mathbb{C}$-CNNs with their real-valued counterparts. The results conclude that $\mathbb{C}$-CNNs outperformed $\mathbb{R}$-CNNs in that particular problem.
 
 
 
 
-The same authors
+%SAR based
 
+The incorporation of complex-valued blocks in the classification of Synthetic Aperture Radar (SAR) data has been very promising. The data is of complex by its very nature, hence opening up the interesting opportunity to employ $\mathbb{C}$-CNNs in various problems.
 
+PolSAR uses microwaves with different polarisations to measure
+the distance to ground and the reflectance of a target \cite{hansch2009classification}. One of the traditional techniques for classification involving PolSAR data is the use of Multilayer Perceptrons (MLP). Inspired by the success of MLPs in computer vision, H\"{a}nsch and Hellwich (2009) \cite{hansch2009classification} employed the $\mathbb{C}$-CNNs to classify the complex-valued Polarimetric Synthetic Aperture Radar (PolSAR) data to perform a 3-class pixel-wise classification (forest, fields and urban areas). The authors test there architectures using different error functions for $\mathbb{C}$-CNNs, and compare $\mathbb{C}$-CNNs with their real-valued counterparts. The results conclude that $\mathbb{C}$-CNNs outperformed $\mathbb{R}$-CNNs in that particular problem. However, the input data to both type of CNNs is not preprocessed the same way. The same authors further tackle the object-classification problem using complex-valued neural networks ($\mathbb{C}$-NNs) and $\mathbb{C}$-CNNs \cite{hansch2010complex}. They show that $\mathbb{C}$-CNNs, with only one complex-convolutional layer, outperform the $\mathbb{C}$-NNs in the cases where the number of neurons in single convolutional layer exceeded 10. 
+
+Wilmanski $et \ al.$ (2016) \cite{wilmanski2016complex} explore the suitability of using $\mathbb{C}$-CNNs for Automatic Target Recognition for complex-valued SAR data. Although their $\mathbb{C}$-CNN had only one complex-valued layer (complex weights) in their complex-valued variant architecture, it outperformed (99.21\% accuracy) the state-of-the-art $\mathbb{R}$-CNN network (87.30\% accuracy). In the dataset they used (GOTCHA \cite{gotcha}), they also pointed out how the phase surrounding an object had a distinctive structure, pointing to the potential importance of phase information in classification tasks.
 
 Zhang $et \ al.$ (2017) \cite{polsarzhang2017complex} leverage magnitude as well as the phase of the PolSAR data to classify different terrains on the Flevoland (3 classes) and Oberpfaffenhofen datasets (15 classes). Compared to $\mathbb{R}$-CNN, $\mathbb{C}$-CNN performs better on both the datasets while having approximately same number of parameters.  
 
-
-
+%Deep Complex Networks
 Chiheb $et \ al.$ (2018) \cite{trabelsi2018deep} compare the performance of different architectures of the $\mathbb{C}$-CNNs and $\mathbb{R}$-CNNs on the tasks of image recognition, music transcription, and speech spectrum prediction. $\mathbb{C}$-CNNs were reported to perform comparably to $\mathbb{R}$-CNNs for the first task, and achieve state-of-the-art performance on the two tasks while beating $\mathbb{R}$-CNNs. The authors also contribute the extension of Batch Normalization and Weight Initialization (BN) to complex domain. 

@@ -10,49 +10,53 @@ I was expecting a `,' or a `}'---line 234 of file refs.bib
 I'm skipping whatever remains of this entry
 Database file #2: theano-short.bib
 Warning--to sort, need author or key in bloggg
+Warning--to sort, need author or key in gotcha
 Warning--empty author in bloggg
 Warning--empty journal in bloggg
 Warning--empty year in bloggg
+Warning--empty author in gotcha
+Warning--empty journal in gotcha
+Warning--empty year in gotcha
 Warning--can't use both author and editor fields in LeCun1998
-You've used 16 entries,
+You've used 19 entries,
             2118 wiz_defined-function locations,
-            596 strings with 6842 characters,
-and the built_in function-call counts, 5976 in all, are:
-= -- 568
-> -- 330
-< -- 4
-+ -- 130
-- -- 114
-* -- 440
-:= -- 986
-add.period$ -- 46
-call.type$ -- 16
-change.case$ -- 103
+            609 strings with 7328 characters,
+and the built_in function-call counts, 7058 in all, are:
+= -- 682
+> -- 362
+< -- 6
++ -- 143
+- -- 124
+* -- 507
+:= -- 1136
+add.period$ -- 55
+call.type$ -- 19
+change.case$ -- 117
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 221
-empty$ -- 436
-format.name$ -- 114
-if$ -- 1236
+cite$ -- 28
+duplicate$ -- 275
+empty$ -- 533
+format.name$ -- 124
+if$ -- 1486
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 18
-newline$ -- 81
-num.names$ -- 30
-pop$ -- 114
+int.to.str$ -- 19
+missing$ -- 21
+newline$ -- 94
+num.names$ -- 34
+pop$ -- 139
 preamble$ -- 1
-purify$ -- 89
+purify$ -- 100
 quote$ -- 0
-skip$ -- 164
+skip$ -- 204
 stack$ -- 0
-substring$ -- 334
-swap$ -- 54
-text.length$ -- 4
+substring$ -- 405
+swap$ -- 74
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 60
-warning$ -- 5
-while$ -- 52
-width$ -- 18
-write$ -- 171
+type$ -- 72
+warning$ -- 9
+while$ -- 62
+width$ -- 21
+write$ -- 200
 (There was 1 error message)

@@ -3,6 +3,9 @@
 \bibitem{bloggg}
 Bringing parallelism to the web with river trail.
 
+\bibitem{gotcha}
+Gotcha wide-angle synthetic aperture radar dataset.
+
 \bibitem{ArjovskySB15}
 Mart{\'{\i}}n Arjovsky, Amar Shah, and Yoshua Bengio.
 \newblock Unitary evolution recurrent neural networks.
@@ -23,6 +26,13 @@ Jiuxiang Gu, Zhenhua Wang, Jason Kuen, Lianyang Ma, Amir Shahroudy, Bing Shuai,
 Nitzan Guberman.
 \newblock On complex valued convolutional neural networks.
 \newblock {\em CoRR}, abs/1602.09046, 2016.
+
+\bibitem{hansch2010complex}
+Ronny Haensch and Olaf Hellwich.
+\newblock Complex-valued convolutional neural networks for object detection in
+  polsar data.
+\newblock In {\em Synthetic Aperture Radar (EUSAR), 2010 8th European
+  Conference on}, pages 1--4. VDE, 2010.
 
 \bibitem{hansch2009classification}
 Ronny H{\"a}nsch and Olaf Hellwich.
@@ -82,6 +92,12 @@ Chiheb Trabelsi, Olexa Bilaniuk, Ying Zhang, Dmitriy Serdyuk, Sandeep
   Bengio, and Christopher~J Pal.
 \newblock Deep complex networks.
 \newblock In {\em International Conference on Learning Representations}, 2018.
+
+\bibitem{wilmanski2016complex}
+Michael Wilmanski, Chris Kreucher, and Alfred Hero.
+\newblock Complex input convolutional neural networks for wide angle sar atr.
+\newblock In {\em Signal and Information Processing (GlobalSIP), 2016 IEEE
+  Global Conference on}, pages 1037--1041. IEEE, 2016.
 
 \bibitem{polsarzhang2017complex}
 Zhimian Zhang, Haipeng Wang, Feng Xu, and Ya-Qiu Jin.
