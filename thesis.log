@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.5.26)  26 MAY 2018 08:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.5.26)  26 MAY 2018 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -542,9 +542,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [9]
 Missing character: There is no e in font msbm10!
 
-[10] [11]) (./methodology.tex
+[10] [11]
 Missing character: There is no e in font msbm10!
- [12] [13]
+ [12]) (./methodology.tex [13]
 Chapter 5.
 ) (./experiments.tex [14
 
@@ -558,7 +558,7 @@ Chapter 7.
 
 ]
 Appendix A.
-<./figures/cConvOperation.png, id=388, 517.935pt x 630.355pt>
+<./figures/cConvOperation.png, id=401, 517.935pt x 630.355pt>
 File: ./figures/cConvOperation.png Graphic file (type png)
 <use ./figures/cConvOperation.png>
 Package pdftex.def Info: ./figures/cConvOperation.png  used on input line 7.
@@ -589,10 +589,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 6627 strings out of 494801
- 95224 string characters out of 6178026
- 176304 words of memory out of 5000000
- 9673 multiletter control sequences out of 15000+600000
+ 6636 strings out of 494801
+ 95382 string characters out of 6178026
+ 176532 words of memory out of 5000000
+ 9678 multiletter control sequences out of 15000+600000
  18408 words of font info for 76 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  42i,13n,40p,1535b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -611,10 +611,10 @@ amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (28 pages, 288826 bytes).
+Output written on thesis.pdf (28 pages, 291486 bytes).
 PDF statistics:
- 488 PDF objects out of 1000 (max. 8388607)
- 432 compressed objects within 5 object streams
- 118 named destinations out of 1000 (max. 500000)
+ 502 PDF objects out of 1000 (max. 8388607)
+ 446 compressed objects within 5 object streams
+ 122 named destinations out of 1000 (max. 500000)
  259 words of extra memory for PDF output out of 10000 (max. 10000000)
 

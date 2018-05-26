@@ -18,45 +18,45 @@ Warning--empty author in gotcha
 Warning--empty journal in gotcha
 Warning--empty year in gotcha
 Warning--can't use both author and editor fields in LeCun1998
-You've used 25 entries,
+You've used 27 entries,
             2118 wiz_defined-function locations,
-            636 strings with 8372 characters,
-and the built_in function-call counts, 9233 in all, are:
-= -- 876
-> -- 494
-< -- 11
-+ -- 196
-- -- 170
-* -- 655
-:= -- 1497
-add.period$ -- 73
-call.type$ -- 25
-change.case$ -- 157
+            642 strings with 8556 characters,
+and the built_in function-call counts, 9730 in all, are:
+= -- 921
+> -- 519
+< -- 12
++ -- 206
+- -- 178
+* -- 683
+:= -- 1587
+add.period$ -- 79
+call.type$ -- 27
+change.case$ -- 166
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 363
-empty$ -- 691
-format.name$ -- 170
-if$ -- 1940
+cite$ -- 36
+duplicate$ -- 385
+empty$ -- 730
+format.name$ -- 178
+if$ -- 2041
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 28
-newline$ -- 124
-num.names$ -- 46
-pop$ -- 192
+int.to.str$ -- 27
+missing$ -- 31
+newline$ -- 134
+num.names$ -- 50
+pop$ -- 205
 preamble$ -- 1
-purify$ -- 135
+purify$ -- 143
 quote$ -- 0
-skip$ -- 268
+skip$ -- 282
 stack$ -- 0
-substring$ -- 478
-swap$ -- 100
-text.length$ -- 11
+substring$ -- 488
+swap$ -- 103
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 94
+type$ -- 100
 warning$ -- 9
-while$ -- 78
-width$ -- 27
-write$ -- 265
+while$ -- 82
+width$ -- 29
+write$ -- 286
 (There was 1 error message)

@@ -165,30 +165,24 @@ x , &\textrm{for} \ x\ge 0\\
  Other variants of ReLU include Leaky ReLU (LReLU), Parametric ReLU (PReLU), Randomized ReLU (RReLU), and Exponential Linear Unit (ELU), as shown in figure blaa blaa. 
   
  \subsubsection{Complex-Valued Activation Functions}
- Complex-valued activation functions can be divided into two types: split-complex and differentiable????
- %compare real and complex activation functions and challenges
- %CAUCHY-RIEMANN EQUATIONS 
- %REPORT THE PERFORMANCE OF THE THREE COMPLEX VALUED RELUS
  
- While CR equations are a necessary condition for holomorphism, the presence of the second condition makes CR equations become a sufficient condition for holomorphism.  
+ Real-valued activation functions have to strictly comply with the requirement of differentiability for the chain rule, the backbone of the Gradient Descent optimization algorithm, to work. Since $\mathbb{C}$-CNNs also make use of the 
+ same optimization algorithm, it is only natural to think that the complex activation functions we require must also be differentiable at any point in their domain i.e. they should be Holomorphic. However, Louiville theorem presents us with a realization: the only complex functions that can be  Holomorphic are constant functions. This begs us to question if the condition of differentiability can be relaxed while still being able to optimize the network.
+ We find a way to circumvent this problem by ignoring the requirement complex differentiablity, finding solace in the fact that as long as the complex function is differentiable with respect to its real part and its imaginary part, it provides sufficiency to be able to perform backpropagation, as demonstrated in \cite{trabelsi2018deep}, \cite{hansch2010complex}, \cite{polsarzhang2017complex}. The chain-rule for complex function differentiation is given in section \ref{cchainrule}. However, we must note that since Holomorphic functions obey CR equations, they are beneficial grant computational efficiency to our process because we would only need to compute half the number of partial derivatives \cite{sarroff2015learning}.
  
- in real valued cnns, diff is a strict requirement which enables the use chain rule in the calculation of gradients, the backbone of gradient descent algorithm. however, if we impose this requirement on the complex functions, we find out that the only function that is complex differnetiable on all the complex domain (entire)can only be a constant fucntion (louiville theorom). case in point, direct sub of real var by complex var in sigmoid and tanh functions. This begs us to explore alternative techniques.
- we relax the constraint. no more need to be complex diff entirely. 
+ %cooridnate dependency????
+     
+ Complex-valued activation functions can be divided into two types: Real-Imaginary type , and the Amplitude-Phase type \cite{hirose2012complex}.
+ The first type of activation functions deals with real and imaginary parts separately and independently, but identically. Hence, they can be thought to work similar to real-valued networks with double the number of dimensions.  The latter type applies the nonlinearity on only the magnitude of the complex number, leaving the phase information unchanged \cite{page45hirose2012complex} . 
  
- " Instead, we construct
- the dynamics of learning and self-organization on the basis of meaningful
- partial derivatives in complex domain with deliberation on the properties of
- input and output information "
+ %suitability of the two types functions???
  
- with respect to real and imaginary parts separately.
  
- two types in the book: Real-imaginary type, amplitude-phase type. split complex tanh, tanh(mag of z)phase as it is45
- first type is synonymous to 2n real valued neural network
- second type is more suitable for radar images wierddd 
+ %" Instead, we construct the dynamics of learning and self-organization on the basis of meaningful partial derivatives in complex domain with deliberation on the properties of  input and output information "
  
 
  \subsubsection{modReLU}
-Arjovsky $et \ al.$ (2015) \cite{ArjovskySB15} proposed modReLU as a possible activation function for complex valued networks. It is formulated as:
+Arjovsky $et \ al.$ (2015) \cite{ArjovskySB15} proposed modReLU, an Amplitude-Phase type complex activation function, as a possible activation function for complex valued networks. It is formulated as:
  \begin{equation}
 \mathrm{modReLU}(z) = \mathrm{ReLU}(|z| + b)e^{i\theta_{z}}
 {}=\begin{cases} (|z| + b)\frac{z}{|z|} , &\mathrm{for} \ |z| + b\ge 0 \\ 0 , &\textrm{otherwise} \end{cases}
@@ -196,16 +190,35 @@ Arjovsky $et \ al.$ (2015) \cite{ArjovskySB15} proposed modReLU as a possible ac
 
 where $b$ is a learnable parameter which dictates the offset for the deadzone around the origin $0$. modReLU is an element-wise nonlinearity, where the element is muted(assigned a value of zero in both real and imaginary channels) if it lies in the deadzone, or passed if it is beyond. Chiheb $et \ al.$ \cite{trabelsi2018deep} also make use of this non-linearity in their analysis of $\mathbb{R}$-CNNs and $\mathbb{C}$-CNNs.
 
+
+\subsubsection{$\mathbb{C}$ReLU}
+$\mathbb{C}$ReLU is Real-Imaginary type activation function introduced by Chiheb $et \ al.$ (2018) \cite{trabelsi2018deep}, which satisfies the CR equations only in the first and the third quadrant. The formula is given as follows:
+
+\begin{equation}
+\label{eqcrelu}
+\mathbb{C}\mathrm{ReLU}(z) = \mathrm{ReLU}(\Re(z))+i\mathrm{ReLU}(\Im(z))
+\end{equation}
+
+ 
  
  \subsubsection{$z$ReLU}
- 
-
- \subsubsection{$\mathbb{C}$ReLU}
-
+ Proposed by Guberman (2106) \cite{Guberman}, $z$ReLU does not strictly fall in any of the two categories described above. It follows the CR equations on all points on the complex domain except for the points along the real and imaginary axes of the complex plane. It is defined as follows:
+  \begin{equation}
+  \label{eqzrelu}
+ z\mathrm{ReLU}(z) 
+ {}=\begin{cases} z , &\mathrm{for} \ \theta_{z} \in [0,\pi/2] + b\ge 0 \\ 0 , &\textrm{otherwise} \end{cases}
+ \end{equation}
 
  \subsection{Weight Initialization}
+ 
+ 
+ 
  \subsubsection{Real-Valued Activation Functions}
+ 
+ 
  \subsubsection{Complex-Valued Activation Functions}
+ 
+ 
  \subsection{Output Layer and Loss Function}
  
  \subsubsection{Real-Valued CNNs}

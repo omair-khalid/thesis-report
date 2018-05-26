@@ -25,8 +25,8 @@
 \contentsline {subsubsection}{ReLU}{11}{section*.10}
 \contentsline {subsubsection}{Complex-Valued Activation Functions}{12}{section*.11}
 \contentsline {subsubsection}{modReLU}{12}{section*.12}
-\contentsline {subsubsection}{$z$ReLU}{13}{section*.13}
-\contentsline {subsubsection}{$\mathbb {C}$ReLU}{13}{section*.14}
+\contentsline {subsubsection}{$\mathbb {C}$ReLU}{13}{section*.13}
+\contentsline {subsubsection}{$z$ReLU}{13}{section*.14}
 \contentsline {subsection}{\numberline {4.2.4}Weight Initialization}{13}{subsection.4.2.4}
 \contentsline {subsubsection}{Real-Valued Activation Functions}{13}{section*.15}
 \contentsline {subsubsection}{Complex-Valued Activation Functions}{13}{section*.16}

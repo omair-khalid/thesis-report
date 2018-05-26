@@ -56,6 +56,11 @@ Akira Hirose.
 \newblock {\em Complex-valued neural networks}, volume 400.
 \newblock Springer Science \& Business Media, 2012.
 
+\bibitem{page45hirose2012complex}
+Akira Hirose.
+\newblock {\em Complex-valued neural networks}, volume 400.
+\newblock Springer Science \& Business Media, 2012.
+
 \bibitem{hubel1959receptive}
 David~H Hubel and Torsten~N Wiesel.
 \newblock Receptive fields of single neurones in the cat's striate cortex.
@@ -106,6 +111,11 @@ Vinod Nair and Geoffrey~E Hinton.
 Edouard Oyallon and St{\'e}phane Mallat.
 \newblock Deep roto-translation scattering for object classification.
 \newblock In {\em CVPR}, volume~3, page~6, 2015.
+
+\bibitem{sarroff2015learning}
+Andy~M Sarroff, Victor Shepardson, and Michael~A Casey.
+\newblock Learning representations using complex-valued nets.
+\newblock {\em arXiv preprint arXiv:1511.06351}, 2015.
 
 \bibitem{trabelsi2018deep}
 Chiheb Trabelsi, Olexa Bilaniuk, Ying Zhang, Dmitriy Serdyuk, Sandeep
