@@ -165,11 +165,28 @@ x , &\textrm{for} \ x\ge 0\\
  Other variants of ReLU include Leaky ReLU (LReLU), Parametric ReLU (PReLU), Randomized ReLU (RReLU), and Exponential Linear Unit (ELU), as shown in figure blaa blaa. 
   
  \subsubsection{Complex-Valued Activation Functions}
+ Complex-valued activation functions can be divided into two types: split-complex and differentiable????
  %compare real and complex activation functions and challenges
  %CAUCHY-RIEMANN EQUATIONS 
  %REPORT THE PERFORMANCE OF THE THREE COMPLEX VALUED RELUS
  
+ While CR equations are a necessary condition for holomorphism, the presence of the second condition makes CR equations become a sufficient condition for holomorphism.  
  
+ in real valued cnns, diff is a strict requirement which enables the use chain rule in the calculation of gradients, the backbone of gradient descent algorithm. however, if we impose this requirement on the complex functions, we find out that the only function that is complex differnetiable on all the complex domain (entire)can only be a constant fucntion (louiville theorom). case in point, direct sub of real var by complex var in sigmoid and tanh functions. This begs us to explore alternative techniques.
+ we relax the constraint. no more need to be complex diff entirely. 
+ 
+ " Instead, we construct
+ the dynamics of learning and self-organization on the basis of meaningful
+ partial derivatives in complex domain with deliberation on the properties of
+ input and output information "
+ 
+ with respect to real and imaginary parts separately.
+ 
+ two types in the book: Real-imaginary type, amplitude-phase type. split complex tanh, tanh(mag of z)phase as it is45
+ first type is synonymous to 2n real valued neural network
+ second type is more suitable for radar images wierddd 
+ 
+
  \subsubsection{modReLU}
 Arjovsky $et \ al.$ (2015) \cite{ArjovskySB15} proposed modReLU as a possible activation function for complex valued networks. It is formulated as:
  \begin{equation}

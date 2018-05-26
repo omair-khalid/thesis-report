@@ -11,6 +11,17 @@ Mart{\'{\i}}n Arjovsky, Amar Shah, and Yoshua Bengio.
 \newblock Unitary evolution recurrent neural networks.
 \newblock {\em CoRR}, abs/1511.06464, 2015.
 
+\bibitem{bruna2015theoretical}
+Joan Bruna, Soumith Chintala, Yann LeCun, Serkan Piantino, Arthur Szlam, and
+  Mark Tygert.
+\newblock A theoretical argument for complex-valued convolutional networks.
+\newblock {\em CoRR abs/1503.03438}, 2015.
+
+\bibitem{danihelka2016associative}
+Ivo Danihelka, Greg Wayne, Benigno Uria, Nal Kalchbrenner, and Alex Graves.
+\newblock Associative long short-term memory.
+\newblock {\em arXiv preprint arXiv:1602.03032}, 2016.
+
 \bibitem{DeepLearning}
 Ian Goodfellow, Yoshua Bengio, and Courville Aaron.
 \newblock {\em Deep Learning}, pages 324--330.
@@ -39,6 +50,11 @@ Ronny H{\"a}nsch and Olaf Hellwich.
 \newblock Classification of polarimetric sar data by complex valued neural
   networks.
 \newblock In {\em Proceedings of ISPRS Workshop, Hannover, Germany}, 2009.
+
+\bibitem{hirose2012complex}
+Akira Hirose.
+\newblock {\em Complex-valued neural networks}, volume 400.
+\newblock Springer Science \& Business Media, 2012.
 
 \bibitem{hubel1959receptive}
 David~H Hubel and Torsten~N Wiesel.
@@ -86,6 +102,11 @@ Vinod Nair and Geoffrey~E Hinton.
 \newblock In {\em Proceedings of the 27th international conference on machine
   learning (ICML-10)}, pages 807--814, 2010.
 
+\bibitem{oyallon2015deep}
+Edouard Oyallon and St{\'e}phane Mallat.
+\newblock Deep roto-translation scattering for object classification.
+\newblock In {\em CVPR}, volume~3, page~6, 2015.
+
 \bibitem{trabelsi2018deep}
 Chiheb Trabelsi, Olexa Bilaniuk, Ying Zhang, Dmitriy Serdyuk, Sandeep
   Subramanian, Joao~Felipe Santos, Soroush Mehri, Negar Rostamzadeh, Yoshua
@@ -98,6 +119,19 @@ Michael Wilmanski, Chris Kreucher, and Alfred Hero.
 \newblock Complex input convolutional neural networks for wide angle sar atr.
 \newblock In {\em Signal and Information Processing (GlobalSIP), 2016 IEEE
   Global Conference on}, pages 1037--1041. IEEE, 2016.
+
+\bibitem{wisdom2016full}
+Scott Wisdom, Thomas Powers, John Hershey, Jonathan Le~Roux, and Les Atlas.
+\newblock Full-capacity unitary recurrent neural networks.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  4880--4888, 2016.
+
+\bibitem{worrall2017harmonic}
+Daniel~E Worrall, Stephan~J Garbin, Daniyar Turmukhambetov, and Gabriel~J
+  Brostow.
+\newblock Harmonic networks: Deep translation and rotation equivariance.
+\newblock In {\em Proc. IEEE Conf. on Computer Vision and Pattern Recognition
+  (CVPR)}, volume~2, 2017.
 
 \bibitem{polsarzhang2017complex}
 Zhimian Zhang, Haipeng Wang, Feng Xu, and Ya-Qiu Jin.
