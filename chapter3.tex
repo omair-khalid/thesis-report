@@ -1,0 +1,180 @@
+\chapter{Comparison of $\mathbb{Re}$-CNNs with $\mathbb{C}$-CNNs}\label{chap:meth}
+ 
+ 
+ \section{Convolutional Neural Networks}
+ 
+ Convolutional Neural Networks (CNNs) (LeCun, 1989) \cite{lecun1989backpropagation} are specialized neural networks that are used for processing data that can be represented in the form of a grid or arrays e.g. 1D arrays of audio signals, three channels of 2D arrays of RGB images, or any other higher dimensional data. CNNs take their name due to the presence of a specialized kind of linear operation called convolution. CNNs are inspired by the visual cortex in the brain, which consists of alternating layers of simple and complex cells  (Hubel \& Wiesel, 1959, 1962) \cite{hubel1959receptive}\cite{hubel1962receptive}. 
+ 
+In the context of image classification, CNNs make use of the inherent compositional hierarchies present in images such that higher-level features are obtained by composing lower-level ones. Additionally, there are three key ideas behind ConvNets that makes them attractive for learning: sparse interactions, shared weights, equivariant representations. In traditional neural netowrks, one learned parameter interacts with the one input unit in order to produce an output. In the case of images where there are millions of pixels, this approach becomes extremely expensive. In this respect, CNNs offer sparse interactions between inputs and the ouputs in the sense that very few parameters of the kernels need to be learned to extract features from an input of, let's say, a million pixels. This reduces the memory requirements and improve statistical effeciency. Parameter sharing referes to the use of the same parameters for than one function in the model. When kernels are learned in a CNN, the same kernel is used for different spatial locations of the input rather than learning different parameters for different spatial locations. This further reduces the memory requirements. CNNs also grant equivariance to translations, meaning that if the presence of a feature translates in an image, the output of a convolutional layer will also move by the same amount. This behavior is useful if we want to detect the same feature in different parts of the image.\cite{DeepLearning}
+ 
+ In the following section, the building blocks of a real-valued CNN ($\mathbb{Re}$-CNN) and its complex counterpart, complex-valued CNN ($\mathbb{C}$-CNN), pertinent to our methodology, are discussed in detail.
+ 
+ \section{The Building Blocks}
+ 
+ 
+ 
+ \subsection{Convolution}
+  In the field of Computer Vision, convolution operation is utilized for applying a 2D filter to an image for the purpose of photo enhancement or feature extraction. In photo enhancement, the filters used can have different effects e.g. sharpening, blurring, dilatting, and more. In case of features extraction, different features i.e. edges, corners, gradients etc. can be extracted. In short, the application of filters through convolution operation enables us to convert images in a form which are easier to understand and can further help in myriads of computer vision applications such as face detection, object detection, SLAM etc. 
+  
+  In a CNN, the convolutional layer performs the role of feature extraction in a way that each succeeding layer represents a more complex concept that helps get closer to classification \cite{nature}. For examples, the first layers would learn low-level features (e.g. edges) form patterns and the latter layers would learn higher level features (e.g. shapes, textures) which would inturn be composed of these the earlier ones. 
+
+ 
+ Units in a convolutional layer are organized in feature maps, within which each unit is connected to local patches in the feature maps of the previous  layer through a set of weights called a filter bank \cite{nature}.  The local patches in the feature maps of the previous layer are called the receptive field for the respective unit in the feature map under discussion. Different feature maps in a layer use different filter banks but each unit in the same feature map undergo the same filter bank. The new feature map can be obtained by first convolving the input with a learned kernel and then applying an element-wise nonlinear activation function on the convolved results\cite{recent_advances}. The nonlinear acitvation function will be discussed in detail in Section \ref{ssec:act_fn}. 
+ 
+ NUMBER OF PARAMETERS/ MORE ACTIVATION FUNCTIONS IN POLSARHAENCSH
+ 
+ \subsubsection{Real-Valued Convolution}
+ Convolution entails point-wise multiplication of the filter with the input image and summing all the multiplicands to form the unit in the feature map corresponding to that on which the filter's central unit is positioned in the output feature map (after the application of non-linear activation function). The filter slides and performs this operation all over the space of the input by centering upon all or some of the units of the input, according to the design choice of number of strides. The complete feature maps are obtained by using several different kernels. \\
+ 
+ Mathematically, the feature value at location $(i, j)$ in the k-th feature map of $l$-th layer, $z_{i,j,k}^l$, is calculated by:
+ \begin{equation}
+ z_{i,j,k}^l= {w_{k}^l}^T*x^l_{i,j} + b^l_k
+ \end{equation}
+ 
+ 
+ where $w_k^{l}$ and $b_k^{l}$ are the weight vector and bias term of the $k$-th filter of the $l$-th layer respectively, and
+ $x^l_{i,j}$ is the input patch centered at location $(i, j)$ of the $l$-th layer. Note that the kernel $w_k^{l}$ that generates
+ the feature map $z^l_{:,:,k}$ is shared. Such a weight sharing mechanism has several advantages such as it can reduce the model complexity and make the network easier to train\cite{recent_advances}. 
+ 
+\begin{figure}[htb]
+	\centering
+	\epsfxsize=6cm
+	{\epsfbox{convRiverTrailBlog}}
+	\caption{A schematic sketch of the convolution operation. An unit in the output is the sum of point-wise multiplication of the kernel and input patch \cite{bloggg}}
+	\label{fig:conv}
+\end{figure}
+ 
+
+\subsubsection{Complex-Valued Convolution}
+Like complex domain can be thought of as an extension of real domain, complex-valued convolution can also be formulated through such thinking. In complex-valued convolution, the filter and the input both take on the complex form:
+ \begin{equation}
+\mathrm{W} = \mathrm{A}+i\mathrm{B}
+\label{eqCfilter}
+\end{equation}
+ \begin{equation}
+\mathrm{h} = \mathrm{x}+i\mathrm{y}
+\label{eqCinput}
+\end{equation}
+ 
+where A and B are real-valued matrices which belong to one complex kernel, implemented as seperate layers. x and y are real-valued input vecetors  representing the real and imaginary part of the complex-valued patch of the input layer. Note that the real and imaginary parts of both the kernel and the input are present as separate layers, and the result of the convolution is one complex-valued layer represented as two real-valued layers \cite{Guberman}. 
+
+Taking advantage of the fact that convolution is distributive, the result of $\mathrm{W*h}$ results as follows:
+
+ \begin{equation}
+\mathrm{W*h} = (\mathrm{A*x-B*y})+i(\mathrm{B*x+A*Y})
+\label{eqCconv}
+\end{equation}
+
+
+This convolution strategy has been used in \cite{Guberman}, \cite{trabelsi2018deep} , Learning Rep, Polsar and ...  
+ \subsection{Batch Normalization}\label{ssec:bn}
+One of the most widespread methods used to improve the performance of Deep Neural networks, including CNNs, is called Batch Normalization (BN). 
+%Problem faced, how it is solved: 
+Introduced by Ioffe and Szegedy in 2015 \cite{bnIoffeS15}, BN helps speed up the training of the network and enables the use of a wider variety of acceptable hyperparameters by reducing internal covariant shift. 
+Internal Covariate Shift is defined as the change in the distribution of network activations, the input to the next layer, due to the change in network parameters during training \cite{bnIoffeS15}. Normalization of input data is widely accepted method to make the nerual networks converge faster, as stated in \cite{LeCun1998}. In the case of BN, this idea of input normalization is applied on the input of each layer which happens to be the output of the previous layer. It fights the internal covariate shift problem by a normalization step that fixes the means and variances of layer inputs where the estimations of mean and variance are computed
+after each mini-batch rather than the entire training set \cite{recent_advances}. The exact procedure proposed is described lates in \ref{rvbn}.
+
+%Advantages
+Batch normalization has many advantages compared with global data
+normalization that is done before training. Apart from reducing internal covariant shift, BN also reduces the dependence of gradients on the scale of the parameters or of their initialization strategy. This benefits the flow of gradients and enables the use of higher learning rate without the risk of divergence \cite{recent_advances}. BN also weakens the coupling between functions of each layers which inturn expedites convergence.  
+Furthermore, as BN involves subtraction of mean and scaling by standard deviation, where mena and standard deviation are calculated on mini-batches, multiplicative and additive noise is added to the each iteration. As a result, a slight regularization effect is induced in the network which helps it not to rely too much on the output of a single neuron/node in any layer of the network. One should note that the bigger the size of the mini-batch, the weaker is the regularization effect. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%At test time????
+
+ \subsubsection{Real-Valued Batch Normalization}\label{rvbn}
+ %Exact procedure of R goes here
+In $\mathbb{Re}$-CNNs, the BN step is generally performed between the convolution step and the activation step, although the original paper \cite{bnIoffeS15} proposed it for after the activation step. Suppose that a layer to normalize has a $d$ dimensional
+input, i.e., $\mathrm{x} = [x_{1} , x_{2} , ..., x_{d} ]^{\mathrm{T}}$ .  The first step is to normalize the $k$-th dimension as follows:
+
+
+ \begin{equation}
+\hat{x}_{k} = \frac{x_{k} - \mu}{\sqrt{\sigma^{2} - \epsilon}}
+\label{eqrbn1}
+\end{equation}
+
+where $\mu$ and $\sigma^{2}$ are the mean and variance of mini-batch respectively, and $\epsilon$ is a constant value. Next, we let the network change the distribution of the network as is required by the model throught he help of one multiplicative and one additive paramter. The normalized input $\hat{x}_{k}$ is further transformed into:
+ \begin{equation}
+y_{k} = \mathrm{BN}_{\gamma,\beta}(x_{k}) = \gamma\hat{x}_{k} + \beta
+\label{eqrbn2}
+\end{equation}
+where $\gamma$ and $\beta$ are learned parameters. It might not be beneficial for the layer input to have zero mean and variance, although the network has the choice to keep them such through the two parameters. $\gamma$ and $\beta$ help scale and shift the mean of the input distribution to better make advantage of the nonlinearity of the activation function.
+
+
+ \subsubsection{Complex-Valued Batch Normalization}
+ %Exact procedure of C from DCN goes here; mention that it was first introduced in this paper
+The complex-valued BN is an extension of its real-valued counterpart and it was first introduced in \cite{trabelsi2018deep}. The first step, ofcourse, is normalization of the input distribution. Unlike real-valued BN, merely translating and scaling, like in \cite{bnIoffeS15}, would result in skewed or elliptical variance with high eccentricity \cite{trabelsi2018deep}. To cater for this problem, the authors the normalization step of complex BN is treated  as whitening of 2D vectors. The following equations describe the process.
+
+ \begin{equation}
+\tilde{x} = (V^{-\frac{1}{2}})(x - \mathbb{E}[x])
+\label{eqcbn1}
+\end{equation}
+
+ \begin{equation}
+V = \begin{pmatrix} V_{rr} & V_{ri}\\ V_{ir} & V_{ii} \end{pmatrix} = 
+\begin{pmatrix} \mathrm{Cov}(\Re{\{x\}},\Re{\{x\}}) & \mathrm{Cov}(\Re{\{x\}},\Im{\{x\}})\\  \mathrm{Cov}(\Im{\{x\}},\Re{\{x\}}) & \mathrm{Cov}(\Im{\{x\}},\Im{\{x\}}) \end{pmatrix}
+\label{eqcbn2}
+\end{equation}
+
+As described by the equations above, the mean-centered input ($x - \mathbb{E}[x]$) is multiplied by the inverse of the square-root of input variance $\mathrm{V}$ in the normalizatios step.%The guarantee of positive definiteness of $\mathrm{V} 
+Whereas in real-valued BN, the first step entailed converting the input distribution into a standard normal distribution, the complex-valued BN requires it to be converted to standard complex normal ditribution, which is characterized by having location parameter (also called mean) $\mu = 0$, covariance matrix $\Gamma = 1$, and the relation matrix (also called pseudo-covariance) $C = 0$. The formulae of these parameters are given by:
+
+\begin{equation}
+\label{eqcbn3}
+\begin{aligned}
+&\mu = \mathbb{E}[\tilde{x}]&\\
+&\Gamma = \mathbb{E}[(\tilde{x}-\mu)(\tilde{x}-\mu)^{*}] = V_{rr} + V_{ii} + i (V_{ir} - V_{ri} )&\\
+&C = \mathbb{E}[(\tilde{x}-\mu)(\tilde{x}-\mu)] = V_{rr} - V_{ii} + i (V_{ir} + V_{ri} )&
+\end{aligned}
+\end{equation}
+
+The next step in complex-valued BN is to scale and shift the input distrubtion to a desired mean and variance, with the help of $\gamma$ and $\beta$, respectively. $\gamma$ is now a $\mathrm{2} \mathrm{x} \mathrm{2}$ positive-semidefinite matrix with three tunable parameters and it is given by:
+
+\begin{equation}
+\gamma = \begin{pmatrix} \gamma_{rr} & \gamma_{ri}\\ \gamma_{ri} & \gamma_{ii} \end{pmatrix} 
+\label{eqcbn4}
+\end{equation}
+
+$\beta$ is a complex parameter with real and imaginary learnable components. The final step of complex-valued BN follows the same equation as of real-valued BN, given by:
+
+ \begin{equation}
+y_{k} = \mathrm{BN}_{\gamma,\beta}(x_{k}) = \gamma\hat{x}_{k} + \beta
+\label{eqcbn5}
+\end{equation}
+
+%SKIPPING: DECORRELATION EFFECT, IMPLEMENTATION DETAILS....
+ \subsection{Activation Function}\label{ssec:act_fn}
+ In the absence of non-linear activation functions, the output of a neural network would essentially be a linear combination of the input, however deep the network is. Non-linear activation functions are introduced in order to add non-linearity to the network so that functions of a higher degree than 1 can be learned, thuse giving them the title of universal function approximators. In a CNN, activation function is applied element-wise to the output of the convolution (or BN, when it is used) and they act as to decide whether or not this output should be taken into account by its connection, and if so, what should be the nature of it. For $\mathrm{R}$-CNNs, some common types of activation functions include Sigmoid, Hyperbolic Tangent function (tanh), and the most popular, Recitified Linear Unit (ReLU).
+ 
+ %They also serve as to provide a degree of robustness to data variability and %a computationally efficient representation, courtesy of sparsity induction.  
+ 
+  \subsubsection{Real-Valued Activation Functions}
+   \subsubsection{ReLU}
+   
+Popularized by \cite{krizhevsky2012imagenet}, Rectified Linear Units (ReLU) \cite{nair2010rectified} remains the most commonly used activation function in deep learning/CNN architectures for the community. ReLU is given by:
+
+\begin{equation}
+f(x) =  
+\begin{cases} 
+x , &\textrm{for} \ x\ge 0\\
+0 , &\textrm{for} \ x < 0
+\end{cases}
+\end{equation}
+ 
+%benefits of ReLU
+%other 
+ 
+ Other variants of ReLU include Leaky ReLU (LReLU), Parametric ReLU (PReLU), Randomized ReLU (RReLU), and Exponential Linear Unit (ELU), as shown in figure. 
+  
+ \subsubsection{Complex-Valued Activation Functions}
+ %compare real and complex activation functions and challenges
+ %CAUCHY-RIEMANN EQUATIONS 
+ %REPORT THE PERFORMANCE OF THE THREE COMPLEX VALUED RELUS
+ 
+ 
+ \subsubsection{modReLU}
+Arjovsky $et \ al.$ (2015) \cite{ArjovskySB15} proposed modReLU as a possible activation function for complex valued networks. It is formulated as:
+ \begin{equation}
+\mathrm{modReLU}(z) = \mathrm{ReLU}(|z| + b)e^{i\theta_{z}}
+{}=\begin{cases} (|z| + b)\frac{z}{|z|} , &\mathrm{for} \ |z| + b\ge 0 \\ 0 , &\textrm{otherwise} \end{cases}
+\end{equation}
+
+where $b$ is a learnable parameter which dictates the offset for the deadzone around the origin $0$. modReLU is an element-wise nonlinearity, where the element is muted(assigned a value of zero in both real and imaginary channels) if it lies in the deadzone, or passed if it is beyond. The authors of t

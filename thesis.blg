@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2018/dev/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: header.aux
+The style file: plain.bst
+Database file #1: refs.bib
+I was expecting a `,' or a `}'---line 234 of file refs.bib
+ :  year={2009}
+ :             \begin{flushright}
+I'm skipping whatever remains of this entry
+Database file #2: theano-short.bib
+Warning--to sort, need author or key in bloggg
+Warning--empty author in bloggg
+Warning--empty journal in bloggg
+Warning--empty year in bloggg
+Warning--can't use both author and editor fields in LeCun1998
+You've used 15 entries,
+            2118 wiz_defined-function locations,
+            591 strings with 6657 characters,
+and the built_in function-call counts, 5704 in all, are:
+= -- 545
+> -- 317
+< -- 4
++ -- 125
+- -- 110
+* -- 427
+:= -- 941
+add.period$ -- 43
+call.type$ -- 15
+change.case$ -- 98
+chr.to.int$ -- 0
+cite$ -- 20
+duplicate$ -- 207
+empty$ -- 408
+format.name$ -- 110
+if$ -- 1177
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 17
+newline$ -- 76
+num.names$ -- 28
+pop$ -- 105
+preamble$ -- 1
+purify$ -- 85
+quote$ -- 0
+skip$ -- 156
+stack$ -- 0
+substring$ -- 329
+swap$ -- 52
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 56
+warning$ -- 5
+while$ -- 50
+width$ -- 17
+write$ -- 161
+(There was 1 error message)
