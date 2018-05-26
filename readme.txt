@@ -12,4 +12,4 @@ The files (among others):
 - Thesis.pdf/.dvi: the final version of the thesis in dvi and pdf formats.
 
 
-Robert Martí, March 2008.
+Robert Martí, March 2008........
