@@ -162,7 +162,7 @@ x , &\textrm{for} \ x\ge 0\\
 %benefits of ReLU
 %other 
  
- Other variants of ReLU include Leaky ReLU (LReLU), Parametric ReLU (PReLU), Randomized ReLU (RReLU), and Exponential Linear Unit (ELU), as shown in figure. 
+ Other variants of ReLU include Leaky ReLU (LReLU), Parametric ReLU (PReLU), Randomized ReLU (RReLU), and Exponential Linear Unit (ELU), as shown in figure blaa blaa. 
   
  \subsubsection{Complex-Valued Activation Functions}
  %compare real and complex activation functions and challenges
@@ -177,4 +177,25 @@ Arjovsky $et \ al.$ (2015) \cite{ArjovskySB15} proposed modReLU as a possible ac
 {}=\begin{cases} (|z| + b)\frac{z}{|z|} , &\mathrm{for} \ |z| + b\ge 0 \\ 0 , &\textrm{otherwise} \end{cases}
 \end{equation}
 
-where $b$ is a learnable parameter which dictates the offset for the deadzone around the origin $0$. modReLU is an element-wise nonlinearity, where the element is muted(assigned a value of zero in both real and imaginary channels) if it lies in the deadzone, or passed if it is beyond. The authors of t
+where $b$ is a learnable parameter which dictates the offset for the deadzone around the origin $0$. modReLU is an element-wise nonlinearity, where the element is muted(assigned a value of zero in both real and imaginary channels) if it lies in the deadzone, or passed if it is beyond. Chiheb $et \ al.$ \cite{trabelsi2018deep} also make use of this non-linearity in their analysis of $\mathbb{R}$-CNNs and $\mathbb{C}$-CNNs.
+
+ 
+ \subsubsection{$z$ReLU}
+ 
+
+ \subsubsection{$\mathbb{C}$ReLU}
+
+
+ \subsection{Complex Weight Initialization}
+ \subsection{Output Layer and Loss Function}
+ 
+ \subsection{Optimization through Backpropagation}
+
+
+
+
+
+
+
+
+
