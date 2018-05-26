@@ -210,14 +210,71 @@ $\mathbb{C}$ReLU is Real-Imaginary type activation function introduced by Chiheb
  \end{equation}
 
  \subsection{Weight Initialization}
+ Weight initialization can help in speeding up the convergence of the gradient descent algorithm, and combats the problem of vanishing and exploding gradients, especially in the absence of BN. 
+ 
+ 
+ \subsubsection{Real-Valued Weight Initialization}\label{rvwi}
+ In the context of $\mathbb{R}$-CNNs, two weight initialization techniques are popular among the community, which are explained below. In these two techniques, the first step concerns with choosing choosing a random distribution function whose defining parameters can be adjusted according to their benefits.
+ \paragraph{Glorot and Bengio (2010) criterion}
+ This type of initialization demands that the variance of the weight distibution should be as follows:
+
+  \begin{equation}\label{gbwi}
+\mathrm{Var}(W) = 2/(n_{in}+n_{out})
+\end{equation}
+ 
+ The constraint ensures that the variances of the input, output and the gradients are the same. They go ahead to pick the weights from a Gaussian distribution with zero mean and variance as given in equation\ref{gbwi}. This initialization has been proved to be useful owing to the fact that it can detect the scale of initialization based on the number of inputs and outputs, keeping the signal in a reasonable limit through many layers \cite{recent_advances} \cite{glorot2010understanding}.
+ 
+ 
+ \paragraph{He $et \ al.$ (2015b) criterion}
+ He $et \ al.$ (2105b) proposed an initialization criterion specifically accounts for ReLU non-linearity function, which grants the ability to train extremely deep networks \cite{recent_advances} \cite{he2015delving}. 
  
  
  
- \subsubsection{Real-Valued Activation Functions}
+ \begin{equation}\label{hewi}
+ \mathrm{Var}(W) = 2/n_{in}
+ \end{equation}
+ \subsubsection{Complex-Valued Weight Initialization}
+ Chiheb $et \ al.$ (2018) introduced two methods of complex weight initialization, which incorporate the two real-valued $\mathbb{R}$-CNN weight initialization techniques given above.
+ 
+ They start with dealing with the problem of defining the variance of complex weights. The standard definition of variance of complex variables goes as follows:
+ 
+ \begin{equation}\label{vardef}
+ \mathrm{Var}(W) = \mathbb{E}[WW^{*}]-(\mathbb{E}[W])^2 = \mathbb{E}[|W|^{2}]-(\mathbb{E}[W])^2
+ \end{equation}
  
  
- \subsubsection{Complex-Valued Activation Functions}
+ When $W$ is a symmtrically distributed around 0, equation \ref{vardef} reduces to $\mathrm{Var}(W) = \mathbb{E}[|W|^{2}]$. In order to calculate this variance, we adopt a route that involves Rayleigh distribution. We know that the variance of the magnitude of complex weights, $\mathrm{Var}(|W|)$, follows a Rayleigh distribution, given below:
  
+ \begin{equation}\label{varmagrayleighdef}
+ \mathrm{Var}(|W|) = \mathbb{E}[|W||W|^{*}]-(\mathbb{E}[|W|])^2 = \mathbb{E}[|W|^{2}]-(\mathbb{E}[|W|])^2
+ \end{equation}
+ 
+ Bu substitution, we reach the following formulation for the variance of the weights:
+ 
+ \begin{equation}\label{varw2}
+ \mathrm{Var}(|W|) = \mathrm{Var}(W)-(\mathrm{E}[|W|])^2 , and  
+ \mathrm{Var}(W) = \mathrm{Var}(|W|) + (\mathrm{E}[|W|])^2
+ \end{equation}
+  
+ The expectation and variance of magnitude of complex weights can be computer using the definitions given by the Rayleigh distribution, which can be characterized by just one parameter, mode ($\sigma$). By substitution, we can finally define the variance of the complex weights.
+ 
+ \begin{equation}\label{ray}
+ \mathrm{E}(|W|) = \sigma\sqrt{\frac{\pi}{2}},\\  
+ \mathrm{Var}(|W|) = \frac{4-\pi}{2}\sigma^{2}
+ \end{equation}
+ 
+ 
+ \begin{equation}\label{ray}
+ \mathrm{Var}(W) = 2\sigma^2
+ \end{equation}
+ 
+ Now that the variance is defined,  we can choose either Glorot and Bengio criterion or the He. $2t \ al.$ (2015b) criteron to equate to define the vaue of $\sigma$. In the former criterion, we get $\sigma = 1/\sqrt{n_{in}+n_{out}}$, and in the latter, $\sigma = 1/\sqrt{n_{in}}$. Having the appropriate $\sigma$, we can pick the magnitude of our weights from teh Rayleigh distribution. However, as the variance of $W$ depends only on the magnitude of the weights and not their phase,  we have the liberty of choosing phase. In their implementation, phase is chosen from a uniform distribution of -$\pi$ to $\pi$.
+ 
+ %\subsubsection{Complex-Valued Weight Initialization}
+ 
+ 
+ \paragraph{Complex Weight Initialization}
+ %\paragraph{Complex Independent Weight Initialization}
  
  \subsection{Output Layer and Loss Function}
  

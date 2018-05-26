@@ -22,6 +22,13 @@ Ivo Danihelka, Greg Wayne, Benigno Uria, Nal Kalchbrenner, and Alex Graves.
 \newblock Associative long short-term memory.
 \newblock {\em arXiv preprint arXiv:1602.03032}, 2016.
 
+\bibitem{glorot2010understanding}
+Xavier Glorot and Yoshua Bengio.
+\newblock Understanding the difficulty of training deep feedforward neural
+  networks.
+\newblock In {\em Proceedings of the thirteenth international conference on
+  artificial intelligence and statistics}, pages 249--256, 2010.
+
 \bibitem{DeepLearning}
 Ian Goodfellow, Yoshua Bengio, and Courville Aaron.
 \newblock {\em Deep Learning}, pages 324--330.
@@ -50,6 +57,13 @@ Ronny H{\"a}nsch and Olaf Hellwich.
 \newblock Classification of polarimetric sar data by complex valued neural
   networks.
 \newblock In {\em Proceedings of ISPRS Workshop, Hannover, Germany}, 2009.
+
+\bibitem{he2015delving}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Delving deep into rectifiers: Surpassing human-level performance on
+  imagenet classification.
+\newblock In {\em Proceedings of the IEEE international conference on computer
+  vision}, pages 1026--1034, 2015.
 
 \bibitem{hirose2012complex}
 Akira Hirose.
