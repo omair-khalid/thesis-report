@@ -10,16 +10,16 @@
 \BOOKMARK [2][-]{subsection.3.2.1}{Complex Numbers and its representaitons}{section.3.2}% 10
 \BOOKMARK [2][-]{subsection.3.2.2}{Complex functions}{section.3.2}% 11
 \BOOKMARK [2][-]{subsection.3.2.3}{Holomorphism \046 Complex Differentiability}{section.3.2}% 12
-\BOOKMARK [2][-]{subsection.3.2.4}{Complex Chain Rule}{section.3.2}% 13
+\BOOKMARK [2][-]{subsection.3.2.4}{Generalized chain rule for real-valued complex loss functions}{section.3.2}% 13
 \BOOKMARK [0][-]{chapter.4}{Comparison of Re-CNNs with C-CNNs}{}% 14
 \BOOKMARK [1][-]{section.4.1}{Convolutional Neural Networks}{chapter.4}% 15
 \BOOKMARK [1][-]{section.4.2}{The Building Blocks}{chapter.4}% 16
 \BOOKMARK [2][-]{subsection.4.2.1}{Convolution}{section.4.2}% 17
 \BOOKMARK [2][-]{subsection.4.2.2}{Batch Normalization}{section.4.2}% 18
 \BOOKMARK [2][-]{subsection.4.2.3}{Activation Function}{section.4.2}% 19
-\BOOKMARK [2][-]{subsection.4.2.4}{Weight Initialization}{section.4.2}% 20
-\BOOKMARK [2][-]{subsection.4.2.5}{Output Layer and Loss Function}{section.4.2}% 21
-\BOOKMARK [2][-]{subsection.4.2.6}{Optimization through Backpropagation}{section.4.2}% 22
+\BOOKMARK [2][-]{subsection.4.2.4}{Weight initialization}{section.4.2}% 20
+\BOOKMARK [2][-]{subsection.4.2.5}{Loss function}{section.4.2}% 21
+\BOOKMARK [2][-]{subsection.4.2.6}{Optimization through backpropagation}{section.4.2}% 22
 \BOOKMARK [0][-]{chapter.5}{Methodology}{}% 23
 \BOOKMARK [1][-]{section.5.1}{Representation of Complex Numbers}{chapter.5}% 24
 \BOOKMARK [1][-]{section.5.2}{Experimental setups}{chapter.5}% 25

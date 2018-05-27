@@ -166,11 +166,11 @@ x , &\textrm{for} \ x\ge 0\\
   
  \subsubsection{Soft-max}
   
- \subsubsection{Complex-Valued Activation Functions}
+ \subsubsection{Complex-Valued Activation Functions}\label{cvaf}
  
- Real-valued activation functions have to strictly comply with the requirement of differentiability for the chain rule, the backbone of the Gradient Descent optimization algorithm, to work. Since $\mathbb{C}$-CNNs also make use of the 
- same optimization algorithm, it is only natural to think that the complex activation functions we require must also be differentiable at any point in their domain i.e. they should be Holomorphic. However, Louiville theorem presents us with a realization: the only complex functions that can be  Holomorphic are constant functions. This begs us to question if the condition of differentiability can be relaxed while still being able to optimize the network.
- We find a way to circumvent this problem by ignoring the requirement complex differentiablity, finding solace in the fact that as long as the complex function is differentiable with respect to its real part and its imaginary part, it provides sufficiency to be able to perform backpropagation, as demonstrated in \cite{trabelsi2018deep}, \cite{hansch2010complex}, \cite{polsarzhang2017complex}. The chain-rule for complex function differentiation is given in section \ref{cchainrule}. However, we must note that since Holomorphic functions obey CR equations, they are beneficial grant computational efficiency to our process because we would only need to compute half the number of partial derivatives \cite{sarroff2015learning}.
+ Real-valued activation functions in $\mathbb{R}$-CNNs have to strictly comply with the requirement of differentiability for the chain rule, the backbone of the Gradient Descent optimization algorithm, to work. Since $\mathbb{C}$-CNNs also make use of the 
+ same optimization algorithm, it is only natural to think that the complex activation functions must also be differentiable at any point in their domain i.e. they should be Holomorphic. However, Louiville theorem presents us with a realization: the only complex functions that can be  Holomorphic are constant functions. This begs us to question if the condition of differentiability can be relaxed while still being able to optimize the network.
+ We find a way to circumvent this problem by ignoring the requirement of complex differentiablity, finding solace in the fact that as long as the complex function is differentiable with respect to its real part and its imaginary part, it provides sufficiency to be able to perform backpropagation, as demonstrated in \cite{trabelsi2018deep}, \cite{hansch2010complex}, \cite{polsarzhang2017complex}. The chain-rule for complex function differentiation is given in section \ref{cchainrule}. However, we must note that since Holomorphic functions obey CR equations, they are beneficial in granting computational efficiency to our process because we would only need to compute half the number of partial derivatives \cite{sarroff2015learning}.
  
  %cooridnate dependency????
      
@@ -211,11 +211,13 @@ $\mathbb{C}$ReLU is Real-Imaginary type activation function introduced by Chiheb
  {}=\begin{cases} z , &\mathrm{for} \ \theta_{z} \in [0,\pi/2] + b\ge 0 \\ 0 , &\textrm{otherwise} \end{cases}
  \end{equation}
 
- \subsection{Weight Initialization}
+SPLIT COMPLEX SOFTMAX????
+
+ \subsection{Weight initialization}
  Weight initialization can help in speeding up the convergence of the gradient descent algorithm, and combats the problem of vanishing and exploding gradients, especially in the absence of BN. 
  
  
- \subsubsection{Real-Valued Weight Initialization}\label{rvwi}
+ \subsubsection{Real-valued weight initialization}\label{rvwi}
  In the context of $\mathbb{R}$-CNNs, two weight initialization techniques are popular among the community, which are explained below. In these two techniques, the first step concerns with choosing choosing a random distribution function whose defining parameters can be adjusted according to their benefits.
  \paragraph{Glorot and Bengio (2010) criterion}
  This type of initialization demands that the variance of the weight distibution should be as follows:
@@ -235,7 +237,7 @@ $\mathbb{C}$ReLU is Real-Imaginary type activation function introduced by Chiheb
  \begin{equation}\label{hewi}
  \mathrm{Var}(W) = 2/n_{in}
  \end{equation}
- \subsubsection{Complex-Valued Weight Initialization}
+ \subsubsection{Complex-valued weight initialization}
  Chiheb $et \ al.$ (2018) introduced two methods of complex weight initialization, which incorporate the two real-valued $\mathbb{R}$-CNN weight initialization techniques given above.
  
  They start with dealing with the problem of defining the variance of complex weights. The standard definition of variance of complex variables goes as follows:
@@ -285,12 +287,12 @@ $\mathbb{C}$ReLU is Real-Imaginary type activation function introduced by Chiheb
  %\paragraph{Complex Weight Initialization}
  %\paragraph{Complex Independent Weight Initialization}
  
- \subsection{Output Layer and Loss Function}
+ \subsection{Loss function}
  Loss functions provide two functions in a convolutional neural network - regularization, and provide a measure of comparison between the prediction and the ground truth label. Regularization refers to the idea that the loss function can help enforce a specific quality of the learning in a neural netowrk i.e. L2 regularization prefers that the result obtained is not a consequence of a little number of peaky weight vectors, but a large number of diffused weight vectors. In a classification problem solved with the help of neural networks, we intend to minimize the error, i.e. the difference between the prediction and the ground truth label, using an optimization technique, most common of which is Stochastic Gradient Descent (discussed in \ref{optbp}). Different loss functions will give different errors for the same prediction, and thus have a considerable effect on the performance of the model. One of the strict requirements is that loss functions are differnetiable so that error gradients can be calculated.
  
  
  
- \subsubsection{$\mathbb{R}$-CNNs Loss Function}
+ \subsubsection{Loss functions in $\mathbb{R}$-CNNs}
  In the classification problem, $\mathbb{C}$-CNNs employ a variety of loss functions including Mean Squared Error (MSE), Hinge Loss, Cross Entropy etc. One of the most common loss functions used for multi-class classification, Categorical Cross Entropy (negative), defined as:
  
   \begin{equation}\label{rloss}
@@ -300,16 +302,17 @@ $\mathbb{C}$ReLU is Real-Imaginary type activation function introduced by Chiheb
  
  
  
- \subsubsection{$\mathbb{C}$-CNNs Loss Function}
- In the literature, we find that the output layer can have either complex output, which requires a complex-valued loss function, or some mechanism that projects the data complex domain to real domain, suitable for real-valued loss function.
+ \subsubsection{Loss functions in $\mathbb{C}$-CNNs}
+ In the literature, we find that the output of the final layer of $\mathbb{C}$-CNNs can be complex-valued or real-valued in nature. Since complex domain is not an ordered field, the output of the loss function has to real-valued, making it a real-valued complex function. When the output of the $\mathbb{C}$-CNN is complex-valued, the loss function maps from complex domain to real domain. Examples of such loss functions include Complex Quadratic Error Function, Complex FOurth Power Error Function, Complex Cauchy Error Function, Complex Log-Cosh Error Function, Adapted Least-Squares Error, among others \cite{hansch2009classification}\cite{polsarzhang2017complex}\cite{hansch2010complex}. 
+ In the other case when the loss function maps from complex domain to real domain, we have two options: either project the data from complex domain to real domain and use a real valued loss function \cite{Guberman}, or use a real-valued complex loss function whose input is complex but the output is real (image recognition problem in \cite{trabelsi2018deep}).    
  
- THEY NEED TO BE DIFFERENTIABLE AS WELL
+ \subsection{Optimization through backpropagation}\label{optbp}
+ In the supervised learning problem involving CNNs, the output layer of the system produces a vector of scores, each denote the probability of each hypothesis class $i$, where $i \in [1,P]$. Ideally, the $k^{th}$ entry of the vector, $O(k)$, should larger than the others, corresponding to and correctly identifying the input data class. However, the system needs to go through a training or optimization, in which the parameters or weights of the system are tuned such that they give us correct predictions of the result.
  
- \subsection{Optimization through Backpropagation}\label{optbp}
-supervised learning
-
-
-
+ The most common procedure to train CNNs is known as Stochastic Gradient Descent(SGD). This learning algorithm involves computing a gradient vector,  with the help of the chain-rule for derivatives, that, for each weight, indicates by what amount the error would increase or decrease if the weight were increased by a tiny amount \cite{nature}. SGD updates the parameters $\theta$ of the objective $L(\theta)$ as $\theta_{t+1} = \theta_{t} − \eta_{t}\nabla_{\theta}E[L(\theta_{t})]$,
+ where $E[L(\theta_{t})$ is the average of $L(\theta)$ over a sub-set of the input datset called minibatch, and $\eta$ is the learning rate. Hence, differentiability of the loss function and the activation functions is a strict condition in the case of $\mathbb{R}$-CNNs. However, as discussed in section \ref{cvaf}, such strict requirement can be relaxed for the case of $\mathbb{C}$-CNNs, as substantiated by the literature. 
+    
+ 
 
 
 
