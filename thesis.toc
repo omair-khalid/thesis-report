@@ -13,7 +13,8 @@
 \contentsline {subsubsection}{Exponential form}{5}{section*.7}
 \contentsline {subsection}{\numberline {3.2.2}Complex functions}{5}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Holomorphism \& Complex Differentiability}{5}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Generalized chain rule for real-valued complex loss functions}{6}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.4}Derivative of real-valued complex functions}{6}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Generalized chain rule for real-valued complex loss functions}{6}{subsection.3.2.5}
 \contentsline {chapter}{\numberline {4}Comparison of $\mathbb {Re}$-CNNs with $\mathbb {C}$-CNNs}{7}{chapter.4}
 \contentsline {section}{\numberline {4.1}Convolutional Neural Networks}{7}{section.4.1}
 \contentsline {section}{\numberline {4.2}The Building Blocks}{8}{section.4.2}

@@ -30,9 +30,29 @@ A complex function $f(z): \mathbb{C} \mapsto \mathbb{C}$, $f(z)= u(z) + iv(z)$ (
 	\item $u(z)$ and $v(z)$ are individually differentiable at $z$ as real functions	
 \end{enumerate} 
 
+\subsection{Derivative of real-valued complex functions}
 
  
 \subsection{Generalized chain rule for real-valued complex loss  functions}\label{cchainrule}
+Consider that we have a real-valued loss function $L(z): \mathbb{C}\rightarrow\mathbb{R}$, where $z$ is a complex variable $z=x+iy$ with $x,y \in \mathbb{R}$. The gradient of real-valued complex function is defined as follows:
+ 
+\begin{equation}\label{cvgrad}
+\nabla_{L}(z) = \frac{\partial L}{\partial z} = \frac{\partial L}{\partial x} + i\frac{\partial L}{\partial y} = \Re(\nabla_{L}(z))+i\Im(\nabla_{L}(z))
+\end{equation}
+
+If we have another complex variable $t=r+is$ where z could be expressed in terms of $t$, where $r,s \in \mathbb{R}$, the gradient with respect to $t$ would be:
+
+\begin{equation}\label{chainchainchain}
+\begin{align*}
+\nabla_{L}(t) &= \frac{\partial L}{\partial t} = \frac{\partial L}{\partial r} + i\frac{\partial L}{\partial s}\\
+&= \frac{\partial L}{\partial x}\frac{\partial x}{\partial r} + \frac{\partial L}{\partial y}\frac{\partial y}{\partial r}+i\bigg(\frac{\partial L}{\partial x}\frac{\partial x}{\partial s}+\frac{\partial L}{\partial y}\frac{\partial y}{\partial s}\bigg)\\
+&= \frac{\partial L}{\partial x}\bigg(\frac{\partial x}{\partial r}+i\frac{\partial x}{\partial s}\bigg)+\frac{\partial L}{\partial y}\bigg(\frac{\partial y}{\partial r}+i\frac{\partial y}{\partial s}\bigg)\\
+&= \Re(\nabla_{L}(z))\bigg(\frac{\partial x}{\partial r}+i\frac{\partial x}{\partial s}\bigg)+\Im(\nabla_{L}(z))\bigg(\frac{\partial y}{\partial r}+i\frac{\partial y}{\partial s}\bigg)
+\end{align*}
+\end{equation}
+
+
+
 
 
 

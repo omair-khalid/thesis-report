@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.5.26)  27 MAY 2018 05:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.5.26)  27 MAY 2018 06:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -483,7 +483,21 @@ Chapter 2.
 Chapter 3.
 [5
 
-]) (./comparison.tex [6]
+]
+
+! Package amsmath Error: Erroneous nesting of equation structures;
+(amsmath)                trying to recover with `aligned'.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \end{align*}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (./comparison.tex [6]
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -530,7 +544,7 @@ Package epstopdf Info: Source file: <./figures/convRiverTrailBlog.eps>
 og-eps-converted-to.pdf ./figures/convRiverTrailBlog.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/convRiverTrailBlog-eps-converted-to.pdf, id=297, 274.02374pt x 164.6
+<./figures/convRiverTrailBlog-eps-converted-to.pdf, id=307, 274.02374pt x 164.6
 15pt>
 File: ./figures/convRiverTrailBlog-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -569,7 +583,7 @@ Chapter 7.
 
 ]
 Appendix A.
-<./figures/cConvOperation.png, id=452, 517.935pt x 630.355pt>
+<./figures/cConvOperation.png, id=459, 517.935pt x 630.355pt>
 File: ./figures/cConvOperation.png Graphic file (type png)
 <use ./figures/cConvOperation.png>
 Package pdftex.def Info: ./figures/cConvOperation.png  used on input line 7.
@@ -591,25 +605,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./thesis.aux (./header.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 486155D26550342DABC0CA1FF9F9BE06;2145.
 
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: D7996FC9332E04448FE58ED214FBDD6D;2056
-(rerunfilecheck)             After:  3EF7F1E117DDF154DA96670C23F717B7;2048.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 6671 strings out of 494801
- 95790 string characters out of 6178026
- 177473 words of memory out of 5000000
- 9692 multiletter control sequences out of 15000+600000
+ 6677 strings out of 494801
+ 95877 string characters out of 6178026
+ 177647 words of memory out of 5000000
+ 9695 multiletter control sequences out of 15000+600000
  18408 words of font info for 76 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  42i,13n,40p,1535b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -629,10 +637,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (32 pages, 315884 bytes).
+Output written on thesis.pdf (32 pages, 318836 bytes).
 PDF statistics:
- 558 PDF objects out of 1000 (max. 8388607)
- 497 compressed objects within 5 object streams
- 143 named destinations out of 1000 (max. 500000)
- 259 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 568 PDF objects out of 1000 (max. 8388607)
+ 506 compressed objects within 6 object streams
+ 146 named destinations out of 1000 (max. 500000)
+ 267 words of extra memory for PDF output out of 10000 (max. 10000000)
 
