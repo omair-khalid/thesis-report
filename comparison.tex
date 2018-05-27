@@ -164,6 +164,8 @@ x , &\textrm{for} \ x\ge 0\\
  
  Other variants of ReLU include Leaky ReLU (LReLU), Parametric ReLU (PReLU), Randomized ReLU (RReLU), and Exponential Linear Unit (ELU), as shown in figure blaa blaa. 
   
+ \subsubsection{Soft-max}
+  
  \subsubsection{Complex-Valued Activation Functions}
  
  Real-valued activation functions have to strictly comply with the requirement of differentiability for the chain rule, the backbone of the Gradient Descent optimization algorithm, to work. Since $\mathbb{C}$-CNNs also make use of the 
@@ -258,31 +260,53 @@ $\mathbb{C}$ReLU is Real-Imaginary type activation function introduced by Chiheb
   
  The expectation and variance of magnitude of complex weights can be computer using the definitions given by the Rayleigh distribution, which can be characterized by just one parameter, mode ($\sigma$). By substitution, we can finally define the variance of the complex weights.
  
- \begin{equation}\label{ray}
+ \begin{equation}\label{ray1}
  \mathrm{E}(|W|) = \sigma\sqrt{\frac{\pi}{2}},\\  
  \mathrm{Var}(|W|) = \frac{4-\pi}{2}\sigma^{2}
  \end{equation}
  
  
- \begin{equation}\label{ray}
+ \begin{equation}\label{ray2}
  \mathrm{Var}(W) = 2\sigma^2
  \end{equation}
  
  Now that the variance is defined,  we can choose either Glorot and Bengio criterion or the He. $2t \ al.$ (2015b) criteron to equate to define the vaue of $\sigma$. In the former criterion, we get $\sigma = 1/\sqrt{n_{in}+n_{out}}$, and in the latter, $\sigma = 1/\sqrt{n_{in}}$. Having the appropriate $\sigma$, we can pick the magnitude of our weights from teh Rayleigh distribution. However, as the variance of $W$ depends only on the magnitude of the weights and not their phase,  we have the liberty of choosing phase. In their implementation, phase is chosen from a uniform distribution of -$\pi$ to $\pi$.
  
+ Finally, we can use equation \ref{lastcwi} to form the real and imaginary parts of the weights.
+ 
+ \begin{equation}\label{lastcwi}
+ W = |W|e^{i\theta} = \Re\{W\}+i\Im\{W\}
+ \end{equation}
+ 
+ 
  %\subsubsection{Complex-Valued Weight Initialization}
  
  
- \paragraph{Complex Weight Initialization}
+ %\paragraph{Complex Weight Initialization}
  %\paragraph{Complex Independent Weight Initialization}
  
  \subsection{Output Layer and Loss Function}
+ Loss functions provide two functions in a convolutional neural network - regularization, and provide a measure of comparison between the prediction and the ground truth label. Regularization refers to the idea that the loss function can help enforce a specific quality of the learning in a neural netowrk i.e. L2 regularization prefers that the result obtained is not a consequence of a little number of peaky weight vectors, but a large number of diffused weight vectors. In a classification problem solved with the help of neural networks, we intend to minimize the error, i.e. the difference between the prediction and the ground truth label, using an optimization technique, most common of which is Stochastic Gradient Descent (discussed in \ref{optbp}). Different loss functions will give different errors for the same prediction, and thus have a considerable effect on the performance of the model. One of the strict requirements is that loss functions are differnetiable so that error gradients can be calculated.
  
- \subsubsection{Real-Valued CNNs}
- \subsubsection{Complex-Valued CNNs}
  
- \subsection{Optimization through Backpropagation}
-
+ 
+ \subsubsection{$\mathbb{R}$-CNNs Loss Function}
+ In the classification problem, $\mathbb{C}$-CNNs employ a variety of loss functions including Mean Squared Error (MSE), Hinge Loss, Cross Entropy etc. One of the most common loss functions used for multi-class classification, Categorical Cross Entropy (negative), defined as:
+ 
+  \begin{equation}\label{rloss}
+  L_{y^{'}}(y) = - \sum_{i=1} y_{i}^{'} \log(y_{i})
+ \end{equation}
+ where $y_{i}$ is the predicted probability for class $i$ and $y_{i}^{'}$ is the ground truth label of the class. Cross entropy, true to the nature of a loss function, shows a trend of increase as the difference between the predicted and the ground truth class label increases.
+ 
+ 
+ 
+ \subsubsection{$\mathbb{C}$-CNNs Loss Function}
+ In the literature, we find that the output layer can have either complex output, which requires a complex-valued loss function, or some mechanism that projects the data complex domain to real domain, suitable for real-valued loss function.
+ 
+ THEY NEED TO BE DIFFERENTIABLE AS WELL
+ 
+ \subsection{Optimization through Backpropagation}\label{optbp}
+supervised learning
 
 
 
