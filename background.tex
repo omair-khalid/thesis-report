@@ -43,12 +43,12 @@ Consider that we have a real-valued loss function $L(z): \mathbb{C}\rightarrow\m
 If we have another complex variable $t=r+is$ where z could be expressed in terms of $t$, where $r,s \in \mathbb{R}$, the gradient with respect to $t$ would be:
 
 \begin{equation}\label{chainchainchain}
-\begin{align*}
+\begin{aligned}
 \nabla_{L}(t) &= \frac{\partial L}{\partial t} = \frac{\partial L}{\partial r} + i\frac{\partial L}{\partial s}\\
 &= \frac{\partial L}{\partial x}\frac{\partial x}{\partial r} + \frac{\partial L}{\partial y}\frac{\partial y}{\partial r}+i\bigg(\frac{\partial L}{\partial x}\frac{\partial x}{\partial s}+\frac{\partial L}{\partial y}\frac{\partial y}{\partial s}\bigg)\\
 &= \frac{\partial L}{\partial x}\bigg(\frac{\partial x}{\partial r}+i\frac{\partial x}{\partial s}\bigg)+\frac{\partial L}{\partial y}\bigg(\frac{\partial y}{\partial r}+i\frac{\partial y}{\partial s}\bigg)\\
 &= \Re(\nabla_{L}(z))\bigg(\frac{\partial x}{\partial r}+i\frac{\partial x}{\partial s}\bigg)+\Im(\nabla_{L}(z))\bigg(\frac{\partial y}{\partial r}+i\frac{\partial y}{\partial s}\bigg)
-\end{align*}
+\end{aligned}
 \end{equation}
 
 

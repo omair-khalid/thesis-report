@@ -22,11 +22,13 @@
 \BOOKMARK [2][-]{subsection.4.2.5}{Loss function}{section.4.2}% 22
 \BOOKMARK [2][-]{subsection.4.2.6}{Optimization through backpropagation}{section.4.2}% 23
 \BOOKMARK [0][-]{chapter.5}{Methodology}{}% 24
-\BOOKMARK [1][-]{section.5.1}{Representation of Complex Numbers}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.1}{Representation of complex numbers}{chapter.5}% 25
 \BOOKMARK [1][-]{section.5.2}{Experimental setups}{chapter.5}% 26
 \BOOKMARK [2][-]{subsection.5.2.1}{MNIST+P Dataset}{section.5.2}% 27
 \BOOKMARK [2][-]{subsection.5.2.2}{Radar Dataset}{section.5.2}% 28
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 29
-\BOOKMARK [0][-]{chapter.7}{Experimental Results}{}% 30
-\BOOKMARK [0][-]{appendix.A}{The first appendix}{}% 31
-\BOOKMARK [0][-]{appendix*.25}{}{}% 32
+\BOOKMARK [2][-]{subsection.5.2.3}{Archtitecture - R-CNNs \046 C-CNNs}{section.5.2}% 29
+\BOOKMARK [0][-]{chapter.6}{Experimental Results}{}% 30
+\BOOKMARK [1][-]{section.6.1}{Results}{chapter.6}% 31
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 32
+\BOOKMARK [0][-]{appendix.A}{The first appendix}{}% 33
+\BOOKMARK [0][-]{appendix*.25}{}{}% 34
