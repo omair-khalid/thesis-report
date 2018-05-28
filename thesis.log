@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.5.26)  28 MAY 2018 04:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.5.26)  28 MAY 2018 20:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -335,6 +335,12 @@ LaTeX Warning: Label `sect:thefirst' multiply defined.
 LaTeX Warning: Label `chap:comp' multiply defined.
 
 
+LaTeX Warning: Label `eq:compdiff' multiply defined.
+
+
+LaTeX Warning: Label `eq:compdiff' multiply defined.
+
+
 LaTeX Warning: Label `chap:meth' multiply defined.
 
 )
@@ -471,7 +477,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.45 \section
-             {Document Structure} \label{sect:thefirst} [1
+             {Document structure} \label{sect:thefirst} [1
 
 
 ]) (./sota.tex
@@ -483,7 +489,11 @@ Chapter 2.
 Chapter 3.
 [5
 
-]) (./comparison.tex [6]
+]
+Underfull \vbox (badness 1365) has occurred while \output is active []
+
+ [6])
+(./comparison.tex [7]
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -502,7 +512,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
 Missing character: There is no e in font msbm10!
-[7
+[8
 
 ]
 Missing character: There is no e in font msbm10!
@@ -517,8 +527,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-Missing character: There is no e in font msbm10!
-[8]
+[9]
 Package epstopdf Info: Source file: <./figures/convRiverTrailBlog.eps>
 (epstopdf)                    date: 2018-05-16 20:53:24
 (epstopdf)                    size: 490293 bytes
@@ -530,7 +539,7 @@ Package epstopdf Info: Source file: <./figures/convRiverTrailBlog.eps>
 og-eps-converted-to.pdf ./figures/convRiverTrailBlog.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/convRiverTrailBlog-eps-converted-to.pdf, id=317, 274.02374pt x 164.6
+<./figures/convRiverTrailBlog-eps-converted-to.pdf, id=320, 274.02374pt x 164.6
 15pt>
 File: ./figures/convRiverTrailBlog-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -538,63 +547,64 @@ File: ./figures/convRiverTrailBlog-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures/convRiverTrailBlog-eps-converted-to.pdf  use
 d on input line 42.
 (pdftex.def)             Requested size: 170.71652pt x 102.55757pt.
- [9 <./figures/convRiverTrailBlog-eps-converted-to.pdf>]
 Missing character: There is no e in font msbm10!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+ [10 <./figures/convRiverTrailBlog-eps-converted-to.pdf>]
 Missing character: There is no e in font msbm10!
- [10]
-[11]
+ [11]
 Missing character: There is no e in font msbm10!
  [12] [13]
 Missing character: There is no e in font msbm10!
- [14] [15]
+
+[14] [15]
 Missing character: There is no e in font msbm10!
- [16]
+ [16] [17]
+Missing character: There is no e in font msbm10!
+ [18]
 Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ’ in font cmr10!
-) (./methodology.tex [17]
+ [19]) (./methodology.tex
+Missing character: There is no e in font msbm10!
+ [20]
 Chapter 5.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 20.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 20.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 20.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 20.
-
-) (./experiments.tex
-Underfull \vbox (badness 2521) has occurred while \output is active []
-
- [18
+[21
 
 ]
-[19]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 35.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 35.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 35.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 35.
+
+
+LaTeX Warning: Reference `arch' on page 22 undefined on input line 36.
+
+) (./experiments.tex [22]
 Chapter 6.
-) (./conclusion.tex [20
+) (./conclusion.tex [23
 
 ]
 Chapter 7.
-) (./appendix.tex [21
+) (./appendix.tex [24
 
 ]
 Appendix A.
-<./figures/cConvOperation.png, id=473, 517.935pt x 630.355pt>
+<./figures/cConvOperation.png, id=499, 517.935pt x 630.355pt>
 File: ./figures/cConvOperation.png Graphic file (type png)
 <use ./figures/cConvOperation.png>
 Package pdftex.def Info: ./figures/cConvOperation.png  used on input line 7.
 (pdftex.def)             Requested size: 227.62204pt x 277.03003pt.
-) (./thesis.bbl [22
+) (./thesis.bbl [25
 
  <./figures/cConvOperation.png>]
 Underfull \hbox (badness 1681) in paragraph at lines 44--47
@@ -602,11 +612,11 @@ Underfull \hbox (badness 1681) in paragraph at lines 44--47
 ral net-works.  \OT1/cmr/m/it/10 CoRR\OT1/cmr/m/n/10 ,
  []
 
-[23
+[26
 
-] [24])
+] [27])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
- [25]
+ [28]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./thesis.aux (./header.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
@@ -618,21 +628,24 @@ Package rerunfilecheck Warning: File `thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: 6C2CFD497049540AE2155674818E71EB;2285
-(rerunfilecheck)             After:  220DECDF59E964D882073602602D476F;2287.
+(rerunfilecheck)             Before: D2AF7B81CE861C6AA0B038A736D175FF;2195
+(rerunfilecheck)             After:  50AC1124B373520CBA98CDDCB51419CB;2283.
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 6682 strings out of 494801
- 95942 string characters out of 6178026
- 177647 words of memory out of 5000000
- 9697 multiletter control sequences out of 15000+600000
+ 6701 strings out of 494801
+ 96157 string characters out of 6178026
+ 179713 words of memory out of 5000000
+ 9698 multiletter control sequences out of 15000+600000
  18408 words of font info for 76 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 42i,13n,40p,1535b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,40p,1532b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -649,10 +662,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (33 pages, 321401 bytes).
+Output written on thesis.pdf (36 pages, 332185 bytes).
 PDF statistics:
- 582 PDF objects out of 1000 (max. 8388607)
- 519 compressed objects within 6 object streams
- 149 named destinations out of 1000 (max. 500000)
- 283 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 610 PDF objects out of 1000 (max. 8388607)
+ 544 compressed objects within 6 object streams
+ 167 named destinations out of 1000 (max. 500000)
+ 275 words of extra memory for PDF output out of 10000 (max. 10000000)
 

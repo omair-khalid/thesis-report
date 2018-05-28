@@ -17,46 +17,47 @@ Warning--empty year in bloggg
 Warning--empty author in gotcha
 Warning--empty journal in gotcha
 Warning--empty year in gotcha
+Warning--empty booktitle in page45hirose2012complex
 Warning--can't use both author and editor fields in LeCun1998
 You've used 29 entries,
             2118 wiz_defined-function locations,
             652 strings with 9032 characters,
-and the built_in function-call counts, 10732 in all, are:
-= -- 1024
+and the built_in function-call counts, 10819 in all, are:
+= -- 1036
 > -- 555
-< -- 14
+< -- 15
 + -- 220
 - -- 190
-* -- 742
-:= -- 1724
-add.period$ -- 85
+* -- 746
+:= -- 1732
+add.period$ -- 86
 call.type$ -- 29
-change.case$ -- 178
+change.case$ -- 179
 chr.to.int$ -- 0
-cite$ -- 38
-duplicate$ -- 433
-empty$ -- 815
+cite$ -- 39
+duplicate$ -- 439
+empty$ -- 822
 format.name$ -- 190
-if$ -- 2273
+if$ -- 2299
 int.to.chr$ -- 0
 int.to.str$ -- 29
-missing$ -- 33
+missing$ -- 32
 newline$ -- 144
 num.names$ -- 54
 pop$ -- 223
 preamble$ -- 1
 purify$ -- 153
 quote$ -- 0
-skip$ -- 326
+skip$ -- 332
 stack$ -- 0
-substring$ -- 570
-swap$ -- 127
-text.length$ -- 14
+substring$ -- 574
+swap$ -- 132
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 108
-warning$ -- 9
-while$ -- 92
+type$ -- 110
+warning$ -- 10
+while$ -- 93
 width$ -- 31
-write$ -- 308
+write$ -- 309
 (There was 1 error message)

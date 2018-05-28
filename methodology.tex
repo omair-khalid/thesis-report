@@ -3,21 +3,46 @@
  WHY BRO WHY DID YOU CHOOSE AVERAGE POOLING?
  AHAAA!  We don't wanna have to deal with a activation function whose values are only positive!
  
- breifly mention the challenges of building a complex valued neural networks. 
+ briefly mention the challenges of building a complex valued neural networks. 
  
  \section{Representation of complex numbers}
  Consider a complex number $z=a+ib$ with the real component $a$ and the imaginary component $b$. In $\mathbb{R}$-CNNs, the filter bank or the feature maps of a layer exist in 3 dimensions, where two of them denote the size of the filter or feature map in 2D, and the third dimension indicates how many there are. If we have $N$ feature maps (where $N$ is divisible by 2), the first $N/2$ feature maps would be dedicated to the real components ($a$) and the last $N/2$ feature maps would be dedicated to the imaginary components ($b$). In this manner, the imaginary feature map corresponding to the real feature map on index one of the 3rd dimension would like on the $\frac{N}{2} +1$ position.
  
  IMAGE REQUIRED
  
- \section{Experimental setups}
- Explain the architecture, experimental details, the datasets used. Datasets: Toy+ results.Tables and shit.
- 
  \subsection{MNIST+P Dataset}
+ The MNIST database of handwritten digits (10 classes) has a training set of 60,000 examples, and a test set of 10,000 examples, where wach image is of dimensions 28x28. 
  
+ 
+ It is commonly used benchmark for supervised learning algorithm performance. In the MNIST+P dataset created for our experimentation, we consider that an image of MNIST dataset represents the magnitude of a complex number. The magnitude in each image is scaled such that the black part of the image is 50, and the white part is 200. The phase for each image class is picked from uniform distribution whose range is determined class-wise: The range for class 1 representing the digit 0 is [0,$\pi$/10], that for class 2 representing the digit 1 is [$\pi$/10,2$\pi$/10],...., that for class 10 representing digit 9 is [9$\pi$/10,$\pi$]. 
+ 
+ 
+ \subsubsection{Preprocessing of MNIST+P Dataset}
+ Now that we know the magnitude and phase information for each image, we convert them to the cartesian form having a real channel and an imaginary channel. Now, the shape of each image becomes 28x28x2.
+ 
+     
  \subsection{Radar Dataset}
+ The magnitude and phase maps are first reshaped to a same size: 32x32. 
  
- \subsection{Archtitecture - $\mathbb{R}$-CNNs \& $\mathbb{C}$-CNNs}
+ 
+ 
+ 
+ \subsubsection{Preprocessing of Radar Dataset}
+ We convert the Polar form information (magnitude and phase) to Cartesian form having a real channel and an imaginary channel. Now, the shape of each image becomes 32x32x2.
+ 
+ 
+ 
+ \subsection{Architecture -- $\mathbb{R}$-CNNs \& $\mathbb{C}$-CNNs}
+ The architecture employed for our experiments is a simplified variant of the one used by Chiheb $et \ al.$ (2018) \cite{trabelsi2018deep} for the problem of real-valued image classification. It contains three residual blocks containing 2 convolutional layers (3x3 filter size), 2 ReLU activation functions, and two BN layers in the order shown in Figure \ref{arch}. The skip connection of the first block differs from that of the second and the third block. The skip connection of the first block simply adds the input of the block to the output of the other thread of the block. However, the last two blocks perform a projection operation at their output that concatenates the output of the last residual block with the output of a 1x1 convolution applied on it with the same number of filters used throughout the stage and subsample by a factor of 2. While the $\mathbb{C}$-CNNs perform complex convolutions, complex BN, complex average-pooling, the $\mathbb{R}$-CNNs employs the real-valued counter parts. The weight initialization of $\mathbb{R}$-CNNs are done following the Glorot and Bengio criterion (2010) \cite{glorot2010understanding}, while that of $\mathbb{C}$-CNNs follow the complex-valued counterpart of the same, as described in section \ref{cwi}. The last layer of both the network types contain a FC layer employing the Softmax function as the activation function, and the loss function is categorical-cross entropy.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  

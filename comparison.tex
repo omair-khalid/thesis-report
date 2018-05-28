@@ -1,13 +1,13 @@
 \chapter{Comparison of $\mathbb{Re}$-CNNs with $\mathbb{C}$-CNNs}\label{chap:meth}
  
  
- \section{Convolutional Neural Networks}
+ \section{Convolutional neural networks}
  
  Convolutional Neural Networks (CNNs) (LeCun, 1989) \cite{lecun1989backpropagation} are specialized neural networks that are used for processing data that can be represented in the form of a grid or arrays e.g. 1D arrays of audio signals, three channels of 2D arrays of RGB images, or any other higher dimensional data. CNNs take their name due to the presence of a specialized kind of linear operation called convolution. CNNs are inspired by the visual cortex in the brain, which consists of alternating layers of simple and complex cells  (Hubel \& Wiesel, 1959, 1962) \cite{hubel1959receptive}\cite{hubel1962receptive}. 
  
-In the context of image classification, CNNs make use of the inherent compositional hierarchies present in images such that higher-level features are obtained by composing lower-level ones. Additionally, there are three key ideas behind ConvNets that makes them attractive for learning: sparse interactions, shared weights, equivariant representations. In traditional neural netowrks, one learned parameter interacts with the one input unit in order to produce an output. In the case of images where there are millions of pixels, this approach becomes extremely expensive. In this respect, CNNs offer sparse interactions between inputs and the ouputs in the sense that very few parameters of the kernels need to be learned to extract features from an input of, let's say, a million pixels. This reduces the memory requirements and improve statistical effeciency. Parameter sharing referes to the use of the same parameters for than one function in the model. When kernels are learned in a CNN, the same kernel is used for different spatial locations of the input rather than learning different parameters for different spatial locations. This further reduces the memory requirements. CNNs also grant equivariance to translations, meaning that if the presence of a feature translates in an image, the output of a convolutional layer will also move by the same amount. This behavior is useful if we want to detect the same feature in different parts of the image.\cite{DeepLearning}
+In the context of image classification, CNNs make use of the inherent compositional hierarchies present in images such that higher-level features are obtained by composing lower-level ones. Additionally, there are three key ideas behind ConvNets that makes them attractive for learning: sparse interactions, shared weights, equivariant representations. In traditional neural netowrks, one learned parameter interacts with6 one input unit in order to produce an output. In the case of images where there are millions of pixels, this approach becomes extremely expensive. In this respect, CNNs offer sparse interactions between inputs and the ouputs in the sense that very few parameters of the kernels need to be learned to extract features from an input of, let's say, a million pixels. This reduces the memory requirements and improve statistical effeciency. Parameter sharing referes to the use of the same parameters for than one function in the model. When kernels are learned in a CNN, the same kernel is used for different spatial locations of the input rather than learning different parameters for different spatial locations. This further reduces the memory requirements. CNNs also grant equivariance to translations, meaning that if the presence of a feature translates in an image, the output of a convolutional layer will also move by the same amount. This behavior is useful if we want to detect the same feature in different parts of the image.\cite{DeepLearning}
  
- In the following section, the building blocks of a real-valued CNN ($\mathbb{Re}$-CNN) and its complex counterpart, complex-valued CNN ($\mathbb{C}$-CNN), pertinent to our methodology, are discussed in detail.
+ In the following section, the building blocks of a real-valued CNN ($\mathbb{Re}$-CNN) and its complex counterpart, complex-valued CNN ($\mathbb{C}$-CNN), pertinent to our experiments, are discussed in detail.
  
  \section{The Building Blocks}
  
@@ -45,7 +45,7 @@ In the context of image classification, CNNs make use of the inherent compositio
 \end{figure}
  
 
-\subsubsection{Complex-Valued Convolution}
+\subsubsection{Complex-valued convolution}
 Like complex domain can be thought of as an extension of real domain, complex-valued convolution can also be formulated through such thinking. In complex-valued convolution, the filter and the input both take on the complex form:
  \begin{equation}
 \mathrm{W} = \mathrm{A}+i\mathrm{B}
@@ -66,8 +66,8 @@ Taking advantage of the fact that convolution is distributive, the result of $\m
 \end{equation}
 
 
-This convolution strategy has been used in \cite{Guberman}, \cite{trabelsi2018deep} , Learning Rep, Polsar and ...  
- \subsection{Batch Normalization}\label{ssec:bn}
+%This convolution strategy has been used in \cite{Guberman}, \cite{trabelsi2018deep} , Learning Rep, Polsar and ...  
+ \subsection{Batch normalization}\label{ssec:bn}
 One of the most widespread methods used to improve the performance of Deep Neural networks, including CNNs, is called Batch Normalization (BN). 
 %Problem faced, how it is solved: 
 Introduced by Ioffe and Szegedy in 2015 \cite{bnIoffeS15}, BN helps speed up the training of the network and enables the use of a wider variety of acceptable hyperparameters by reducing internal covariant shift. 
@@ -80,7 +80,7 @@ normalization that is done before training. Apart from reducing internal covaria
 Furthermore, as BN involves subtraction of mean and scaling by standard deviation, where mena and standard deviation are calculated on mini-batches, multiplicative and additive noise is added to the each iteration. As a result, a slight regularization effect is induced in the network which helps it not to rely too much on the output of a single neuron/node in any layer of the network. One should note that the bigger the size of the mini-batch, the weaker is the regularization effect. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%At test time????
 
- \subsubsection{Real-Valued Batch Normalization}\label{rvbn}
+ \subsubsection{Real-valued batch normalization}\label{rvbn}
  %Exact procedure of R goes here
 In $\mathbb{Re}$-CNNs, the BN step is generally performed between the convolution step and the activation step, although the original paper \cite{bnIoffeS15} proposed it for after the activation step. Suppose that a layer to normalize has a $d$ dimensional
 input, i.e., $\mathrm{x} = [x_{1} , x_{2} , ..., x_{d} ]^{\mathrm{T}}$ .  The first step is to normalize the $k$-th dimension as follows:
@@ -99,7 +99,7 @@ y_{k} = \mathrm{BN}_{\gamma,\beta}(x_{k}) = \gamma\hat{x}_{k} + \beta
 where $\gamma$ and $\beta$ are learned parameters. It might not be beneficial for the layer input to have zero mean and variance, although the network has the choice to keep them such through the two parameters. $\gamma$ and $\beta$ help scale and shift the mean of the input distribution to better make advantage of the nonlinearity of the activation function.
 
 
- \subsubsection{Complex-Valued Batch Normalization}
+ \subsubsection{Complex-valued batch normalization}
  %Exact procedure of C from DCN goes here; mention that it was first introduced in this paper
 The complex-valued BN is an extension of its real-valued counterpart and it was first introduced in \cite{trabelsi2018deep}. The first step, ofcourse, is normalization of the input distribution. Unlike real-valued BN, merely translating and scaling, like in \cite{bnIoffeS15}, would result in skewed or elliptical variance with high eccentricity \cite{trabelsi2018deep}. To cater for this problem, the authors the normalization step of complex BN is treated  as whitening of 2D vectors. The following equations describe the process.
 
@@ -141,7 +141,7 @@ y_{k} = \mathrm{BN}_{\gamma,\beta}(x_{k}) = \gamma\hat{x}_{k} + \beta
 \end{equation}
 
 %SKIPPING: DECORRELATION EFFECT, IMPLEMENTATION DETAILS....
- \subsection{Activation Function}\label{ssec:act_fn}
+ \subsection{Activation function}\label{ssec:act_fn}
  In the absence of non-linear activation functions, the output of a neural network would essentially be a linear combination of the input, however deep the network is. Non-linear activation functions are introduced in order to add non-linearity to the network so that functions of a higher degree than 1 can be learned, thuse giving them the title of universal function approximators. In a CNN, activation function is applied element-wise to the output of the convolution (or BN, when it is used) and they act as to decide whether or not this output should be taken into account by its connection, and if so, what should be the nature of it. For $\mathrm{R}$-CNNs, some common types of activation functions include Sigmoid, Hyperbolic Tangent function (tanh), and the most popular, Recitified Linear Unit (ReLU).
  
  %They also serve as to provide a degree of robustness to data variability and %a computationally efficient representation, courtesy of sparsity induction.  
@@ -237,7 +237,7 @@ SPLIT COMPLEX SOFTMAX????
  \begin{equation}\label{hewi}
  \mathrm{Var}(W) = 2/n_{in}
  \end{equation}
- \subsubsection{Complex-valued weight initialization}
+ \subsubsection{Complex-valued weight initialization}\label{cwi}
  Chiheb $et \ al.$ (2018) introduced two methods of complex weight initialization, which incorporate the two real-valued $\mathbb{R}$-CNN weight initialization techniques given above.
  
  They start with dealing with the problem of defining the variance of complex weights. The standard definition of variance of complex variables goes as follows:
@@ -287,8 +287,57 @@ SPLIT COMPLEX SOFTMAX????
  %\paragraph{Complex Weight Initialization}
  %\paragraph{Complex Independent Weight Initialization}
  
+ \subsection{Pooling layer}
+ The sequence of layers in a typical CNN is as given below: 
+ \begin{equation}
+ Convolutional \ Layer\longrightarrow BN \longrightarrow Activation \ Function \longrightarrow  Pooling \ Layer
+ \end{equation}
+ 
+ Pooling layer operates patch-wise on the input to extract a statistical summary of the patch that replaces the pixel corresponding to the central pixel of the patch in the output. This results in merging semantically similar features into one. One of the benefit lies in the reduced size of the inputs and weights for the next layers which reduces their computational burden. Another benefit is slight translational invariance of feature, since even if a feature occur at a slightly different areas of the feature map, the pooling layer would result in the same output as if it hadn't. 
+ %Pooling also helps in combating the problem of overfitting 
+
+ \subsubsection{Pooling in $\mathbb{R}$-CNNs}
+ \paragraph{Max pooling}
+ Max pooling is a patch-wise operation whose output is the maximum of all the values in the patch. Its formula is given by:
+ 
+ \begin{equation}
+ y = \underset{i,j \in patch}{max} x_{i,j}
+ \end{equation}
+ where $x$ is a real number, and $i,j$ are the indices of the patch.
+ 
+ \paragraph{Average pooling}
+ Average pooling is a patch-wise operation whose output is the maximum of all the values in the patch. Its formula is given by:
+
+ \begin{equation}
+ y = \bigg(\underset{i,j \in patch}{\sum} x_{i,j} \bigg)/ sizeOfPatch
+ \end{equation}
+ 
+ where $x$ is a real number, and $i,j$ are the indices of the patch.
+ \subsubsection{Pooling in $\mathbb{C}$-CNNs}
+% Pooling in $\mathbb{C}$-CNNs aims to achieve the same effects as those in $\mathbb{R}$-CNNs but we are encountered by some choices and restrictions.   
+ \paragraph{Max-by-mag pooling}
+ Maximum operator is not defined for a Complex Field since it is not an ordered field. Hence, we cannot compare two complex numbers wholly. Guberman (2016) \cite{Guberman} proposed the max-by-magnitude pooling, where the basis of comparison is the magnitude. In $\mathbb{C}$-CNNs, we are to decide what the statistical summary of the output should be based on. Knowing that choosing either the real part or the imaginary part would be wrong as it will mean that one is more important than the other, magnitude is chosen to provide the comparison. However, the output is itself a complex number courtesy of the $argmax$ operator, which allows the remainder of the network to remain in complex form. The formulation is given by:
+ 
+
+ 
+\begin{equation}
+y = \underset{i,j \in patch}{argmax} \ |z_{i,j}|
+\end{equation}
+ where $z$ is a complex number, and $i,j$ are the indices of the patch.
+\paragraph{Average pooling}
+Averaging operator is trivially generalized to the complex domain. As th  
+ 
+ 
+  \begin{equation}
+ y = \bigg(\underset{i,j \in patch}{\sum} z_{i,j} \bigg)/ sizeOfPatch
+ \end{equation}
+ 
+ where $z$ is a complex number, and $i,j$ are the indices of the patch.
+ 
+ 
+ 
  \subsection{Loss function}
- Loss functions provide two functions in a convolutional neural network - regularization, and provide a measure of comparison between the prediction and the ground truth label. Regularization refers to the idea that the loss function can help enforce a specific quality of the learning in a neural netowrk i.e. L2 regularization prefers that the result obtained is not a consequence of a little number of peaky weight vectors, but a large number of diffused weight vectors. In a classification problem solved with the help of neural networks, we intend to minimize the error, i.e. the difference between the prediction and the ground truth label, using an optimization technique, most common of which is Stochastic Gradient Descent (discussed in \ref{optbp}). Different loss functions will give different errors for the same prediction, and thus have a considerable effect on the performance of the model. One of the strict requirements is that loss functions are differnetiable so that error gradients can be calculated.
+ Loss functions take on two roles in a convolutional neural network - regularization, and provide a measure of comparison between the prediction and the ground truth label. Regularization refers to the idea that the loss function can help enforce a specific quality of the learning in a neural network i.e. L2 regularization prefers that the result obtained is not a consequence of a little number of peaky weight vectors, but a large number of diffused weight vectors. In a classification problem solved with the help of neural networks, we intend to minimize the error, i.e. the difference between the prediction and the ground truth label, using an optimization technique, most common of which is Stochastic Gradient Descent (discussed in \ref{optbp}). Different loss functions will give different errors for the same prediction, and thus have a considerable effect on the performance of the model. One of the strict requirements is that loss functions are differnetiable so that error gradients can be calculated.
  
  
  
