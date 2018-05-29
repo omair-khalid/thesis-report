@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.5.26)  29 MAY 2018 02:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2018.5.26)  29 MAY 2018 02:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -335,9 +335,6 @@ LaTeX Warning: Label `sect:thefirst' multiply defined.
 LaTeX Warning: Label `chap:comp' multiply defined.
 
 
-LaTeX Warning: Label `fig:conv' multiply defined.
-
-
 LaTeX Warning: Label `chap:meth' multiply defined.
 
 )
@@ -487,40 +484,26 @@ Chapter 3.
 [5
 
 ]
-Package epstopdf Info: Source file: <./figures/ccart.eps>
-(epstopdf)                    date: 2018-05-29 01:54:36
-(epstopdf)                    size: 14255 bytes
-(epstopdf)             Output file: <./figures/ccart-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-29 02:06:17
-(epstopdf)                    size: 6447 bytes
-(epstopdf)             Command: <repstopdf --outfile=./figures/ccart-eps-conver
-ted-to.pdf ./figures/ccart.eps>
+Package epstopdf Info: Source file: <./figures/crep2.eps>
+(epstopdf)                    date: 2018-05-29 02:45:40
+(epstopdf)                    size: 68550 bytes
+(epstopdf)             Output file: <./figures/crep2-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figures/crep2-eps-conver
+ted-to.pdf ./figures/crep2.eps>
 (epstopdf)             \includegraphics on input line 38.
-Package epstopdf Info: Output file is already uptodate.
-<./figures/ccart-eps-converted-to.pdf, id=283, 139.52126pt x 154.5775pt>
-File: ./figures/ccart-eps-converted-to.pdf Graphic file (type pdf)
-<use ./figures/ccart-eps-converted-to.pdf>
-Package pdftex.def Info: ./figures/ccart-eps-converted-to.pdf  used on input li
+runsystem(repstopdf --outfile=./figures/crep2-eps-converted-to.pdf ./figures/cr
+ep2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./figures/crep2-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-29 02:45:53
+(epstopdf)                    size: 11157 bytes.
+<./figures/crep2-eps-converted-to.pdf, id=282, 139.52126pt x 154.5775pt>
+File: ./figures/crep2-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figures/crep2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/crep2-eps-converted-to.pdf  used on input li
 ne 38.
-(pdftex.def)             Requested size: 170.71652pt x 189.14561pt.
-Package epstopdf Info: Source file: <./figures/cpol.eps>
-(epstopdf)                    date: 2018-05-29 02:17:59
-(epstopdf)                    size: 72484 bytes
-(epstopdf)             Output file: <./figures/cpol-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-29 02:18:28
-(epstopdf)                    size: 14156 bytes
-(epstopdf)             Command: <repstopdf --outfile=./figures/cpol-eps-convert
-ed-to.pdf ./figures/cpol.eps>
-(epstopdf)             \includegraphics on input line 39.
-Package epstopdf Info: Output file is already uptodate.
-<./figures/cpol-eps-converted-to.pdf, id=284, 139.52126pt x 154.5775pt>
-File: ./figures/cpol-eps-converted-to.pdf Graphic file (type pdf)
-<use ./figures/cpol-eps-converted-to.pdf>
-Package pdftex.def Info: ./figures/cpol-eps-converted-to.pdf  used on input lin
-e 39.
-(pdftex.def)             Requested size: 170.71652pt x 189.14561pt.
- [6 <./figures/ccart-eps-converted-to.pdf> <./figures/cpol-eps-converted-to.pdf
->] [7]) (./comparison.tex [8]
+(pdftex.def)             Requested size: 142.26378pt x 157.61977pt.
+ [6 <./figures/crep2-eps-converted-to.pdf>] [7]) (./comparison.tex [8]
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -567,7 +550,7 @@ Package epstopdf Info: Source file: <./figures/convRiverTrailBlog.eps>
 og-eps-converted-to.pdf ./figures/convRiverTrailBlog.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/convRiverTrailBlog-eps-converted-to.pdf, id=365, 274.02374pt x 164.6
+<./figures/convRiverTrailBlog-eps-converted-to.pdf, id=354, 274.02374pt x 164.6
 15pt>
 File: ./figures/convRiverTrailBlog-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -624,7 +607,7 @@ Chapter 7.
 
 ]
 Appendix A.
-<./figures/cConvOperation.png, id=544, 517.935pt x 630.355pt>
+<./figures/cConvOperation.png, id=532, 517.935pt x 630.355pt>
 File: ./figures/cConvOperation.png Graphic file (type png)
 <use ./figures/cConvOperation.png>
 Package pdftex.def Info: ./figures/cConvOperation.png  used on input line 7.
@@ -647,7 +630,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5B1114E8D86472474748C7DCCB52B198;2277.
+(rerunfilecheck)             Checksum: 0D92C6454C2114BAF2608375D669B8CD;2277.
 
 
 LaTeX Warning: There were undefined references.
@@ -658,10 +641,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 6721 strings out of 494801
- 96659 string characters out of 6178026
- 179716 words of memory out of 5000000
- 9707 multiletter control sequences out of 15000+600000
+ 6718 strings out of 494801
+ 96501 string characters out of 6178026
+ 180824 words of memory out of 5000000
+ 9704 multiletter control sequences out of 15000+600000
  18408 words of font info for 76 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  42i,14n,40p,1532b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -681,10 +664,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (37 pages, 348605 bytes).
+Output written on thesis.pdf (37 pages, 342945 bytes).
 PDF statistics:
- 659 PDF objects out of 1000 (max. 8388607)
- 582 compressed objects within 6 object streams
- 176 named destinations out of 1000 (max. 500000)
- 293 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 648 PDF objects out of 1000 (max. 8388607)
+ 575 compressed objects within 6 object streams
+ 177 named destinations out of 1000 (max. 500000)
+ 288 words of extra memory for PDF output out of 10000 (max. 10000000)
 

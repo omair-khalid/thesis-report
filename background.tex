@@ -34,11 +34,10 @@ The magnitude or distance quantity $|z|$ is unique for each $(x,y)$ in the compl
 
 \begin{figure}[htb]
 	\centering
-	\epsfxsize=6cm
-	{\epsfbox{ccart}} 
-	{\epsfbox{cpol}}
-	\caption{A schematic sketch of the convolution operation. An unit in the output is the sum of point-wise multiplication of the kernel and input patch \cite{bloggg}}
-	\label{fig:conv}
+	\epsfxsize=5cm
+	{\epsfbox{crep2}}
+	\caption{Illustration of complex number in Cartesian form and Polar form on a Complex Plane}
+	\label{fig:complexrep}
 \end{figure}
 
 \subsubsection{Complex numbers operations}
@@ -53,10 +52,27 @@ The complex conjugate of a complex number $z=x+iy$ is given by $x-iy$, denoted b
 \end{equation}
 
 \paragraph{Multiplication}
+Let $z = a+ib$ and $t=c+id$ be two complex numbers. The product of $z$ and $t$ would be as follows:
+\begin{equation}
+\begin{aligned}
+(a+ib)(c+id)  &= ac+iad+ibc-bd\\
+&= (ac-bd)+i(ad+bc)
+\end{aligned}
+\end{equation}
 
+\paragraph{Addition and Substraction}
+Let $z = a+ib$ and $t=c+id$ be two complex numbers. The addition and substraction of $z$ and $t$ would be as follows:
 
-\paragraph{Substraction}
-\paragraph{Addition}
+\begin{equation}
+\begin{aligned}
+(a+ib) + (c+id)  = (a+c)+i(b+d)\\
+(a+ib) - (c+id)  = (a-c)+i(b-d)
+\end{aligned}
+\end{equation}
+
+As can be seen, the addition and substraction operations are performed 
+component-wise.
+
 \paragraph{Division}
 Algebraic closed field
 
