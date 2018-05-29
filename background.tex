@@ -2,36 +2,74 @@
 \section{Radar technology?}
 
 
-\section{Complex domain theory}
+\section{Complex numbers}
 
 \subsection{Complex numbers and their representations}
-Complex numbers are denoted as follows:
+Complex numbers
 
 The field of complex numbers includes the field of real numbers as a subfield.
 
 Complex numbers are useful abstract quantities that can be used in calculations and result in physically meaningful solutions.
+quantity i
 
+
+
+
+\subsubsection{Cartesian form}
+In the Cartesian form, a complex number is represented by $z=x+iy$, where $x$ is the imaginary part and $y$ is the real part. They can be visualized in a rectangular plane, called the Complex Plane, where the x-axis represents the real part and the y-axis represents the imaginary part (demonstrated in Figure BLABLA). 
 
 \subsubsection{Polar form}
 The Polar form of a complex number can be denoted by two quantities: 
-the distance to a point (x,y) from the origin of the complex plane, $|z|$, and the phase of the complex number, $\theta$, measured positive counter-clockwise. The conversion formulae to and from Cartesian form and Polar form are given by:
+the distance to a point (x,y) from the origin on the complex plane, $|z|$, and the phase of the complex number, $\theta$, measured positive counter-clockwise from the x-axis. The conversion formulae to and from Cartesian form and Polar form are given by:
 
-\begin{equation}\label{eq:compdiff}
+\begin{equation}
 x = |z|cos\theta  ~~,~~ y = |z|sin\theta 
 \end{equation}
 
-\begin{equation}\label{eq:compdiff}
+\begin{equation}
 |z| = \sqrt{x_{2}+y_{2}}  ~~,~~ \theta = \arctan(y/x) 
 \end{equation}
 
 The magnitude or distance quantity $|z|$ is unique for each $(x,y)$ in the complex domain, but the $\theta$ can have the following values: $\theta$, $\theta \pm \mathrm{2}\pi$,...,, $\theta \pm \mathrm{2}n\pi$ where $n$ = 1,2,3,... However, we often choose a valued between $0$ and 2$\pi$ and call it the \textit{Principal Argument}.
 
-ADD IMAGE 
+\begin{figure}[htb]
+	\centering
+	\epsfxsize=6cm
+	{\epsfbox{ccart}} 
+	{\epsfbox{cpol}}
+	\caption{A schematic sketch of the convolution operation. An unit in the output is the sum of point-wise multiplication of the kernel and input patch \cite{bloggg}}
+	\label{fig:conv}
+\end{figure}
+
+\subsubsection{Complex numbers operations}
+\paragraph{Conjugate}
+The complex conjugate of a complex number $z=x+iy$ is given by $x-iy$, denoted by $z^{*}$ or $\bar{z}$. Conjugate of a complex number can be used to extract the real and imaginary parts of a complex number, as follows:
+
+\begin{equation}
+\begin{aligned}
+\Re(z)= \frac{z+\bar{z}}{2}\\
+\Im(z)= \frac{z-\bar{z}}{2}
+\end{aligned}
+\end{equation}
+
+\paragraph{Multiplication}
 
 
-\subsubsection{Cartesian form}
+\paragraph{Substraction}
+\paragraph{Addition}
+\paragraph{Division}
+Algebraic closed field
+
+$\theta$
+
+
+
+
+
 \subsubsection{Exponential form}
 \subsection{Complex functions}
+
+
 \subsection{Properties of complex number field}
 map c to c
 map c to r
