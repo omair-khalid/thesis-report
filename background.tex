@@ -2,25 +2,28 @@
 \section{Radar technology?}
 
 
-\section{Complex numbers}
+\section{Complex numbers theory}
 
-\subsection{Complex numbers and their representations}
-Complex numbers
+Complex number field ($\mathbb{C}$) is an extension of the Real numbers field ($\mathbb{R}$); alternatively, $\mathbb{R}\subset\mathbb{C}$. In their Cartesian form, further described later in this chapter, they consist of a real part and an imaginary part ($z=a+ib$). If the imaginary part is $0$, the complex number reduces to a real number. The term $i$, known as the Imaginary Quantiy, was proposed by Euler as a substitute for the quantity $\sqrt{-1}$. 
 
-The field of complex numbers includes the field of real numbers as a subfield.
+
 
 Complex numbers are useful abstract quantities that can be used in calculations and result in physically meaningful solutions.
-quantity i
 
 
 
+\subsection{Representations of complex numbers}
 
 \subsubsection{Cartesian form}
-In the Cartesian form, a complex number is represented by $z=x+iy$, where $x$ is the imaginary part and $y$ is the real part. They can be visualized in a rectangular plane, called the Complex Plane, where the x-axis represents the real part and the y-axis represents the imaginary part (demonstrated in Figure BLABLA). 
+In the Cartesian form, a complex number is represented by $z=x+iy$, where $x$ is the imaginary part and $y$ is the real part. They can be visualized in a rectangular plane, called the Complex Plane, where the x-axis represents the real part and the y-axis represents the imaginary part (demonstrated in Figure \ref{fig:complexrep}). 
 
 \subsubsection{Polar form}
 The Polar form of a complex number can be denoted by two quantities: 
 the distance to a point (x,y) from the origin on the complex plane, $|z|$, and the phase of the complex number, $\theta$, measured positive counter-clockwise from the x-axis. The conversion formulae to and from Cartesian form and Polar form are given by:
+
+
+
+
 
 \begin{equation}
 x = |z|cos\theta  ~~,~~ y = |z|sin\theta 
@@ -36,11 +39,26 @@ The magnitude or distance quantity $|z|$ is unique for each $(x,y)$ in the compl
 	\centering
 	\epsfxsize=5cm
 	{\epsfbox{crep2}}
-	\caption{Illustration of complex number in Cartesian form and Polar form on a Complex Plane}
+	\caption{Illustration of complex number in Cartesian form ($z=x+iy$) and Polar form ($|z|,\theta$) on a Complex Plane}
 	\label{fig:complexrep}
 \end{figure}
 
-\subsubsection{Complex numbers operations}
+\subsubsection{Exponential form}
+Utilizing Euler's formula given in equation \ref{ef}, we can rewrite the Polar form of a complex number into the exponential form, defined in equation \ref{eform}, where $r = |z|$.
+
+
+\begin{equation}\label{ef}
+e^{i\theta} = cos\theta+isin\theta
+\end{equation}
+
+\begin{equation}\label{eform}
+ z = re^{i\theta} = rcos\theta+irsin\theta
+\end{equation}
+
+
+
+
+\subsubsection{Basic operations of complex numbers }
 \paragraph{Conjugate}
 The complex conjugate of a complex number $z=x+iy$ is given by $x-iy$, denoted by $z^{*}$ or $\bar{z}$. Conjugate of a complex number can be used to extract the real and imaginary parts of a complex number, as follows:
 
@@ -52,11 +70,21 @@ The complex conjugate of a complex number $z=x+iy$ is given by $x-iy$, denoted b
 \end{equation}
 
 \paragraph{Multiplication}
-Let $z = a+ib$ and $t=c+id$ be two complex numbers. The product of $z$ and $t$ would be as follows:
+Let $z = a+ib$ and $t=c+id$ be two complex numbers. Utilizing the fact that $i^{2}=(\sqrt{-1})^2=-1$, the product of $z$ and $t$ would be as follows:
 \begin{equation}
 \begin{aligned}
-(a+ib)(c+id)  &= ac+iad+ibc-bd\\
+(a+ib)(c+id)  &= ac+iad+ibc+(-1)bd\\
 &= (ac-bd)+i(ad+bc)
+\end{aligned}
+\end{equation}
+
+\paragraph{Division}
+Complex division is involves rationalization of the denominator, meaning that, to get the answer, the conjugate of the denominator will be multiplied and divided to the fraction of the dividend and divisor. It is given by:
+
+\begin{equation}
+\begin{aligned}
+\dfrac{a+ib}{c+id} &= \dfrac{(a+ib)}{c+id}\dfrac{(c-id)}{c-id}\\
+&= \dfrac{ac+bd}{(c^2+d^2)}+i\dfrac{bc-ad}{(c^2+d^2)}
 \end{aligned}
 \end{equation}
 
@@ -73,12 +101,6 @@ Let $z = a+ib$ and $t=c+id$ be two complex numbers. The addition and substractio
 As can be seen, the addition and substraction operations are performed 
 component-wise.
 
-\paragraph{Division}
-Algebraic closed field
-
-$\theta$
-
-
 
 
 
@@ -87,6 +109,25 @@ $\theta$
 
 
 \subsection{Properties of complex number field}
+
+\subsection{Trichotomy law and comparison of two complex numbers}
+One way of comparing two complex numbers is by comparing the real components first, and if they are equal, compare the imaginary numbers. This is known as lexicographic ordering, a system used in dictionaries as well to define order. This can be summarized as follows:
+
+\begin{equation}
+\begin{aligned}
+(a+ib) < (c+id), \ if \ a<c \ or \ a=c \ and \ b<d
+\end{aligned}
+\end{equation}
+
+The law of trichotomy states that "for arbitrary real numbers a and b, exactly one of the relations $a<b$, $a=b$, $a>b$ holds" \cite{trichotomy}. However, this relationship is not true for complex numbers and it becomes clear when dealing with multiplication of complex numbers (described below).
+
+For an order to satisfy Trichomoty Law, $a<b$ and $0<c$, then $ac<bc$ must be true. Now, consider that $a=0+i1$, and $0$ is represented as $b=0+i0$. By lexicographic order, $0<i$. We move forward to see that if we multiply both sides by $i$ twice, we turn this inequality into $1<-1$, which is a contradiction to our previous claim.
+
+Another way to compare complex numbers is to compare their respective magnitude, instead of comparing the individual components lexicographically. But the shortcoming of this approach is that the distinction between negative and positive quantities is foregone i.e. if $z=-9+i0$ and $t=9+i0$, $|z|=|t|$ even though the real part of both numbers have opposite signs.  
+
+
+%You can put (partial) orders on the complex numbers. One choice is to compare the real parts and ignore the complex ones. Another is to use the lexicographic order, comparing the real parts and then comparing the imaginary ones if the real parts are equal. Another is to use the modulus. There are many more. The distinction with the order on the reals (or subsets of the reals) is that the order relation is compatible with addition and multiplication. You can't do that in the complex numbers. The simple proof is to ask whether i is greater or less than 0. In either case, i2=−1 should be greater than zero.
+
 map c to c
 map c to r
 

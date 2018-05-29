@@ -6,6 +6,12 @@ Bringing parallelism to the web with river trail.
 \bibitem{gotcha}
 Gotcha wide-angle synthetic aperture radar dataset.
 
+\bibitem{trichotomy}
+T.~M. Apostol.
+\newblock {\em One-Variable Calculus, with an Introduction to Linear Algebra},
+  volume~1.
+\newblock Blaisdell Publishing Company, Waltham, MA, 1967.
+
 \bibitem{ArjovskySB15}
 Mart{\'{\i}}n Arjovsky, Amar Shah, and Yoshua Bengio.
 \newblock Unitary evolution recurrent neural networks.

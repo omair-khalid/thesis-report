@@ -6,62 +6,64 @@
 \contentsline {chapter}{\numberline {2}State of the art}{3}{chapter.2}
 \contentsline {chapter}{\numberline {3}Background}{5}{chapter.3}
 \contentsline {section}{\numberline {3.1}Radar technology?}{5}{section.3.1}
-\contentsline {section}{\numberline {3.2}Complex numbers}{5}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Complex numbers and their representations}{5}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.2}Complex numbers theory}{5}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Representations of complex numbers}{5}{subsection.3.2.1}
 \contentsline {subsubsection}{Cartesian form}{5}{section*.5}
 \contentsline {subsubsection}{Polar form}{5}{section*.6}
-\contentsline {subsubsection}{Complex numbers operations}{6}{section*.7}
-\contentsline {paragraph}{Conjugate}{6}{section*.8}
-\contentsline {paragraph}{Multiplication}{6}{section*.9}
-\contentsline {paragraph}{Addition and Substraction}{7}{section*.10}
+\contentsline {subsubsection}{Exponential form}{6}{section*.7}
+\contentsline {subsubsection}{Basic operations of complex numbers }{7}{section*.8}
+\contentsline {paragraph}{Conjugate}{7}{section*.9}
+\contentsline {paragraph}{Multiplication}{7}{section*.10}
 \contentsline {paragraph}{Division}{7}{section*.11}
-\contentsline {subsubsection}{Exponential form}{7}{section*.12}
-\contentsline {subsection}{\numberline {3.2.2}Complex functions}{7}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Properties of complex number field}{7}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Holomorphism \& Complex Differentiability}{7}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Generalized chain rule for real-valued complex loss functions}{7}{subsection.3.2.5}
-\contentsline {chapter}{\numberline {4}Comparison of $\mathbb {Re}$-CNNs with $\mathbb {C}$-CNNs}{9}{chapter.4}
-\contentsline {section}{\numberline {4.1}Convolutional neural networks}{9}{section.4.1}
-\contentsline {section}{\numberline {4.2}The Building Blocks}{10}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Convolution}{10}{subsection.4.2.1}
-\contentsline {subsubsection}{Real-Valued Convolution}{10}{section*.13}
-\contentsline {subsubsection}{Complex-valued convolution}{11}{section*.14}
-\contentsline {subsection}{\numberline {4.2.2}Batch normalization}{12}{subsection.4.2.2}
-\contentsline {subsubsection}{Real-valued batch normalization}{12}{section*.15}
-\contentsline {subsubsection}{Complex-valued batch normalization}{13}{section*.16}
-\contentsline {subsection}{\numberline {4.2.3}Activation function}{14}{subsection.4.2.3}
-\contentsline {subsubsection}{Real-Valued Activation Functions}{14}{section*.17}
-\contentsline {subsubsection}{ReLU}{14}{section*.18}
-\contentsline {subsubsection}{Soft-max}{15}{section*.19}
-\contentsline {subsubsection}{Complex-Valued Activation Functions}{15}{section*.20}
-\contentsline {subsubsection}{modReLU}{15}{section*.21}
-\contentsline {subsubsection}{$\mathbb {C}$ReLU}{16}{section*.22}
-\contentsline {subsubsection}{$z$ReLU}{16}{section*.23}
-\contentsline {subsection}{\numberline {4.2.4}Weight initialization}{16}{subsection.4.2.4}
-\contentsline {subsubsection}{Real-valued weight initialization}{16}{section*.24}
-\contentsline {paragraph}{Glorot and Bengio (2010) criterion}{16}{section*.25}
-\contentsline {paragraph}{He $et \ al.$ (2015b) criterion}{17}{section*.26}
-\contentsline {subsubsection}{Complex-valued weight initialization}{17}{section*.27}
-\contentsline {subsection}{\numberline {4.2.5}Pooling layer}{18}{subsection.4.2.5}
-\contentsline {subsubsection}{Pooling in $\mathbb {R}$-CNNs}{18}{section*.28}
-\contentsline {paragraph}{Max pooling}{18}{section*.29}
-\contentsline {paragraph}{Average pooling}{18}{section*.30}
-\contentsline {subsubsection}{Pooling in $\mathbb {C}$-CNNs}{19}{section*.31}
-\contentsline {paragraph}{Max-by-mag pooling}{19}{section*.32}
-\contentsline {paragraph}{Average pooling}{19}{section*.33}
-\contentsline {subsection}{\numberline {4.2.6}Loss function}{19}{subsection.4.2.6}
-\contentsline {subsubsection}{Loss functions in $\mathbb {R}$-CNNs}{20}{section*.34}
-\contentsline {subsubsection}{Loss functions in $\mathbb {C}$-CNNs}{20}{section*.35}
-\contentsline {subsection}{\numberline {4.2.7}Optimization through backpropagation}{20}{subsection.4.2.7}
-\contentsline {chapter}{\numberline {5}Methodology}{22}{chapter.5}
-\contentsline {section}{\numberline {5.1}Representation of complex numbers}{22}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}MNIST+P Dataset}{22}{subsection.5.1.1}
-\contentsline {subsubsection}{Preprocessing of MNIST+P Dataset}{23}{section*.36}
-\contentsline {subsection}{\numberline {5.1.2}Radar Dataset}{23}{subsection.5.1.2}
-\contentsline {subsubsection}{Preprocessing of Radar Dataset}{23}{section*.37}
-\contentsline {subsection}{\numberline {5.1.3}Architecture -- $\mathbb {R}$-CNNs \& $\mathbb {C}$-CNNs}{23}{subsection.5.1.3}
-\contentsline {chapter}{\numberline {6}Experimental Results}{24}{chapter.6}
-\contentsline {section}{\numberline {6.1}Results}{24}{section.6.1}
-\contentsline {chapter}{\numberline {7}Conclusion}{25}{chapter.7}
-\contentsline {chapter}{\numberline {A}The first appendix}{26}{appendix.A}
-\contentsline {chapter}{\numberline {Bibliography\hspace {-96pt}}}{29}{appendix*.38}
+\contentsline {paragraph}{Addition and Substraction}{7}{section*.12}
+\contentsline {subsubsection}{Exponential form}{8}{section*.13}
+\contentsline {subsection}{\numberline {3.2.2}Complex functions}{8}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Properties of complex number field}{8}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Trichotomy law and comparison of two complex numbers}{8}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Holomorphism \& Complex Differentiability}{8}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Generalized chain rule for real-valued complex loss functions}{9}{subsection.3.2.6}
+\contentsline {chapter}{\numberline {4}Comparison of $\mathbb {Re}$-CNNs with $\mathbb {C}$-CNNs}{10}{chapter.4}
+\contentsline {section}{\numberline {4.1}Convolutional neural networks}{10}{section.4.1}
+\contentsline {section}{\numberline {4.2}The Building Blocks}{11}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Convolution}{11}{subsection.4.2.1}
+\contentsline {subsubsection}{Real-Valued Convolution}{11}{section*.14}
+\contentsline {subsubsection}{Complex-valued convolution}{12}{section*.15}
+\contentsline {subsection}{\numberline {4.2.2}Batch normalization}{13}{subsection.4.2.2}
+\contentsline {subsubsection}{Real-valued batch normalization}{13}{section*.16}
+\contentsline {subsubsection}{Complex-valued batch normalization}{14}{section*.17}
+\contentsline {subsection}{\numberline {4.2.3}Activation function}{15}{subsection.4.2.3}
+\contentsline {subsubsection}{Real-Valued Activation Functions}{15}{section*.18}
+\contentsline {subsubsection}{ReLU}{15}{section*.19}
+\contentsline {subsubsection}{Soft-max}{16}{section*.20}
+\contentsline {subsubsection}{Complex-Valued Activation Functions}{16}{section*.21}
+\contentsline {subsubsection}{modReLU}{16}{section*.22}
+\contentsline {subsubsection}{$\mathbb {C}$ReLU}{17}{section*.23}
+\contentsline {subsubsection}{$z$ReLU}{17}{section*.24}
+\contentsline {subsection}{\numberline {4.2.4}Weight initialization}{17}{subsection.4.2.4}
+\contentsline {subsubsection}{Real-valued weight initialization}{17}{section*.25}
+\contentsline {paragraph}{Glorot and Bengio (2010) criterion}{17}{section*.26}
+\contentsline {paragraph}{He $et \ al.$ (2015b) criterion}{18}{section*.27}
+\contentsline {subsubsection}{Complex-valued weight initialization}{18}{section*.28}
+\contentsline {subsection}{\numberline {4.2.5}Pooling layer}{19}{subsection.4.2.5}
+\contentsline {subsubsection}{Pooling in $\mathbb {R}$-CNNs}{19}{section*.29}
+\contentsline {paragraph}{Max pooling}{19}{section*.30}
+\contentsline {paragraph}{Average pooling}{19}{section*.31}
+\contentsline {subsubsection}{Pooling in $\mathbb {C}$-CNNs}{20}{section*.32}
+\contentsline {paragraph}{Max-by-mag pooling}{20}{section*.33}
+\contentsline {paragraph}{Average pooling}{20}{section*.34}
+\contentsline {subsection}{\numberline {4.2.6}Loss function}{20}{subsection.4.2.6}
+\contentsline {subsubsection}{Loss functions in $\mathbb {R}$-CNNs}{21}{section*.35}
+\contentsline {subsubsection}{Loss functions in $\mathbb {C}$-CNNs}{21}{section*.36}
+\contentsline {subsection}{\numberline {4.2.7}Optimization through backpropagation}{21}{subsection.4.2.7}
+\contentsline {chapter}{\numberline {5}Methodology}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Representation of complex numbers}{23}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}MNIST+P Dataset}{23}{subsection.5.1.1}
+\contentsline {subsubsection}{Preprocessing of MNIST+P Dataset}{24}{section*.37}
+\contentsline {subsection}{\numberline {5.1.2}Radar Dataset}{24}{subsection.5.1.2}
+\contentsline {subsubsection}{Preprocessing of Radar Dataset}{24}{section*.38}
+\contentsline {subsection}{\numberline {5.1.3}Architecture -- $\mathbb {R}$-CNNs \& $\mathbb {C}$-CNNs}{24}{subsection.5.1.3}
+\contentsline {chapter}{\numberline {6}Experimental Results}{25}{chapter.6}
+\contentsline {section}{\numberline {6.1}Results}{25}{section.6.1}
+\contentsline {chapter}{\numberline {7}Conclusion}{26}{chapter.7}
+\contentsline {chapter}{\numberline {A}The first appendix}{27}{appendix.A}
+\contentsline {chapter}{\numberline {Bibliography\hspace {-96pt}}}{30}{appendix*.39}
