@@ -1,11 +1,14 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of complex number in Cartesian form ($z=x+iy$) and Polar form ($|z|,\theta $) on a Complex Plane}}{6}{figure.3.1}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Representation of Radar working scheme}}{6}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Types of chirp: Up, Down, Triangle}}{7}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Schematics of a FMCW radar}}{8}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Illustration of complex number in Cartesian form ($z=x+iy$) and Polar form ($|z|,\theta $) on a Complex Plane}}{9}{figure.3.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces A schematic sketch of the convolution operation. An unit in the output is the sum of point-wise multiplication of the kernel and input patch \cite {bloggg}}}{12}{figure.4.1}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A schematic sketch of the convolution operation. An unit in the output is the sum of point-wise multiplication of the kernel and input patch \cite {bloggg}}}{14}{figure.4.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces A schematic sketch of the convolution operation. An item in the output is the sum of point-wise multiplication of the kernel and input patch \cite {bloggg}}}{27}{figure.A.1}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces A schematic sketch of the convolution operation. An item in the output is the sum of point-wise multiplication of the kernel and input patch \cite {bloggg}}}{29}{figure.A.1}

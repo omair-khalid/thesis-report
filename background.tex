@@ -1,14 +1,82 @@
 \chapter{Background}\label{chap:comp}
-\section{Radar technology?}
+
+This chapter presents the pre-requisite knowledge for understanding the challenges of the problem. The following subsections explain about the Radar technology and Complex Numbers theory.
+
+\section{Radar technology}
+Radar stands for Radio Detection and Range is a sensing technology that uses radio waves to detect range, angle, and velocity of objects. Radar technology was first developed to aid enemy target detection in World War II, and extended to other applications such as monitoring precipitation (meteorology), mapping componsition of Earth's crust (geology), monitoring speeds of road vehicles, among others. Nowadays, radars are also widely used in automotive industry in Advanced Driver Assistance Systems (ADAS) for automatic emergency braking system (AEBS), adaptive cruise control (ACC), automatic parking, among others.
+
+\subsection{Working principle of radar}
+Radars emit electromagnetic waves (continuous or pulsed) and detect the distance of a target object based on the amount of time it took for the reflected wave to be received.  In this respect the equation governing this process is:
+
+\begin{equation}\label{dist}
+r = \frac{vt}{2} 
+\end{equation}
+where $v$ is the constant for speed of light, $t$ is the time taken for a round trip of the emitted signal to come back, and $r$ is the range. Figure \ref{[rad]} illustrates this process.
+
+\begin{figure}[htb]
+	\centering
+	\epsfxsize=5cm
+	{\epsfbox{radarbasics}}
+	\caption{Representation of Radar working scheme}
+	\label{fig:rad}
+\end{figure}
+
+The direction from which maximum amplitude echo signal is received dictates target’s location which is measured in angle. To measure range and location of moving objects, Doppler Effect is utilized.
+
+
+
+
+The simplified model of radar gives us the maximum range $R_{max}$ as,
+
+\begin{equation}\label{radmodel}
+\begin{aligned}
+R_{max}&=\bigg[ \dfrac{P_{t}GA_{e}\sigma}{(4\pi)^2S_{}min}\bigg],       where\\
+P_{t} &= \mathrm{Transmitted\ power, in \ Watts,}\\
+G &= \mathrm{Antenna\ gain},\\
+A_{e} &= \mathrm{Antenna\  effective \ aperture \ in}\ m^2,\\
+\sigma &= \mathrm{Radar \ cross \ section \ of \ the \ target,\ in} \ m^2, \\
+S_{min} &= \mathrm{Minimum \ detectable \ signal, \ in \ Watts}.\\
+\end{aligned}
+\end{equation}
+
+
+
+
+All the above parameters, except $\sigma$, are to some extent under the control of the radar designer. As this model does not exactly capture the nature of the physical world, a number of other factors play a role in deteriorating the performance of the radar, namely, variance in performance of electronic components according to the environment, probabilistic nature of variables ($S_{min},\  \sigma$), variance in environmental conditions, among others.
+
+\subsection{Frequency modulated continuous-wave radar}
+Frequency Modulated Continuous-Wave Radar (FMCW) transmits a continuous carrier signal, whose frequency modulated by periodic function such as a sinusoid or sawtooth wave to provide range data. 
+
+The internal schematics of an FMCW radar are presented in Figure \ref{fig:fmcwrad}. Wave generator produces a Up, Down or Triangular Chirp, as illustrated in Figure \ref{fig:chirps}, that will be transmitted by the radar. In our case, a triangular chirp is being produced at frequency of 150 GHz, with a bandwidth of 6 GHz. Next, the transmitter components transmits this wave, which, after reflecting from an object, returns back to the receiver as a scaled and delayed version of the original signal. The receiver consists of two mixers: one to mix with the transmitted signal, and one to mix with the transmitted signal shifted 90 degrees. This type of mixing creates two channels for the received signal, denoted by $I$ and $Q$. Both the channels are treated with a Low Pass Filter which removes the high-frequency noise, followed by an Analog-to-Digital Converter which makes it suitable for digital processing. The individual channels are added together to form one signal $I+jQ$. A windowing operation is performed to remove the side lobes before applying Fast Fourier Transform (FFT) on the signal. FFT  is applied to this signal and the magnitude represents the range of the object, represented in the 2D plot in Figure \ref{fig:fmcwrad}. 
+
+BEAT FREQUENCY RADAR? 
+  
+
+\begin{figure}[htb]
+	\centering
+	\epsfxsize=4.5cm
+	{\epsfbox{up}}
+	{\epsfbox{down}}
+	{\epsfbox{tri}}
+	\caption{Types of chirp: Up, Down, Triangle}
+	\label{fig:chirps}
+\end{figure}
+
+\begin{figure}[htb]
+	\centering
+	\epsfxsize=14cm
+	{\epsfbox{fmcv}}
+	\caption{Schematics of a FMCW radar}
+	\label{fig:fmcwrad}
+\end{figure}
+
 
 
 \section{Complex numbers theory}
 
 Complex number field ($\mathbb{C}$) is an extension of the Real numbers field ($\mathbb{R}$); alternatively, $\mathbb{R}\subset\mathbb{C}$. In their Cartesian form, further described later in this chapter, they consist of a real part and an imaginary part ($z=a+ib$). If the imaginary part is $0$, the complex number reduces to a real number. The term $i$, known as the Imaginary Quantiy, was proposed by Euler as a substitute for the quantity $\sqrt{-1}$. 
 
-
-
-Complex numbers are useful abstract quantities that can be used in calculations and result in physically meaningful solutions.
+Complex numbers are useful abstract quantities that can be used in calculations and result in physically meaningful solutions. They can be found in the fields of control theory, fluid dynamics, electromagnetism, signal analysis, and quantum mechanics, among others.
 
 
 
@@ -101,15 +169,6 @@ Let $z = a+ib$ and $t=c+id$ be two complex numbers. The addition and substractio
 As can be seen, the addition and substraction operations are performed 
 component-wise.
 
-
-
-
-\subsubsection{Exponential form}
-\subsection{Complex functions}
-
-
-\subsection{Properties of complex number field}
-
 \subsection{Trichotomy law and comparison of two complex numbers}
 One way of comparing two complex numbers is by comparing the real components first, and if they are equal, compare the imaginary numbers. This is known as lexicographic ordering, a system used in dictionaries as well to define order. This can be summarized as follows:
 
@@ -125,18 +184,10 @@ For an order to satisfy Trichomoty Law, $a<b$ and $0<c$, then $ac<bc$ must be tr
 
 Another way to compare complex numbers is to compare their respective magnitude, instead of comparing the individual components lexicographically. But the shortcoming of this approach is that the distinction between negative and positive quantities is foregone i.e. if $z=-9+i0$ and $t=9+i0$, $|z|=|t|$ even though the real part of both numbers have opposite signs.  
 
-
-%You can put (partial) orders on the complex numbers. One choice is to compare the real parts and ignore the complex ones. Another is to use the lexicographic order, comparing the real parts and then comparing the imaginary ones if the real parts are equal. Another is to use the modulus. There are many more. The distinction with the order on the reals (or subsets of the reals) is that the order relation is compatible with addition and multiplication. You can't do that in the complex numbers. The simple proof is to ask whether i is greater or less than 0. In either case, i2=−1 should be greater than zero.
-
-map c to c
-map c to r
-
-
-
-\subsection{Holomorphism \& Complex Differentiability}
+\subsection{Holomorphism \& complex differentiability}
 
 Holomorphism guarantees that a complex-valued function is complex differentiable in the neighborhood of every point in its domain \cite{trabelsi2018deep}.
-A complex function $f(z): \mathbb{C} \mapsto \mathbb{C}$, $f(z)= u(z) + iv(z)$ ($u(z)$ and $v(z)$ are real-valued functions) is complex differentiable if it satisfies the following two conditions:
+A complex function $f(z)= u(z) + iv(z)$, where $u(z)$ and $v(z)$ are real-valued functions, is complex differentiable if it satisfies the following two conditions:
 \begin{enumerate}
 
 	\item It satisfies the Cauchy-Riemann (CR) equations, given by:
@@ -146,8 +197,10 @@ A complex function $f(z): \mathbb{C} \mapsto \mathbb{C}$, $f(z)= u(z) + iv(z)$ (
 	\item $u(z)$ and $v(z)$ are individually differentiable at $z$ as real functions	
 \end{enumerate} 
 
-\subsection{Generalized chain rule for real-valued complex loss  functions}\label{cchainrule}
-Consider that we have a real-valued loss function $L(z): \mathbb{C}\rightarrow\mathbb{R}$, where $z$ is a complex variable $z=x+iy$ with $x,y \in \mathbb{R}$. The gradient of real-valued complex function is defined as follows:
+
+
+\subsection{Generalized chain rule for real-valued complex  function}\label{cchainrule}
+Consider that we have a real-valued function $L(z): \mathbb{C}\rightarrow\mathbb{R}$, where $z$ is a complex variable $z=x+iy$ with $x,y \in \mathbb{R}$. The gradient of real-valued complex function is defined as follows:
  
 \begin{equation}\label{cvgrad}
 \nabla_{L}(z) = \frac{\partial L}{\partial z} = \frac{\partial L}{\partial x} + i\frac{\partial L}{\partial y} = \Re(\nabla_{L}(z))+i\Im(\nabla_{L}(z))
