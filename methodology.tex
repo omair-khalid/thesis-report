@@ -5,6 +5,9 @@
  
  briefly mention the challenges of building a complex valued neural networks. 
  
+ 
+   In our case, a triangular chirp is being produced at frequency of 150 GHz, with a bandwidth of 6 GHz
+   
  \section{Implementation of complex numbers}
  Consider a complex number $z=a+ib$ with the real component $a$ and the imaginary component $b$. In $\mathbb{R}$-CNNs, the filter bank or the feature maps of a layer exist in 3 dimensions, where two of them denote the size of the filter or feature map in 2D, and the third dimension indicates how many there are. If we have $N$ feature maps (where $N$ is divisible by 2), the first $N/2$ feature maps would be dedicated to the real components ($a$) and the last $N/2$ feature maps would be dedicated to the imaginary components ($b$). In this manner, the imaginary feature map corresponding to the real feature map on index one of the 3rd dimension would like on the $\frac{N}{2} +1$ position.
  

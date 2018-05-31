@@ -1,90 +1,35 @@
 \chapter{Introduction} \label{chap:intro}
 
 \section{Motivation} \label{sect:thefirst}
-Motivation in LeCUN
 
-Why CVNN?
+Complex-valued Convolutional Neural Networks ($\mathbb{C}$-CNNs) are that class of Convolutional Neural Networks (CNNs) that incorporate complex number representations in their operation. This may mean that either data, internal parameters (weights), or both data and weights are complex in nature. We motivate our problem by first describing why CNNs are a suitable choice for image classification, followed by why complex numbers should be incorporated into CNNs for complex-natured data.
 
-Page 38 akira 2012
- In CVNNs, the flexibility in learning and self-organization
-is restricted rather than that in double-dimensional real-valued neural net-
-works. As we discussed in Section 3.2.1, the restriction is brought by the four
-fundamental rules of arithmetic in complex numbers (especially multiplication as it entails rotation and scaling, not just scaling as in real valued case). Such fundamental rules
-in processing often work well in solving real world problems. This feature is
-one of the most useful advantages in CVNNs. wave-related phenomena
-such as sonic wave, lightwave, and electromagnetic wave.4
+CNNs have emerged to be one of the most powerful tool in computer vision for the tasks including, but not limited to, image classification, and segmentation. CNNs make use of the compositional hierarchy of features present in natural images, i.e. low-level elements coming together to form higher-level representations, while enjoying the benefits of sparse connectivity, weight-sharing, and invariance to translations (further explained in \ref{cnn41})  They gained tremendous popularity after they were used by Krizhevsky $et \ al.$ (2012) \cite{krizhevsky2012imagenet} used them to win the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 2012 by achieving record-breaking results. Recent years have seen major advancements in their performance which includes techniques like Batch Normalization \cite{bnIoffeS15}, Drop-Out regularization, different architecture designs (AlexNet, ResNet) etc.
 
-pg 19
-In short, in CVNNs, we can reduce ineffective degree of freedom in
-learning or self-organization to achieve better generalization characteristics.
+Complex numbers lend themselves to model neurons that exhibit the properties of a human brain. Reichert and Serre (2013) \cite{reichert2013neuronal} incorporated complex-valued neurons to represent the functioning of a biologically inspired neuron in a deep learning network that exhibits dynamic binding: depending on the input of the network, the phases of particular neurons adding up or canceling each other, so that as a whole, the network provides the correct output. Hence, the usage of complex numbers can help us achieve a closer representation of natural phenomena as compared to that of only real-valued numbers.
 
- if we know a priori
-that the objective quantities include “phase” and/or “amplitude,” we can re-
-duce possibly harmful portion of the freedom by employing a complex-valued
-neural network, resulting in a more meaningful generalization characteristics\\
+In literature, one of the advantages of $\mathbb{C}$-NNs can provide better guard against overfitting phenomenon, leading to better generalization. This idea is also put forward by Hirose and Yoshida (2012) \cite{hirose2012complex} who explain that the benefit of complex-valued neural networks ($\mathbb{C}$-NNs) compared to real-valued neural networks ($\mathbb{R}$-NNs) lies in the restriction in flexibility in learning brought by the nature of multiplication, as it entails rotation and scaling, not just scaling as in real-valued case. This grants the network relief from "ineffective degrees of freedom" that leads to better generalization. Guberman (2016) \cite{Guberman} also reports better generalization for $\mathbb{C}$-CNNs as compared to $\mathbb{R}$-CNNs. Hence, if better generalization is desired, $\mathbb{C}$-CNNs might have the answer.
 
-physical meaning of radar magnitude and phase? discernibility lies in them?
+The recent successes of $\mathbb{C}$-CNNs with Polarimetric Synthetic Aperture (SAR) data in various classification tasks (\cite{polsarzhang2017complex}, \cite{hansch2010complex}, \cite{wilmanski2016complex}), audio transcription, and speech spectrum prediction \cite{trabelsi2018deep}, against $\mathbb{R}$-CNNs presents us with a strong case of their potential advantages when the input data is complex-natured itself. Although the research of $\mathbb{C}$-NNs is not new, the recent advancements in CNNs and general deep learning architectures offer us an opportunity to further investigate how complex number representations can be useful in this new light. 
 
-the mannerism of how the learning unfolds is restricted
+%According to Bruna $et. \ al$ (2015) \cite{bruna2015theoretical}, a simple complex-valued network, having repeated blocks of complex convolution, taking absolute of result, and local averaging, can be regarded data-driven multi-scale windows absolute spectra. However, their complex-valued neural network definition does not incorporate non-linearites and thus the latest implementations of Complex-valued neural networks cannot be equated to the ones defined by the authors.
 
+%In short, in CVNNs, we can reduce ineffective degree of freedom in learning or self-organization to achieve better generalization characteristics. If we know a priori
+%that the objective quantities include “phase” and/or “amplitude,” we can reduce possibly harmful portion of the freedom by employing a complex-valued neural network, resulting in a more meaningful generalization characteristics\\
 
-biological motivation
-signal processing
-associative memory
-data patchhhhh
-historical uses
-success with PolSAR
+%physical meaning of radar magnitude and phase? discernibility lies in them? WHAT IS MEANT BY COMPLEX DATA? MAG AND PHASE RELATION TO PHYSICAL QUANTITY? magnitude alone cannot grant us what they can do together.
+%historical uses
 
-MAKE SECTIONS
- 
-
+%Why should complex data invite the use of complex representations?
+%
 
 
 \section{Problem definition} \label{sect:thefirst}
-complex data with complex weights?
-leveraging the promise of complex valued networks
+We aim to experiment and analyse if $\mathbb{C}$-CNNs can perfom better than $\mathbb{R}$-CNNs when the input is complex-natured data.
+
+
+
 
 \section{Document structure} \label{sect:thefirst}
-% % You are strongly encouraged to use the Latex templates provided.
 
-% \subsection{Paper}
-% The manuscript should be in A4 size, and the printed paper should
-% be of at least 70 gsm.
 
-% \subsection{Font and margins}
-% Thesis should be printed on both sides of the paper. Use no less
-% than 1.5 spacing, with quotations and notes single-spaced.
-% Regarding \textbf{Character size}, not less than 2.0mm for
-% capitals and 1.5mm for x-height (the height of a lower-case x). Us
-% a serif font (i.e. Times) between 10 and 12 points. Use consistent
-% and clear fonts through all the document.
-
-% The text layout should be approximately as follows:
-
-% \begin{itemize}
-%     \item $4cm$ binding margin
-%     \item $2cm$ head margin (top of page)
-%     \item $2.5cm$ fore-edge margin
-%     \item $4cm$ tail margin (bottom of page)
-% \end{itemize}
-
-% \section{Title Page}
-% The title page should contain the title of thesis, authors name,
-% and at the foot of the page: the name of degree,  Your University,
-% and the year of presentation. Something like this:
-
-% \vspace*{1cm}
-% \begin{center}
-% {\Large\bf MSc. Thesis example VIBOT\\} \vspace{2cm} {\large
-% Robert Mart\'i\\
-% \vspace{1cm}
-% Department of Computer Architecture and Technology \\
-% University of Girona}
-
-% \end{center}
-
-% \vspace{2cm}
-% \begin{center}
-% {\large A Thesis Submitted for the Degree of MSc Erasmus Mundus in
-% Vision and Robotics (VIBOT)\\ \vspace{0.3cm} $\cdot$ 2008 $\cdot$}
-% \end{center}

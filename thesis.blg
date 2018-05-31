@@ -8,6 +8,10 @@ I was expecting a `,' or a `}'---line 234 of file refs.bib
  :  year={2009}
  :             \begin{flushright}
 I'm skipping whatever remains of this entry
+Repeated entry---line 421 of file refs.bib
+ : @inproceedings{he2015delving
+ :                             ,
+I'm skipping whatever remains of this entry
 Database file #2: theano-short.bib
 Warning--to sort, need author or key in bloggg
 Warning--to sort, need author or key in gotcha
@@ -19,45 +23,45 @@ Warning--empty journal in gotcha
 Warning--empty year in gotcha
 Warning--empty booktitle in page45hirose2012complex
 Warning--can't use both author and editor fields in LeCun1998
-You've used 30 entries,
+You've used 31 entries,
             2118 wiz_defined-function locations,
-            657 strings with 9162 characters,
-and the built_in function-call counts, 11045 in all, are:
-= -- 1056
-> -- 562
+            662 strings with 9301 characters,
+and the built_in function-call counts, 11285 in all, are:
+= -- 1079
+> -- 575
 < -- 16
-+ -- 223
-- -- 192
-* -- 757
-:= -- 1771
-add.period$ -- 89
-call.type$ -- 30
-change.case$ -- 182
++ -- 228
+- -- 196
+* -- 769
+:= -- 1816
+add.period$ -- 92
+call.type$ -- 31
+change.case$ -- 187
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 451
-empty$ -- 844
-format.name$ -- 192
-if$ -- 2347
+cite$ -- 41
+duplicate$ -- 461
+empty$ -- 861
+format.name$ -- 196
+if$ -- 2395
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 34
-newline$ -- 149
-num.names$ -- 56
-pop$ -- 230
+int.to.str$ -- 31
+missing$ -- 35
+newline$ -- 154
+num.names$ -- 58
+pop$ -- 235
 preamble$ -- 1
-purify$ -- 156
+purify$ -- 160
 quote$ -- 0
-skip$ -- 339
+skip$ -- 347
 stack$ -- 0
-substring$ -- 579
-swap$ -- 134
+substring$ -- 584
+swap$ -- 135
 text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 112
+type$ -- 116
 warning$ -- 10
-while$ -- 95
-width$ -- 32
-write$ -- 320
-(There was 1 error message)
+while$ -- 97
+width$ -- 33
+write$ -- 330
+(There were 2 error messages)

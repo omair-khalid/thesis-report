@@ -132,6 +132,11 @@ Edouard Oyallon and St{\'e}phane Mallat.
 \newblock Deep roto-translation scattering for object classification.
 \newblock In {\em CVPR}, volume~3, page~6, 2015.
 
+\bibitem{reichert2013neuronal}
+David~P Reichert and Thomas Serre.
+\newblock Neuronal synchrony in complex-valued deep networks.
+\newblock {\em arXiv preprint arXiv:1312.6115}, 2013.
+
 \bibitem{sarroff2015learning}
 Andy~M Sarroff, Victor Shepardson, and Michael~A Casey.
 \newblock Learning representations using complex-valued nets.
