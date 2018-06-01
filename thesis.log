@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.5.29)  1 JUN 2018 03:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.5.29)  1 JUN 2018 15:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -558,7 +558,7 @@ Package epstopdf Info: Source file: <./figures/radarbasics.eps>
 converted-to.pdf ./figures/radarbasics.eps>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/radarbasics-eps-converted-to.pdf, id=358, 340.27126pt x 288.07625pt>
+<./figures/radarbasics-eps-converted-to.pdf, id=361, 340.27126pt x 288.07625pt>
 
 File: ./figures/radarbasics-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/radarbasics-eps-converted-to.pdf>
@@ -568,22 +568,22 @@ put line 19.
 [6
 
 ] [7 <./figures/radarbasics-eps-converted-to.pdf>]
-<./figures/up.png, id=378, 649.42625pt x 375.4025pt>
+<./figures/up.png, id=381, 649.42625pt x 375.4025pt>
 File: ./figures/up.png Graphic file (type png)
 <use ./figures/up.png>
 Package pdftex.def Info: ./figures/up.png  used on input line 56.
 (pdftex.def)             Requested size: 128.0374pt x 74.008pt.
-<./figures/down.png, id=379, 647.41875pt x 369.38pt>
+<./figures/down.png, id=382, 647.41875pt x 369.38pt>
 File: ./figures/down.png Graphic file (type png)
 <use ./figures/down.png>
 Package pdftex.def Info: ./figures/down.png  used on input line 57.
 (pdftex.def)             Requested size: 128.0374pt x 73.05179pt.
-<./figures/tri.png, id=380, 658.46pt x 375.4025pt>
+<./figures/tri.png, id=383, 658.46pt x 375.4025pt>
 File: ./figures/tri.png Graphic file (type png)
 <use ./figures/tri.png>
 Package pdftex.def Info: ./figures/tri.png  used on input line 58.
 (pdftex.def)             Requested size: 128.0374pt x 72.99411pt.
-<./figures/fmcv.png, id=381, 1166.3575pt x 758.835pt>
+<./figures/fmcv.png, id=384, 1166.3575pt x 758.835pt>
 File: ./figures/fmcv.png Graphic file (type png)
 <use ./figures/fmcv.png>
 Package pdftex.def Info: ./figures/fmcv.png  used on input line 66.
@@ -600,7 +600,7 @@ Package epstopdf Info: Source file: <./figures/crep2.eps>
 ted-to.pdf ./figures/crep2.eps>
 (epstopdf)             \includegraphics on input line 107.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/crep2-eps-converted-to.pdf, id=393, 139.52126pt x 154.5775pt>
+<./figures/crep2-eps-converted-to.pdf, id=396, 139.52126pt x 154.5775pt>
 File: ./figures/crep2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/crep2-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/crep2-eps-converted-to.pdf  used on input li
@@ -628,7 +628,7 @@ Missing character: There is no e in font msbm10!
 [14
 
 ]
-<./figures/cnn.png, id=466, 1383.1675pt x 585.18625pt>
+<./figures/cnn.png, id=469, 1383.1675pt x 585.18625pt>
 File: ./figures/cnn.png Graphic file (type png)
 <use ./figures/cnn.png>
 Package pdftex.def Info: ./figures/cnn.png  used on input line 13.
@@ -655,7 +655,7 @@ Package epstopdf Info: Source file: <./figures/convRiverTrailBlog.eps>
 og-eps-converted-to.pdf ./figures/convRiverTrailBlog.eps>
 (epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/convRiverTrailBlog-eps-converted-to.pdf, id=479, 274.02374pt x 164.6
+<./figures/convRiverTrailBlog-eps-converted-to.pdf, id=482, 274.02374pt x 164.6
 15pt>
 File: ./figures/convRiverTrailBlog-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -665,7 +665,7 @@ d on input line 52.
 (pdftex.def)             Requested size: 170.71652pt x 102.55757pt.
 Missing character: There is no e in font msbm10!
 [16]
-<./figures/cConvOperation.png, id=493, 517.935pt x 630.355pt>
+<./figures/cConvOperation.png, id=496, 517.935pt x 630.355pt>
 File: ./figures/cConvOperation.png Graphic file (type png)
 <use ./figures/cConvOperation.png>
 Package pdftex.def Info: ./figures/cConvOperation.png  used on input line 81.
@@ -710,28 +710,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 27.
+(hyperref)                removing `math shift' on input line 17.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 27.
+(hyperref)                removing `math shift' on input line 17.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 27.
+(hyperref)                removing `math shift' on input line 17.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 27.
-
-
-LaTeX Warning: Reference `arch' on page 28 undefined on input line 28.
+(hyperref)                removing `math shift' on input line 17.
 
 [28
 
-]) (./experiments.tex [29]
+] [29]
+Package epstopdf Info: Source file: <./figures/1.eps>
+(epstopdf)                    date: 2018-06-01 07:13:16
+(epstopdf)                    size: 2056501 bytes
+(epstopdf)             Output file: <./figures/1-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-06-01 07:16:04
+(epstopdf)                    size: 32640 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/1-eps-converted-
+to.pdf ./figures/1.eps>
+(epstopdf)             \includegraphics on input line 44.
+Package epstopdf Info: Output file is already uptodate.
+<./figures/1-eps-converted-to.pdf, id=667, 462.72874pt x 734.745pt>
+File: ./figures/1-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figures/1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/1-eps-converted-to.pdf  used on input line 4
+4.
+(pdftex.def)             Requested size: 142.26378pt x 225.8963pt.
+Package epstopdf Info: Source file: <./figures/23.eps>
+(epstopdf)                    date: 2018-06-01 07:13:33
+(epstopdf)                    size: 2634779 bytes
+(epstopdf)             Output file: <./figures/23-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-06-01 07:15:04
+(epstopdf)                    size: 42061 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/23-eps-converted
+-to.pdf ./figures/23.eps>
+(epstopdf)             \includegraphics on input line 46.
+Package epstopdf Info: Output file is already uptodate.
+<./figures/23-eps-converted-to.pdf, id=668, 593.21625pt x 734.745pt>
+File: ./figures/23-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figures/23-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/23-eps-converted-to.pdf  used on input line 
+46.
+(pdftex.def)             Requested size: 192.05609pt x 237.88118pt.
+Package epstopdf Info: Source file: <./figures/ARCH.eps>
+(epstopdf)                    date: 2018-06-01 07:29:58
+(epstopdf)                    size: 1077940 bytes
+(epstopdf)             Output file: <./figures/ARCH-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-06-01 07:30:42
+(epstopdf)                    size: 20000 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/ARCH-eps-convert
+ed-to.pdf ./figures/ARCH.eps>
+(epstopdf)             \includegraphics on input line 48.
+Package epstopdf Info: Output file is already uptodate.
+<./figures/ARCH-eps-converted-to.pdf, id=669, 332.24126pt x 534.99875pt>
+File: ./figures/ARCH-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figures/ARCH-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/ARCH-eps-converted-to.pdf  used on input lin
+e 48.
+(pdftex.def)             Requested size: 142.26378pt x 229.0817pt.
+) (./experiments.tex [30] [31 <./figures/1-eps-converted-to.pdf> <./figures/23-
+eps-converted-to.pdf> <./figures/ARCH-eps-converted-to.pdf>]
 Chapter 6.
-[30
+[32
 
 ]
 
@@ -744,13 +791,13 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 59.
 See the caption package documentation for explanation.
 
-) (./conclusion.tex [31]
+) (./conclusion.tex [33]
 Chapter 7.
-) (./appendix.tex [32
+) (./appendix.tex [34
 
 ]
 Appendix A.
-) (./thesis.bbl [33
+) (./thesis.bbl [35
 
 ]
 Underfull \hbox (badness 1681) in paragraph at lines 50--53
@@ -758,17 +805,17 @@ Underfull \hbox (badness 1681) in paragraph at lines 50--53
 ral net-works.  \OT1/cmr/m/it/10 CoRR\OT1/cmr/m/n/10 ,
  []
 
-[34
+[36
 
-] [35])
+] [37])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
- [36]
+ [38]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
  (./thesis.aux (./header.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1957F043828F19554A59ABAF53F21260;2870.
+(rerunfilecheck)             Checksum: ADDFF643CD5AF46C27DD74C6BF78D14B;2863.
 
 
 LaTeX Warning: There were undefined references.
@@ -779,11 +826,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
  ) 
 Here is how much of TeX's memory you used:
- 8045 strings out of 494471
- 120068 string characters out of 6175119
- 206134 words of memory out of 5000000
- 11288 multiletter control sequences out of 15000+600000
- 18408 words of font info for 76 fonts, out of 8000000 for 9000
+ 8077 strings out of 494471
+ 120786 string characters out of 6175119
+ 207326 words of memory out of 5000000
+ 11306 multiletter control sequences out of 15000+600000
+ 19761 words of font info for 82 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  42i,14n,40p,1906b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
@@ -802,10 +849,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (44 pages, 990102 bytes).
+Output written on thesis.pdf (46 pages, 1082828 bytes).
 PDF statistics:
- 791 PDF objects out of 1000 (max. 8388607)
- 701 compressed objects within 8 object streams
- 206 named destinations out of 1000 (max. 500000)
- 382 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 828 PDF objects out of 1000 (max. 8388607)
+ 730 compressed objects within 8 object streams
+ 217 named destinations out of 1000 (max. 500000)
+ 397 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,16 +5,6 @@ This section details the methodology adopted to investigate the applicability of
  \textit{Can $\mathbb{C}$-$\mathrm{CNNs}$ outperform $\mathbb{R}$-$\mathrm{CNNs}$ in a classification problem, given that phase of the complex-natured input data contains, as well, discriminatory information?}\\
  
  We employ two datasets: synthetically created toy data set, which we call MNIST-P (Section \ref{data-mnistp}), and real-world Radar dataset (Section \ref{data-radar}), to feed into comparable $\mathbb{R}$-CNN and $\mathbb{C}$-CNN networks in a bid to experimentally determine the winner in the classification problem. The architecture of $\mathbb{R}$-CNN and $\mathbb{C}$-CNN employed in this task is discussed in the following section.
- 
-
- 
- 
- 
- 
- briefly mention the challenges of building a complex valued neural networks. 
- 
- 
-
    
  \section{Practical implementation of complex numbers}
  Consider a complex number $z=a+ib$ with the real component $a$ and the imaginary component $b$. In $\mathbb{R}$-CNNs, the filter bank or the feature maps of a layer exist in 3 dimensions, where two of them denote the size of the filter or feature map in 2D, and the third dimension indicates how many there are. If we have $N$ feature maps (where $N$ is divisible by 2), the first $N/2$ feature maps would be dedicated to the real components ($a$) and the last $N/2$ feature maps would be dedicated to the imaginary components ($b$). In this manner, the imaginary feature map corresponding to the real feature map on index one of the 3rd dimension would like on the $\frac{N}{2} +1$ position.
@@ -24,21 +14,42 @@ This section details the methodology adopted to investigate the applicability of
  
  
  
- \subsection{Architecture -- $\mathbb{R}$-CNNs \& $\mathbb{C}$-CNNs}
- The architecture employed for our experiments is a simplified variant of the one used by Chiheb $et \ al.$ (2018) \cite{trabelsi2018deep} for the problem of real-valued image classification. It contains three residual blocks containing 2 convolutional layers (3x3 filter size), 2 ReLU activation functions, and two BN layers in the order shown in Figure \ref{arch}. The skip connection of the first block differs from that of the second and the third block. The skip connection of the first block simply adds the input of the block to the output of the other thread of the block. However, the last two blocks perform a projection operation at their output that concatenates the output of the last residual block with the output of a 1x1 convolution applied on it with the same number of filters used throughout the stage and subsample by a factor of 2. While the $\mathbb{C}$-CNNs perform complex convolutions, complex BN, complex average-pooling, the $\mathbb{R}$-CNNs employs the real-valued counter parts. The weight initialization of $\mathbb{R}$-CNNs are done following the Glorot and Bengio criterion (2010) \cite{glorot2010understanding}, while that of $\mathbb{C}$-CNNs follow the complex-valued counterpart of the same, as described in section \ref{cwi}. The last layer of both the network types contain a FC layer employing the Softmax function as the activation function, and the loss function is categorical-cross entropy.
- 
- Discuss design choices again as well.
- 
-  WHY BRO WHY DID YOU CHOOSE AVERAGE POOLING?
- AHAAA!  We don't wanna have to deal with a activation function whose values are only positive!
+ \section{Architecture -- $\mathbb{R}$-CNNs \& $\mathbb{C}$-CNNs}
+ The architecture employed for our experiments is a simplified variant of the one used by Chiheb $et \ al.$ (2018) \cite{trabelsi2018deep} for the problem of real-valued image classification. Our network contains three stages, each containing one residual block with 2 convolutional layers (3x3 filter size), 2 activation functions, and two BN layers in the order shown in Figure \ref{fig:blocks}. The skip connection of the first block differs from that of the second and the third block. The skip connection of the first block simply adds the input of the block to the output of the other thread of the block. However, the last two blocks perform a projection operation at their output: they convolve the input of the block with a 1x1 convolution operation with the same number of filters used throughout the stage, and concatenate it with the output of the other thread (with 2 conv, 2 BN, 2 activation layers) in a way that the distinction between real and imaginary parts remains. At the end of each stage, the number of filters are doubled.
  
  
+ \begin{enumerate}
+ 	\item \textit{Input :} The input is prepared such that the real and imaginary parts are on separate channels. The guiding principle in choosing the nature of input is that the information provided to both types of network should be presented in the same way i.e. feeding only real part to the $\mathbb{R}$-CNN and feeding both real and imaginary to the $\mathbb{C}$-CNN would be unfair. 
+ 	\item \textit{Convolution layer :} The convolution operation for $\mathbb{C}$-CNN and $\mathbb{R}$-CNN si described in Sections bla and bla respectively.
+ 	\item \textit{Weight initialization :} The kernels for $\mathbb{R}$-CNN are initialized using Glorot and Bengio (2010) criterion described in \ref{gbwi}, while that of $\mathbb{R}$-CNN are initialized using Complex Weight Initialization scheme (Chiheb $et \ al.$)as described in Section \ref{cwi}.
+ 	 
+ 	\item \textit{Activation function :} For $\mathbb{R}$-CNN, we choose the ReLU activation function, as it is currently the preferred choice in the community due to its state-of-the-art performance. For $\mathbb{C}$-CNN, we choose to test the performance of Real-Imaginary type: $\mathrm{C}$ReLU, Phase-Magnitude type: $z$ReLU, and the Transcendental type: $\mathrm{tanh}(z)$.
+ 	
+ 	\item \textit{Batch normalization $(\mathrm{BN})$:} $\mathbb{R}$-CNN and $\mathbb{C}$-CNN employ the BN process as described in Section \ref{ssec:bn}.
+ 	
+ 	\item \textit{Pooling $(\mathrm{BN})$:} Both $\mathbb{R}$-CNN and $\mathbb{C}$-CNN employ average pooling of size (8,  8). Due to the drawback that a max-by-magnitude pooling would make sense only if the input is positive, we do not choose it. 
+ 	
+ 	\item \textit{Fully-Connected Layer :}  The last layer is a Fully Connected (FC) layer with Softmax Linearity. At this stage, the real and imaginary parts of $\mathbb{C}$-CNN are treated if they were two real numbers having their individual weights, and the $\mathbb{C}$-CNN loses its complex sense.
+ 	
+ 	\item \textit{Loss Function :} The FC layer presents probability scores for each of the classes. A categorical cross entropy loss is employed to evaluate the loss.
+ \end{enumerate}
  
  
  
- We hypothesize that since, $\mathbb{C}$-CNNs will be able to perform better than $\mathbb{R}$-CNNs, given the compelling reasons described in Section \ref{sect:moti}.
+ %We hypothesize that since, $\mathbb{C}$-CNNs will be able to perform better than $\mathbb{R}$-CNNs, given the compelling reasons described in Section \ref{sect:moti}.
+
+  \begin{figure}[htb]
+ 	\centering
+ 	\epsfxsize=5cm
+ 	{\epsfbox{1}}\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \
+ 	\epsfxsize=6.75cm
+ 	{\epsfbox{23}}\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \
+ 		\epsfxsize=5cm
+ 	{\epsfbox{ARCH}}
+ 	\caption{Architecture of the first residual block in stage 1 (left), and that in stages 2 and 3 (right); General architecture of both $\mathbb{R}$-CNN and $\mathbb{C}$-CNN (bottom)}
+ 	\label{fig:blocks}
+ \end{figure}
  
- 
- 
+
  
  

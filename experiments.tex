@@ -42,7 +42,7 @@ How to write about polar and cartesian form?
 
 %\begin{table}
 \begin{center}
-	\captionof{table}{Test accuracy (\%) of activation functions in $\mathbb{C}$-CNNs (z$ReLU(z)$, $\mathbb{C}$ReLU(z)), $tanh(z)$), $\mathbb{R}$-CNNs (ReLU) on MNIST+P dataset}
+	\captionof{table}{Test accuracy (\%) of activation functions in $\mathbb{C}$-CNNs ($z$ReLU(z), $\mathbb{C}$ReLU(z)), $tanh(z)$), $\mathbb{R}$-CNNs (ReLU) on MNIST+P dataset}
 	\begin{tabular}{ c|c|c|c?c } 
 		%\hline
 		- &$z$ReLU(z) & $\mathbb{C}$ReLU(z) & tanh($z$) & ReLU\\
@@ -56,23 +56,26 @@ How to write about polar and cartesian form?
 Peculiar problem with class with digit 1
 
 \begin{center}
-		\captionof{table}{Test accuracy (\%) of activation functions in $\mathbb{C}$-CNNs (z$ReLU(z)$, $\mathbb{C}$ReLU(z)), $tanh(z)$) and $\mathbb{R}$-CNNs (ReLU) on Cartesian and Polar representation of Radar-150 and Radar-300 datasets}
+		\captionof{table}{Test accuracy (\%) of activation functions in $\mathbb{C}$-CNNs ($z$ReLU(z), $\mathbb{C}$ReLU(z)), $tanh(z)$) and $\mathbb{R}$-CNNs (ReLU) on Cartesian and Polar representation of Radar-150 and Radar-300 datasets}
 	\begin{tabular}{ c|c|c|c?c } 
 		%\hline
 		- &$z$ReLU(z) & $\mathbb{C}$ReLU(z) & tanh($z$) & ReLU\\
 		\hline Radar-150-Cart (\%) & - & - & - & -\\
-		\hline Radar-150-Cart (\%) & - & - & - & -\\
-		\hline Radar-300-Polar (\%) & - & - & - & -\\
-		\hline Radar-300-Polar (\%) & - & - & - & -\\
+		\hline Radar-300-Cart (\%) & 52.76* & 79.09 & NaN & 96.63\\
+		\hline Radar-150-Polar (\%) & - & - & - & -\\
+		\hline Radar-300-Polar (\%) & - & 89.36 & - & 92.87\\
 		
 	\end{tabular}
 \end{center}
 
+* 300-cart-zrelu missclassifiying two classes(2,3). no convergence
+
 \subsection{Training acc curves}
 \subsection{Test loss cruves}
 \section{Discussion}
-We didn't experience convergence difficulties.
+We DID experience convergence difficulties.
 Generalization what?
 Perform at par
 
+CONVERGENCE PROBLEMS! 
 

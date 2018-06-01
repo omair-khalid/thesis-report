@@ -4,7 +4,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Test accuracy (\%) of activation functions in $\mathbb {C}$-CNNs (z$ReLU(z)$, $\mathbb {C}$ReLU(z)), $tanh(z)$), $\mathbb {R}$-CNNs (ReLU) on MNIST+P dataset\relax }}{31}{table.6.1}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Test accuracy (\%) of activation functions in $\mathbb {C}$-CNNs (z$ReLU(z)$, $\mathbb {C}$ReLU(z)), $tanh(z)$) and $\mathbb {R}$-CNNs (ReLU) on Cartesian and Polar representation of Radar-150 and Radar-300 datasets\relax }}{31}{table.6.2}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Test accuracy (\%) of activation functions in $\mathbb {C}$-CNNs ($z$ReLU(z), $\mathbb {C}$ReLU(z)), $tanh(z)$), $\mathbb {R}$-CNNs (ReLU) on MNIST+P dataset\relax }}{33}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Test accuracy (\%) of activation functions in $\mathbb {C}$-CNNs ($z$ReLU(z), $\mathbb {C}$ReLU(z)), $tanh(z)$) and $\mathbb {R}$-CNNs (ReLU) on Cartesian and Polar representation of Radar-150 and Radar-300 datasets\relax }}{33}{table.6.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

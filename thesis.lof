@@ -10,6 +10,7 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces A schematic sketch of the convolution operation. An unit in the output is the sum of point-wise multiplication of the kernel and input patch \cite {bloggg}\relax }}{17}{figure.caption.19}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces A schematic sketch of the complex-convolution operation. M and K represent the feature map and kernel, respectively. \cite {trabelsi2018deep}\relax }}{18}{figure.caption.21}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Architecture of the first residual block in stage 1 (left), and that in stages 2 and 3 (right); General architecture of both $\mathbb {R}$-CNN and $\mathbb {C}$-CNN (bottom)\relax }}{31}{figure.caption.43}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
