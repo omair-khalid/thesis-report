@@ -24,13 +24,19 @@
 \BOOKMARK [2][-]{subsection.4.2.6}{Loss function}{section.4.2}% 24
 \BOOKMARK [2][-]{subsection.4.2.7}{Optimization through backpropagation}{section.4.2}% 25
 \BOOKMARK [0][-]{chapter.5}{Methodology}{}% 26
-\BOOKMARK [1][-]{section.5.1}{Implementation of complex numbers}{chapter.5}% 27
-\BOOKMARK [2][-]{subsection.5.1.1}{MNIST+P Dataset}{section.5.1}% 28
-\BOOKMARK [2][-]{subsection.5.1.2}{Radar Dataset}{section.5.1}% 29
-\BOOKMARK [2][-]{subsection.5.1.3}{Data Analysis}{section.5.1}% 30
-\BOOKMARK [2][-]{subsection.5.1.4}{Architecture \205 R-CNNs \046 C-CNNs}{section.5.1}% 31
-\BOOKMARK [0][-]{chapter.6}{Experimental Results}{}% 32
-\BOOKMARK [1][-]{section.6.1}{Results}{chapter.6}% 33
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 34
-\BOOKMARK [0][-]{appendix.A}{The first appendix}{}% 35
-\BOOKMARK [0][-]{appendix*.38}{}{}% 36
+\BOOKMARK [1][-]{section.5.1}{Practical implementation of complex numbers}{chapter.5}% 27
+\BOOKMARK [2][-]{subsection.5.1.1}{Architecture \205 R-CNNs \046 C-CNNs}{section.5.1}% 28
+\BOOKMARK [0][-]{chapter.6}{Experimental Results}{}% 29
+\BOOKMARK [1][-]{section.6.1}{Datasets}{chapter.6}% 30
+\BOOKMARK [2][-]{subsection.6.1.1}{MNIST+P Dataset}{section.6.1}% 31
+\BOOKMARK [2][-]{subsection.6.1.2}{Radar datasets}{section.6.1}% 32
+\BOOKMARK [2][-]{subsection.6.1.3}{Radar-150 datasets}{section.6.1}% 33
+\BOOKMARK [2][-]{subsection.6.1.4}{Radar-300 datasets}{section.6.1}% 34
+\BOOKMARK [2][-]{subsection.6.1.5}{Data Analysis}{section.6.1}% 35
+\BOOKMARK [1][-]{section.6.2}{Results}{chapter.6}% 36
+\BOOKMARK [2][-]{subsection.6.2.1}{Training acc curves}{section.6.2}% 37
+\BOOKMARK [2][-]{subsection.6.2.2}{Test loss cruves}{section.6.2}% 38
+\BOOKMARK [1][-]{section.6.3}{Discussion}{chapter.6}% 39
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 40
+\BOOKMARK [0][-]{appendix.A}{The first appendix}{}% 41
+\BOOKMARK [0][-]{appendix*.45}{}{}% 42

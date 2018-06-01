@@ -1,41 +1,27 @@
 \chapter{Methodology} \label{chap:methodology}
  
- WHY BRO WHY DID YOU CHOOSE AVERAGE POOLING?
- AHAAA!  We don't wanna have to deal with a activation function whose values are only positive!
+This section details the methodology adopted to investigate the applicability of $\mathbb{C}$-CNNs to complex-natured data. In order to do so, we aim to answer the following question:\\
+ 
+ \textit{Can $\mathbb{C}$-$\mathrm{CNNs}$ outperform $\mathbb{R}$-$\mathrm{CNNs}$ in a classification problem, given that phase of the complex-natured input data contains, as well, discriminatory information?}\\
+ 
+ We employ two datasets: synthetically created toy data set, which we call MNIST-P (Section \ref{data-mnistp}), and real-world Radar dataset (Section \ref{data-radar}), to feed into comparable $\mathbb{R}$-CNN and $\mathbb{C}$-CNN networks in a bid to experimentally determine the winner in the classification problem. The architecture of $\mathbb{R}$-CNN and $\mathbb{C}$-CNN employed in this task is discussed in the following section.
+ 
+
+ 
+ 
+ 
  
  briefly mention the challenges of building a complex valued neural networks. 
  
  
-   In our case, a triangular chirp is being produced at frequency of 150 GHz, with a bandwidth of 6 GHz
+
    
- \section{Implementation of complex numbers}
+ \section{Practical implementation of complex numbers}
  Consider a complex number $z=a+ib$ with the real component $a$ and the imaginary component $b$. In $\mathbb{R}$-CNNs, the filter bank or the feature maps of a layer exist in 3 dimensions, where two of them denote the size of the filter or feature map in 2D, and the third dimension indicates how many there are. If we have $N$ feature maps (where $N$ is divisible by 2), the first $N/2$ feature maps would be dedicated to the real components ($a$) and the last $N/2$ feature maps would be dedicated to the imaginary components ($b$). In this manner, the imaginary feature map corresponding to the real feature map on index one of the 3rd dimension would like on the $\frac{N}{2} +1$ position.
  
  IMAGE REQUIRED
  
- \subsection{MNIST+P Dataset}
- The MNIST database of handwritten digits (10 classes) has a training set of 60,000 examples, and a test set of 10,000 examples, where wach image is of dimensions 28x28. 
  
- 
- It is commonly used benchmark for supervised learning algorithm performance. In the MNIST+P dataset created for our experimentation, we consider that an image of MNIST dataset represents the magnitude of a complex number. The magnitude in each image is scaled such that the black part of the image is 50, and the white part is 200. The phase for each image class is picked from uniform distribution whose range is determined class-wise: The range for class 1 representing the digit 0 is [0,$\pi$/10], that for class 2 representing the digit 1 is [$\pi$/10,2$\pi$/10],...., that for class 10 representing digit 9 is [9$\pi$/10,$\pi$]. 
- 
- 
- \subsubsection{Preprocessing of MNIST+P Dataset}
- Now that we know the magnitude and phase information for each image, we convert them to the cartesian form having a real channel and an imaginary channel. Now, the shape of each image becomes 28x28x2.
- 
-     
- \subsection{Radar Dataset}
- The magnitude and phase maps are first reshaped to a same size: 32x32. 
- 
- 
- 
- 
- \subsubsection{Preprocessing of Radar Dataset}
- We convert the Polar form information (magnitude and phase) to Cartesian form having a real channel and an imaginary channel. Now, the shape of each image becomes 32x32x2.
- 
- 
- 
- \subsection{Data Analysis}
  
  
  \subsection{Architecture -- $\mathbb{R}$-CNNs \& $\mathbb{C}$-CNNs}
@@ -43,12 +29,14 @@
  
  Discuss design choices again as well.
  
+  WHY BRO WHY DID YOU CHOOSE AVERAGE POOLING?
+ AHAAA!  We don't wanna have to deal with a activation function whose values are only positive!
  
  
  
  
  
- 
+ We hypothesize that since, $\mathbb{C}$-CNNs will be able to perform better than $\mathbb{R}$-CNNs, given the compelling reasons described in Section \ref{sect:moti}.
  
  
  
