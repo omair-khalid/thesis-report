@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.5.29)  2 JUN 2018 09:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.5.29)  3 JUN 2018 00:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -24,31 +24,58 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2017/03/19 v3.3-145 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2018/04/15 v1.7-167 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\captionmargin=\dimen103
+\captionmargin@=\dimen104
+\captionwidth=\dimen105
+\caption@tempdima=\dimen106
+\caption@indent=\dimen107
+\caption@parindent=\dimen108
+\caption@hangindent=\dimen109
+)
+\c@ContinuedFloat=\count89
+)
+\c@subfigure=\count90
+\c@subtable=\count91
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/04/06 v1.3b Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
-\col@sep=\dimen103
+\col@sep=\dimen110
 \ar@mcellbox=\box26
-\extrarowheight=\dimen104
-\NC@list=\toks16
+\extrarowheight=\dimen111
+\NC@list=\toks17
 \extratabsurround=\skip43
 \backup@length=\skip44
 \ar@cellbox=\box27
 )
-\TX@col@width=\dimen105
-\TX@old@table=\dimen106
-\TX@old@col=\dimen107
-\TX@target=\dimen108
-\TX@delta=\dimen109
-\TX@cols=\count89
-\TX@ftn=\toks17
+\TX@col@width=\dimen112
+\TX@old@table=\dimen113
+\TX@old@col=\dimen114
+\TX@target=\dimen115
+\TX@delta=\dimen116
+\TX@cols=\count92
+\TX@ftn=\toks18
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
@@ -73,44 +100,23 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen110
-\lightrulewidth=\dimen111
-\cmidrulewidth=\dimen112
-\belowrulesep=\dimen113
-\belowbottomsep=\dimen114
-\aboverulesep=\dimen115
-\abovetopsep=\dimen116
-\cmidrulesep=\dimen117
-\cmidrulekern=\dimen118
-\defaultaddspace=\dimen119
-\@cmidla=\count90
-\@cmidlb=\count91
-\@aboverulesep=\dimen120
-\@belowrulesep=\dimen121
-\@thisruleclass=\count92
-\@lastruleclass=\count93
-\@thisrulewidth=\dimen122
-)
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2017/03/19 v3.3-145 Customizing captions (AR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2018/04/15 v1.7-167 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 64.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks18
-)
-\captionmargin=\dimen123
-\captionmargin@=\dimen124
-\captionwidth=\dimen125
-\caption@tempdima=\dimen126
-\caption@indent=\dimen127
-\caption@parindent=\dimen128
-\caption@hangindent=\dimen129
-)
-\c@ContinuedFloat=\count94
+\heavyrulewidth=\dimen117
+\lightrulewidth=\dimen118
+\cmidrulewidth=\dimen119
+\belowrulesep=\dimen120
+\belowbottomsep=\dimen121
+\aboverulesep=\dimen122
+\abovetopsep=\dimen123
+\cmidrulesep=\dimen124
+\cmidrulekern=\dimen125
+\defaultaddspace=\dimen126
+\@cmidla=\count93
+\@cmidlb=\count94
+\@aboverulesep=\dimen127
+\@belowrulesep=\dimen128
+\@thisruleclass=\count95
+\@lastruleclass=\count96
+\@thisrulewidth=\dimen129
 )
 (/usr/share/texlive/texmf-dist/tex/generic/epsf/epsf.sty
 This is `epsf.tex' v2.7.4 <14 February 2011>
@@ -257,13 +263,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count95
+\inf@bad=\count97
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count96
-\leftroot@=\count97
+\uproot@=\count98
+\leftroot@=\count99
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count98
-\DOTSCASE@=\count99
+\classnum@=\count100
+\DOTSCASE@=\count101
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -272,15 +278,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen148
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count100
-\c@MaxMatrixCols=\count101
+\macc@depth=\count102
+\c@MaxMatrixCols=\count103
 \dotsspace@=\muskip10
-\c@parentequation=\count102
-\dspbrk@lvl=\count103
+\c@parentequation=\count104
+\dspbrk@lvl=\count105
 \tag@help=\toks21
-\row@=\count104
-\column@=\count105
-\maxfields@=\count106
+\row@=\count106
+\column@=\count107
+\maxfields@=\count108
 \andhelp@=\toks22
 \eqnshift@=\dimen149
 \alignsep@=\dimen150
@@ -341,15 +347,15 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen156
-\Hy@linkcounter=\count107
-\Hy@pagecounter=\count108
+\Hy@linkcounter=\count109
+\Hy@pagecounter=\count110
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count109
+\Hy@SavedSpaceFactor=\count111
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -361,7 +367,7 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count110
+\c@Hy@tempcnt=\count112
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
@@ -369,7 +375,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen157
-\Fld@menulength=\count111
+\Fld@menulength=\count113
 \Field@Width=\dimen158
 \Fld@charsize=\dimen159
 Package hyperref Info: Hyper figures OFF on input line 6369.
@@ -381,16 +387,16 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count112
-\c@Item=\count113
-\c@Hfootnote=\count114
+\Hy@abspage=\count114
+\c@Item=\count115
+\c@Hfootnote=\count116
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count115
-\c@bookmark@seq@number=\count116
+\Fld@listcount=\count117
+\c@bookmark@seq@number=\count118
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -432,24 +438,24 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
- ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 39.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count117
+\scratchcounter=\count119
 \scratchdimen=\dimen160
 \scratchbox=\box30
-\nofMPsegments=\count118
-\nofMParguments=\count119
+\nofMPsegments=\count120
+\nofMParguments=\count121
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count120
+\MPscratchCnt=\count122
 \MPscratchDim=\dimen161
-\MPnumerator=\count121
-\makeMPintoPDFobject=\count122
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
 \everyMPtoPDFconversion=\toks26
 )
 \AtBeginShipoutBox=\box31
@@ -469,7 +475,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count123
+\c@section@level=\count125
 )
 LaTeX Info: Redefining \ref on input line 39.
 LaTeX Info: Redefining \pageref on input line 39.
@@ -680,68 +686,84 @@ Underfull \vbox (badness 1584) has occurred while \output is active []
  [19]
 Missing character: There is no e in font msbm10!
 
-[20] [21]
+[20]
+File: ./figures/cConvOperation.png Graphic file (type png)
+<use ./figures/cConvOperation.png>
+Package pdftex.def Info: ./figures/cConvOperation.png  used on input line 188.
+(pdftex.def)             Requested size: 142.26378pt x 173.14136pt.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.191  \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[21]
+
+LaTeX Warning: Reference `tanhz' on page 22 undefined on input line 243.
+
+
+Underfull \vbox (badness 2126) has occurred while \output is active []
+
 Missing character: There is no e in font msbm10!
- [22] [23]
+ [22]
+[23]
 Missing character: There is no e in font msbm10!
  [24] [25]
-Underfull \vbox (badness 7186) has occurred while \output is active []
-
 Missing character: There is no e in font msbm10!
- [26])
-(./methodology.tex [27]
+ [26]) (./methodology.tex [27]
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 9.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
- [28
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+
+
+LaTeX Warning: Reference `data-radar' on page 28 undefined on input line 19.
+
+[28
 
 ]
-<./figures/MnistExamples.png, id=656, 596.2275pt x 362.35374pt>
+<./figures/MnistExamples.png, id=652, 596.2275pt x 362.35374pt>
 File: ./figures/MnistExamples.png Graphic file (type png)
 <use ./figures/MnistExamples.png>
-Package pdftex.def Info: ./figures/MnistExamples.png  used on input line 29.
+Package pdftex.def Info: ./figures/MnistExamples.png  used on input line 33.
 (pdftex.def)             Requested size: 199.16928pt x 121.0423pt.
 
 
-Package caption Warning: \label without proper reference on input line 68.
-See the caption package documentation for explanation.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 39.
 
 
-LaTeX Warning: Reference `table:datadist' on page 29 undefined on input line 36
-.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 39.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 39.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 39.
 
 [29 <./figures/MnistExamples.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 76.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 76.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 76.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 76.
-
-[30]
 Package epstopdf Info: Source file: <./figures/1.eps>
 (epstopdf)                    date: 2018-06-01 07:13:16
 (epstopdf)                    size: 2056501 bytes
@@ -750,13 +772,13 @@ Package epstopdf Info: Source file: <./figures/1.eps>
 (epstopdf)                    size: 32640 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figures/1-eps-converted-
 to.pdf ./figures/1.eps>
-(epstopdf)             \includegraphics on input line 103.
+(epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/1-eps-converted-to.pdf, id=682, 462.72874pt x 734.745pt>
+<./figures/1-eps-converted-to.pdf, id=667, 462.72874pt x 734.745pt>
 File: ./figures/1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/1-eps-converted-to.pdf>
-Package pdftex.def Info: ./figures/1-eps-converted-to.pdf  used on input line 1
-03.
+Package pdftex.def Info: ./figures/1-eps-converted-to.pdf  used on input line 4
+8.
 (pdftex.def)             Requested size: 142.26378pt x 225.8963pt.
 Package epstopdf Info: Source file: <./figures/23.eps>
 (epstopdf)                    date: 2018-06-01 07:13:33
@@ -766,13 +788,13 @@ Package epstopdf Info: Source file: <./figures/23.eps>
 (epstopdf)                    size: 42061 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figures/23-eps-converted
 -to.pdf ./figures/23.eps>
-(epstopdf)             \includegraphics on input line 105.
+(epstopdf)             \includegraphics on input line 50.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/23-eps-converted-to.pdf, id=683, 593.21625pt x 734.745pt>
+<./figures/23-eps-converted-to.pdf, id=668, 593.21625pt x 734.745pt>
 File: ./figures/23-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/23-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/23-eps-converted-to.pdf  used on input line 
-105.
+50.
 (pdftex.def)             Requested size: 192.05609pt x 237.88118pt.
 Package epstopdf Info: Source file: <./figures/ARCH.eps>
 (epstopdf)                    date: 2018-06-01 07:29:58
@@ -782,39 +804,37 @@ Package epstopdf Info: Source file: <./figures/ARCH.eps>
 (epstopdf)                    size: 20000 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figures/ARCH-eps-convert
 ed-to.pdf ./figures/ARCH.eps>
-(epstopdf)             \includegraphics on input line 107.
+(epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/ARCH-eps-converted-to.pdf, id=684, 332.24126pt x 534.99875pt>
+<./figures/ARCH-eps-converted-to.pdf, id=669, 332.24126pt x 534.99875pt>
 File: ./figures/ARCH-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/ARCH-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/ARCH-eps-converted-to.pdf  used on input lin
-e 107.
+e 52.
 (pdftex.def)             Requested size: 142.26378pt x 229.0817pt.
-) (./experiments.tex [31] [32 <./figures/1-eps-converted-to.pdf> <./figures/23-
+) (./experiments.tex [30] [31 <./figures/1-eps-converted-to.pdf> <./figures/23-
 eps-converted-to.pdf> <./figures/ARCH-eps-converted-to.pdf>]
 Chapter 6.
 
-Package array Warning: Column ? is already defined on input line 3.
-
-
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 22.
+(caption)                particular \caption on input line 20.
 See the caption package documentation for explanation.
 
+[32
+
+]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 36.
+(caption)                particular \caption on input line 34.
 See the caption package documentation for explanation.
 
-[33
-
-]) (./conclusion.tex [34]
+) (./conclusion.tex [33]
 Chapter 7.
-) (./appendix.tex [35
+) (./appendix.tex [34
 
 ]
 Appendix A.
-) (./thesis.bbl [36
+) (./thesis.bbl [35
 
 ]
 Overfull \hbox (63.65828pt too wide) in paragraph at lines 7--9
@@ -828,17 +848,17 @@ Underfull \hbox (badness 1681) in paragraph at lines 59--62
 ral net-works.  \OT1/cmr/m/it/10 CoRR\OT1/cmr/m/n/10 ,
  []
 
-[37
+[36
 
-] [38])
+] [37])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
- [39]
+ [38]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
  (./thesis.aux (./header.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: FA36224A772637DF2EA18C4EED2E9BFE;2870.
+(rerunfilecheck)             Checksum: DAF7637C7D43805F09A4B2995676E3DA;2881.
 
 
 LaTeX Warning: There were undefined references.
@@ -849,13 +869,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
  ) 
 Here is how much of TeX's memory you used:
- 8110 strings out of 494471
- 121360 string characters out of 6175119
- 207715 words of memory out of 5000000
- 11331 multiletter control sequences out of 15000+600000
+ 8151 strings out of 494471
+ 122118 string characters out of 6175119
+ 208911 words of memory out of 5000000
+ 11380 multiletter control sequences out of 15000+600000
  19761 words of font info for 82 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 42i,14n,40p,1906b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,40p,1906b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -872,10 +892,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (47 pages, 1135746 bytes).
+Output written on thesis.pdf (46 pages, 1133692 bytes).
 PDF statistics:
- 846 PDF objects out of 1000 (max. 8388607)
- 744 compressed objects within 8 object streams
- 221 named destinations out of 1000 (max. 500000)
+ 821 PDF objects out of 1000 (max. 8388607)
+ 720 compressed objects within 8 object streams
+ 211 named destinations out of 1000 (max. 500000)
  394 words of extra memory for PDF output out of 10000 (max. 10000000)
 

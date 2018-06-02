@@ -21,21 +21,21 @@
 \BOOKMARK [2][-]{subsection.4.2.3}{Activation function}{section.4.2}% 21
 \BOOKMARK [2][-]{subsection.4.2.4}{Weight initialization}{section.4.2}% 22
 \BOOKMARK [2][-]{subsection.4.2.5}{Pooling layer}{section.4.2}% 23
-\BOOKMARK [2][-]{subsection.4.2.6}{Loss function}{section.4.2}% 24
-\BOOKMARK [2][-]{subsection.4.2.7}{Optimization through backpropagation}{section.4.2}% 25
-\BOOKMARK [0][-]{chapter.5}{Methodology}{}% 26
-\BOOKMARK [1][-]{section.5.1}{Datasets}{chapter.5}% 27
-\BOOKMARK [2][-]{subsection.5.1.1}{MNIST+P Dataset}{section.5.1}% 28
-\BOOKMARK [2][-]{subsection.5.1.2}{Radar datasets}{section.5.1}% 29
-\BOOKMARK [1][-]{section.5.2}{Architecture \205 R-CNNs \046 C-CNNs}{chapter.5}% 30
-\BOOKMARK [0][-]{chapter.6}{Experimentation}{}% 31
-\BOOKMARK [1][-]{section.6.1}{Practical implementation of complex numbers}{chapter.6}% 32
-\BOOKMARK [2][-]{subsection.6.1.1}{Data Analysis}{section.6.1}% 33
-\BOOKMARK [1][-]{section.6.2}{Results}{chapter.6}% 34
+\BOOKMARK [2][-]{subsection.4.2.6}{Fully-connected Layer}{section.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.2.7}{Loss function}{section.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.2.8}{Optimization through backpropagation}{section.4.2}% 26
+\BOOKMARK [0][-]{chapter.5}{Methodology}{}% 27
+\BOOKMARK [1][-]{section.5.1}{Approach}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.2}{Datasets}{chapter.5}% 29
+\BOOKMARK [2][-]{subsection.5.2.1}{MNIST+P Dataset}{section.5.2}% 30
+\BOOKMARK [1][-]{section.5.3}{Architecture \205 R-CNNs \046 C-CNNs}{chapter.5}% 31
+\BOOKMARK [0][-]{chapter.6}{Experimentation}{}% 32
+\BOOKMARK [1][-]{section.6.1}{Practical implementation of complex numbers}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.2}{Experimentation details}{chapter.6}% 34
 \BOOKMARK [1][-]{section.6.3}{Discussion}{chapter.6}% 35
 \BOOKMARK [2][-]{subsection.6.3.1}{Generalizibility testing experiment}{section.6.3}% 36
 \BOOKMARK [2][-]{subsection.6.3.2}{effect of complex weight initialization without batch normalization}{section.6.3}% 37
 \BOOKMARK [2][-]{subsection.6.3.3}{Other architecture}{section.6.3}% 38
 \BOOKMARK [0][-]{chapter.7}{Conclusion \046 Future Work}{}% 39
 \BOOKMARK [0][-]{appendix.A}{The first appendix}{}% 40
-\BOOKMARK [0][-]{appendix*.47}{}{}% 41
+\BOOKMARK [0][-]{appendix*.45}{}{}% 41

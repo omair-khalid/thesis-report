@@ -33,41 +33,39 @@
 \contentsline {subsection}{\numberline {4.2.3}Activation function}{20}{subsection.4.2.3}
 \contentsline {subsubsection}{Real-Valued Activation Functions}{21}{section*.24}
 \contentsline {subsubsection}{ReLU}{21}{section*.25}
-\contentsline {subsubsection}{Soft-max}{21}{section*.26}
 \contentsline {subsubsection}{Complex-Valued Activation Functions}{21}{section*.27}
-\contentsline {subsubsection}{modReLU}{22}{section*.28}
-\contentsline {subsubsection}{$\mathbb {C}$ReLU}{22}{section*.29}
-\contentsline {subsubsection}{$z$ReLU}{22}{section*.30}
-\contentsline {subsection}{\numberline {4.2.4}Weight initialization}{22}{subsection.4.2.4}
-\contentsline {subsubsection}{Real-valued weight initialization}{22}{section*.31}
+\contentsline {subsubsection}{$\mathbb {C}$ReLU}{22}{section*.28}
+\contentsline {subsubsection}{$z$ReLU}{22}{section*.29}
+\contentsline {subsubsection}{tanh($z$)}{23}{section*.30}
+\contentsline {subsection}{\numberline {4.2.4}Weight initialization}{23}{subsection.4.2.4}
+\contentsline {subsubsection}{Real-valued weight initialization}{23}{section*.31}
 \contentsline {paragraph}{Glorot and Bengio (2010) criterion}{23}{section*.32}
 \contentsline {paragraph}{He $et \ al.$ (2015b) criterion}{23}{section*.33}
-\contentsline {subsubsection}{Complex-valued weight initialization}{23}{section*.34}
-\contentsline {subsection}{\numberline {4.2.5}Pooling layer}{24}{subsection.4.2.5}
-\contentsline {subsubsection}{Pooling in $\mathbb {R}$-CNNs}{24}{section*.35}
-\contentsline {paragraph}{Max pooling}{24}{section*.36}
+\contentsline {subsubsection}{Complex-valued weight initialization}{24}{section*.34}
+\contentsline {subsection}{\numberline {4.2.5}Pooling layer}{25}{subsection.4.2.5}
+\contentsline {subsubsection}{Pooling in $\mathbb {R}$-CNNs}{25}{section*.35}
+\contentsline {paragraph}{Max pooling}{25}{section*.36}
 \contentsline {paragraph}{Average pooling}{25}{section*.37}
 \contentsline {subsubsection}{Pooling in $\mathbb {C}$-CNNs}{25}{section*.38}
 \contentsline {paragraph}{Max-by-mag pooling}{25}{section*.39}
-\contentsline {paragraph}{Average pooling}{25}{section*.40}
-\contentsline {subsection}{\numberline {4.2.6}Loss function}{25}{subsection.4.2.6}
+\contentsline {paragraph}{Average pooling}{26}{section*.40}
+\contentsline {subsection}{\numberline {4.2.6}Fully-connected Layer}{26}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Loss function}{26}{subsection.4.2.7}
 \contentsline {subsubsection}{Loss functions in $\mathbb {R}$-CNNs}{26}{section*.41}
-\contentsline {subsubsection}{Loss functions in $\mathbb {C}$-CNNs}{26}{section*.42}
-\contentsline {subsection}{\numberline {4.2.7}Optimization through backpropagation}{27}{subsection.4.2.7}
+\contentsline {subsubsection}{Loss functions in $\mathbb {C}$-CNNs}{27}{section*.42}
+\contentsline {subsection}{\numberline {4.2.8}Optimization through backpropagation}{27}{subsection.4.2.8}
 \contentsline {chapter}{\numberline {5}Methodology}{28}{chapter.5}
-\contentsline {section}{\numberline {5.1}Datasets}{29}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}MNIST+P Dataset}{29}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Radar datasets}{29}{subsection.5.1.2}
-\contentsline {subsubsection}{Preprocessing of Radar Dataset}{30}{section*.45}
-\contentsline {section}{\numberline {5.2}Architecture -- $\mathbb {R}$-CNNs \& $\mathbb {C}$-CNNs}{30}{section.5.2}
-\contentsline {chapter}{\numberline {6}Experimentation}{33}{chapter.6}
-\contentsline {section}{\numberline {6.1}Practical implementation of complex numbers}{33}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Data Analysis}{33}{subsection.6.1.1}
-\contentsline {section}{\numberline {6.2}Results}{33}{section.6.2}
-\contentsline {section}{\numberline {6.3}Discussion}{34}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Generalizibility testing experiment}{34}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}effect of complex weight initialization without batch normalization}{34}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Other architecture}{34}{subsection.6.3.3}
-\contentsline {chapter}{\numberline {7}Conclusion \& Future Work}{35}{chapter.7}
-\contentsline {chapter}{\numberline {A}The first appendix}{36}{appendix.A}
-\contentsline {chapter}{\numberline {Bibliography\hspace {-96pt}}}{39}{appendix*.47}
+\contentsline {section}{\numberline {5.1}Approach}{28}{section.5.1}
+\contentsline {section}{\numberline {5.2}Datasets}{29}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}MNIST+P Dataset}{29}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Architecture -- $\mathbb {R}$-CNNs \& $\mathbb {C}$-CNNs}{29}{section.5.3}
+\contentsline {chapter}{\numberline {6}Experimentation}{32}{chapter.6}
+\contentsline {section}{\numberline {6.1}Practical implementation of complex numbers}{32}{section.6.1}
+\contentsline {section}{\numberline {6.2}Experimentation details}{32}{section.6.2}
+\contentsline {section}{\numberline {6.3}Discussion}{33}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Generalizibility testing experiment}{33}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}effect of complex weight initialization without batch normalization}{33}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Other architecture}{33}{subsection.6.3.3}
+\contentsline {chapter}{\numberline {7}Conclusion \& Future Work}{34}{chapter.7}
+\contentsline {chapter}{\numberline {A}The first appendix}{35}{appendix.A}
+\contentsline {chapter}{\numberline {Bibliography\hspace {-96pt}}}{38}{appendix*.45}

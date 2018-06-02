@@ -11,11 +11,9 @@ IMAGE REQUIRED
 
 How to write about polar and cartesian form?
 
-
-\subsection{Data Analysis}
-
-
-\section{Results}
+\section{Experimentation details}
+%For fair comparison of $\mathbb{R}$-CNNs and $\mathbb{C}$-CNNs, we setup conditions as follows.
+For experimentation with MNIST+P dataset, we trained using Stochastic Gradient Descent for 64 batch size, 50 epochs, batch 64, and with learning rate 0.001. For the radar datasets, these hyperparameters were the same except for epochs which were 200. The number of starting filters in each stage are 12, 24, and 48, respectively. 
 
 %\begin{table}
 \begin{center}
@@ -39,7 +37,7 @@ Peculiar problem with class with digit 1
 		- &$z$ReLU(z) & $\mathbb{C}$ReLU(z) & tanh($z$) & ReLU\\
 		%\hline Radar-150-Cart (\%) & - & - & - & -\\
 		\hline Radar-300-Cart (\%) & 52.76* & 79.09 & NaN & 96.63\\
-		\hline Radar-150-Polar (\%) & - &  90.18& NaN & 97.54 \\
+		\hline Radar-150-Polar (\%) & 70.55 &  90.18& NaN & 97.54 \\
 		\hline Radar-300-Polar (\%) & - & 89.36 & - & 92.87\\
 		
 	\end{tabular}
@@ -58,5 +56,10 @@ CReLU vs ReLU: inly dufference is th convolution - did it owrk? not really...
 \subsection{effect of complex weight initialization without batch normalization} 
 \subsection{Other architecture}
 CReLU and ReLU at least
+
+data augmentation problem class problem. 
+
+
+
  
 

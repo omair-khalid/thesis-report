@@ -169,7 +169,7 @@ y_{k} = \mathrm{BN}_{\gamma,\beta}(x_{k}) = \gamma\hat{x}_{k} + \beta
 Popularized by \cite{krizhevsky2012imagenet}, Rectified Linear Units (ReLU) \cite{nair2010rectified} remains the most commonly used activation function in deep learning/CNN architectures for the community. ReLU is given by:
 
 \begin{equation}
-f(x) =  
+\mathrm{ReLU}(x) =  
 \begin{cases} 
 x , &\textrm{for} \ x\ge 0\\
 0 , &\textrm{for} \ x < 0
@@ -179,9 +179,18 @@ x , &\textrm{for} \ x\ge 0\\
 %benefits of ReLU
 %other 
  
- Other variants of ReLU include Leaky ReLU (LReLU), Parametric ReLU (PReLU), Randomized ReLU (RReLU), and Exponential Linear Unit (ELU), as shown in figure blaa blaa. 
+ Other variants of ReLU include Leaky ReLU (LReLU), Parametric ReLU (PReLU), Randomized ReLU (RReLU), and Exponential Linear Unit (ELU), as shown in Figure \ref{ractfn}. 
   
- \subsubsection{Soft-max}
+ 
+  \begin{figure}[htb]
+ 	\centering
+ 	\epsfxsize=5cm
+ 	{\epsfbox{cConvOperation}}
+ 	\caption{Real valued activation functions}}
+ 	\label{ractfn}
+ \end{figure}
+  
+  
   
  \subsubsection{Complex-Valued Activation Functions}\label{cvaf}
  
@@ -191,8 +200,10 @@ x , &\textrm{for} \ x\ge 0\\
  
  %cooridnate dependency????
      
- Complex-valued activation functions can be divided into two types: Real-Imaginary type , the Amplitude-Phase type, and Transcendental type \cite{}.
- The first type of activation functions deals with real and imaginary parts separately and independently, but identically. Hence, they can be thought to work similar to real-valued networks with double the number of dimensions.  The latter type applies the nonlinearity on only the magnitude of the complex number, leaving the phase information unchanged \cite{page45hirose2012complex} . 
+ Complex-valued activation functions can be divided into two types: Split-complex type and Transcendental type.
+ Split-complex type functions deals with real and imaginary parts (Real-Imaginary subtype) or magnitude and phase (Magnitude-phase subtype) independently but identically. Hence, they can be thought to work similar to real-valued networks with double the number of dimensions. The Split-complex activation functions are said to be appropriate when we can assume that our data contains cartesian symmetry when using Real-imaginary type, rotational symmtery when using Magnitude-phase type. Split-complex functions are Holomorphic but unbounded.
+ 
+ Transcendental type is the one which are bounded almost everywhere, with well-defined first order derivatives. They do have singularities but it is suggested by Kima and Adali (2003) \cite{kim2003approximation} that with proper weight initialization and regularization schemes, this type of activation functions will not hamper the process of backpropagation.
  
  %suitability of the two types functions???
  
@@ -200,14 +211,8 @@ x , &\textrm{for} \ x\ge 0\\
  %" Instead, we construct the dynamics of learning and self-organization on the basis of meaningful partial derivatives in complex domain with deliberation on the properties of  input and output information "
  
 
- \subsubsection{modReLU}
-Arjovsky $et \ al.$ (2015) \cite{ArjovskySB15} proposed modReLU, an Amplitude-Phase type complex activation function, as a possible activation function for complex valued networks. It is formulated as:
- \begin{equation}
-\mathrm{modReLU}(z) = \mathrm{ReLU}(|z| + b)e^{i\theta_{z}}
-{}=\begin{cases} (|z| + b)\frac{z}{|z|} , &\mathrm{for} \ |z| + b\ge 0 \\ 0 , &\textrm{otherwise} \end{cases}
-\end{equation}
 
-where $b$ is a learnable parameter which dictates the offset for the deadzone around the origin $0$. modReLU is an element-wise nonlinearity, where the element is muted(assigned a value of zero in both real and imaginary channels) if it lies in the dead-zone, or passed if it is beyond. Chiheb $et \ al.$ \cite{trabelsi2018deep} also make use of this non-linearity in their analysis of $\mathbb{R}$-CNNs and $\mathbb{C}$-CNNs.
+%where $b$ is a learnable parameter which dictates the offset for the deadzone around the origin $0$. modReLU is an element-wise nonlinearity, where the element is muted(assigned a value of zero in both real and imaginary channels) if it lies in the dead-zone, or passed if it is beyond. Chiheb $et \ al.$ \cite{trabelsi2018deep} also make use of this non-linearity in their analysis of $\mathbb{R}$-CNNs and $\mathbb{C}$-CNNs.
 
 
 \subsubsection{$\mathbb{C}$ReLU}
@@ -229,6 +234,19 @@ $\mathbb{C}$ReLU is Real-Imaginary type activation function introduced by Chiheb
  \end{equation}
 
 %SPLIT COMPLEX SOFTMAX????
+
+
+
+\subsubsection{tanh($z$)}
+A Transcendental type, tanh($z$) is a complex- hyperbolic tangent function suggested by Kim and Adali 2003 \cite{kim2003approximation}.
+This function gives us a periodic singularity at every
+$(1/2 + n)\pi i$, $n \in \mathbb{N}$, as shown in Fig. \ref{tanhz}. However, even in the presence of singularities, this activation function can be used to train the network with some success, although the possibility of hitting the singularity remains.
+
+\begin{equation}
+\mathrm{tanh}(z) = \mathrm{tanh}(x+iy) = 
+{}=\begin{cases} \Re(\mathrm{tanh}(z)) = \frac{\mathrm{sinh}(2x)}{\mathrm{cosh}(2x)+\mathrm{cosh}(2y)} \\ \Im(\mathrm{tanh}(z)) = \frac{sinh(2x)}{\mathrm{cosh}(2x)+\mathrm{cosh}(2y)} \end{cases}
+\end{equation}
+
 
  \subsection{Weight initialization}
  Weight initialization can help in speeding up the convergence of the gradient descent algorithm, and combats the problem of vanishing and exploding gradients, especially in the absence of BN. 
@@ -351,7 +369,7 @@ Averaging operator is trivially generalized to the complex domain. As th
  
  where $z$ is a complex number, and $i,j$ are the indices of the patch.
  
- 
+ \subsection{Fully-connected Layer}
  
  \subsection{Loss function}
  Loss functions take on two roles in a convolutional neural network - regularization, and provide a measure of comparison between the prediction and the ground truth label. Regularization refers to the idea that the loss function can help enforce a specific quality of the learning in a neural network i.e. L2 regularization prefers that the result obtained is not a consequence of a little number of peaky weight vectors, but a large number of diffused weight vectors. In a classification problem solved with the help of neural networks, we intend to minimize the error, i.e. the difference between the prediction and the ground truth label, using an optimization technique, most common of which is Stochastic Gradient Descent (discussed in Section \ref{optbp}). Different loss functions will give different errors for the same prediction, and thus have a considerable effect on the performance of the model. One of the strict requirements is that loss functions are differentiable so that error gradients can be calculated.
