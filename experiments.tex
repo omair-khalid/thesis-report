@@ -1,35 +1,12 @@
-\chapter{Experimental Results} \label{chap:meth}
+\chapter{Experimentation} \label{chap:meth}
 
 \newcolumntype{?}{!{\vrule width 1.5pt}}
 
+ \section{Practical implementation of complex numbers}
+Consider a complex number $z=a+ib$ with the real component $a$ and the imaginary component $b$. In $\mathbb{R}$-CNNs, the filter bank or the feature maps of a layer exist in 3 dimensions, where two of them denote the size of the filter or feature map in 2D, and the third dimension indicates how many there are. If we have $N$ feature maps (where $N$ is divisible by 2), the first $N/2$ feature maps would be dedicated to the real components ($a$) and the last $N/2$ feature maps would be dedicated to the imaginary components ($b$). In this manner, the imaginary feature map corresponding to the real feature map on index one of the 3rd dimension would like on the $\frac{N}{2} +1$ position.
 
-\section{Datasets}\label{datasets}
+IMAGE REQUIRED
 
-
-\subsection{MNIST+P Dataset}\label{data-mnistp}
-The MNIST database of handwritten digits (10 classes) has a training set of 60,000 examples, and a test set of 10,000 examples, where wach image is of dimensions 28x28. 
-
-
-It is a commonly used benchmark for supervised learning algorithm performance. In the MNIST+P dataset created for our experimentation, we consider that an image of MNIST dataset represents the magnitude of a complex number. The magnitude in each image is scaled such that the black part of the image obtains the value of 50, and the white part is 200. The phase for each image class is picked from uniform distribution whose range is determined class-wise: The range for class 1 representing the digit 0 is [0,$\pi$/10], that for class 2 representing the digit 1 is [$\pi$/10,2$\pi$/10],...., that for class 10 representing digit 9 is [9$\pi$/10,$\pi$]. 
-
-FIGURE:
-
-\subsubsection{Preprocessing of MNIST+P Dataset}
-Now that we know the magnitude and phase information for each image, we convert them to the cartesian form having a real channel and an imaginary channel and set the shape of each image becomes 32x32x2.
-
-
-
-
-
-\subsection{Radar datasets}\label{data-radar}
-   In our case, a triangular chirp is being produced at frequency of 150 GHz, with a bandwidth of 6 GHz
-\subsection{Radar-150 datasets}
-\subsection{Radar-300 datasets}
-The magnitude and phase maps are first reshaped to a same size: 32x32. 
-
-
-\subsubsection{Preprocessing of Radar Dataset}
-We convert the Polar form information (magnitude and phase) to Cartesian form having a real channel and an imaginary channel. Now, the shape of each image becomes 32x32x2.
 
 
 How to write about polar and cartesian form?
@@ -60,9 +37,9 @@ Peculiar problem with class with digit 1
 	\begin{tabular}{ c|c|c|c?c } 
 		%\hline
 		- &$z$ReLU(z) & $\mathbb{C}$ReLU(z) & tanh($z$) & ReLU\\
-		\hline Radar-150-Cart (\%) & - & - & - & -\\
+		%\hline Radar-150-Cart (\%) & - & - & - & -\\
 		\hline Radar-300-Cart (\%) & 52.76* & 79.09 & NaN & 96.63\\
-		\hline Radar-150-Polar (\%) & - & - & - & -\\
+		\hline Radar-150-Polar (\%) & - &  90.18& NaN & 97.54 \\
 		\hline Radar-300-Polar (\%) & - & 89.36 & - & 92.87\\
 		
 	\end{tabular}
@@ -70,12 +47,16 @@ Peculiar problem with class with digit 1
 
 * 300-cart-zrelu missclassifiying two classes(2,3). no convergence
 
-\subsection{Training acc curves}
-\subsection{Test loss cruves}
 \section{Discussion}
 We DID experience convergence difficulties.
 Generalization what?
 Perform at par
 
-CONVERGENCE PROBLEMS! 
+CONVERGENCE PROBLEMS of tanhz, very data dependent!
+CReLU vs ReLU: inly dufference is th convolution - did it owrk? not really...
+\subsection{Generalizibility testing experiment}
+\subsection{effect of complex weight initialization without batch normalization} 
+\subsection{Other architecture}
+CReLU and ReLU at least
+ 
 

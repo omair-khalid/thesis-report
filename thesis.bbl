@@ -3,6 +3,10 @@
 \bibitem{bloggg}
 Bringing parallelism to the web with river trail.
 
+\bibitem{mnistimage}
+By josef steppan - own work, cc by-sa 4.0,
+  https://commons.wikimedia.org/w/index.php?curid=64810040.
+
 \bibitem{gotcha}
 Gotcha wide-angle synthetic aperture radar dataset.
 
@@ -22,6 +26,11 @@ Joan Bruna, Soumith Chintala, Yann LeCun, Serkan Piantino, Arthur Szlam, and
   Mark Tygert.
 \newblock A theoretical argument for complex-valued convolutional networks.
 \newblock {\em CoRR abs/1503.03438}, 2015.
+
+\bibitem{chollet2015keras}
+Fran\c{c}ois Chollet et~al.
+\newblock Keras.
+\newblock 2015.
 
 \bibitem{danihelka2016associative}
 Ivo Danihelka, Greg Wayne, Benigno Uria, Nal Kalchbrenner, and Alex Graves.
@@ -141,6 +150,12 @@ David~P Reichert and Thomas Serre.
 Andy~M Sarroff, Victor Shepardson, and Michael~A Casey.
 \newblock Learning representations using complex-valued nets.
 \newblock {\em arXiv preprint arXiv:1511.06351}, 2015.
+
+\bibitem{theano}
+{Theano Development Team}.
+\newblock {Theano: A {Python} framework for fast computation of mathematical
+  expressions}.
+\newblock {\em arXiv e-prints}, abs/1605.02688, May 2016.
 
 \bibitem{trabelsi2018deep}
 Chiheb Trabelsi, Olexa Bilaniuk, Ying Zhang, Dmitriy Serdyuk, Sandeep

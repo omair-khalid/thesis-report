@@ -23,7 +23,7 @@ In the context of image classification, CNNs make use of the inherent compositio
  
  
  
- \subsection{Convolution}
+ \subsection{Convolution}\label{conv}
   In the field of Computer Vision, convolution operation is utilized for applying a 2D filter to an image for the purpose of photo enhancement or feature extraction. In photo enhancement, the filters used can have different effects such as sharpening, blurring, dilating, and more, whereas in feature extraction, different features such as edges, corners, gradients etc. can be extracted. In short, the application of filters through convolution operation enables us to convert images in a form which are easier to understand and can further help in myriads of computer vision applications such as face detection, object detection, SLAM etc. 
   
   In a CNN, the convolutional layer performs the role of feature extraction in a way that each succeeding layer represents a more complex concept that helps get closer to classification \cite{nature}. For examples, the first layers would learn low-level features (e.g. edges) form patterns and the latter layers would learn higher level features (e.g. shapes, textures) which would inturn be composed of these the earlier ones. 
@@ -191,7 +191,7 @@ x , &\textrm{for} \ x\ge 0\\
  
  %cooridnate dependency????
      
- Complex-valued activation functions can be divided into two types: Real-Imaginary type , and the Amplitude-Phase type \cite{hirose2012complex}.
+ Complex-valued activation functions can be divided into two types: Real-Imaginary type , the Amplitude-Phase type, and Transcendental type \cite{}.
  The first type of activation functions deals with real and imaginary parts separately and independently, but identically. Hence, they can be thought to work similar to real-valued networks with double the number of dimensions.  The latter type applies the nonlinearity on only the magnitude of the complex number, leaving the phase information unchanged \cite{page45hirose2012complex} . 
  
  %suitability of the two types functions???

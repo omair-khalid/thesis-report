@@ -13,55 +13,61 @@ Repeated entry---line 421 of file refs.bib
  :                             ,
 I'm skipping whatever remains of this entry
 Database file #2: theano-short.bib
+Warning--I didn't find a database entry for ""
 Warning--to sort, need author or key in bloggg
+Warning--to sort, need author or key in mnistimage
 Warning--to sort, need author or key in gotcha
 Warning--empty author in bloggg
 Warning--empty journal in bloggg
 Warning--empty year in bloggg
+Warning--empty author in mnistimage
+Warning--empty journal in mnistimage
+Warning--empty year in mnistimage
 Warning--empty author in gotcha
 Warning--empty journal in gotcha
 Warning--empty year in gotcha
+Warning--empty journal in chollet2015keras
 Warning--empty booktitle in page45hirose2012complex
 Warning--can't use both author and editor fields in LeCun1998
-You've used 31 entries,
+You've used 34 entries,
             2118 wiz_defined-function locations,
-            662 strings with 9301 characters,
-and the built_in function-call counts, 11285 in all, are:
-= -- 1079
-> -- 575
+            672 strings with 9601 characters,
+and the built_in function-call counts, 11890 in all, are:
+= -- 1135
+> -- 596
 < -- 16
-+ -- 228
-- -- 196
-* -- 769
-:= -- 1816
-add.period$ -- 92
-call.type$ -- 31
-change.case$ -- 187
++ -- 237
+- -- 202
+* -- 805
+:= -- 1919
+add.period$ -- 99
+call.type$ -- 34
+change.case$ -- 198
 chr.to.int$ -- 0
-cite$ -- 41
-duplicate$ -- 461
-empty$ -- 861
-format.name$ -- 196
-if$ -- 2395
+cite$ -- 49
+duplicate$ -- 491
+empty$ -- 913
+format.name$ -- 202
+if$ -- 2517
 int.to.chr$ -- 0
-int.to.str$ -- 31
-missing$ -- 35
-newline$ -- 154
-num.names$ -- 58
-pop$ -- 235
+int.to.str$ -- 34
+missing$ -- 38
+newline$ -- 167
+num.names$ -- 62
+pop$ -- 251
 preamble$ -- 1
-purify$ -- 160
+purify$ -- 168
 quote$ -- 0
-skip$ -- 347
+skip$ -- 370
 stack$ -- 0
-substring$ -- 584
-swap$ -- 135
+substring$ -- 599
+swap$ -- 136
 text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 116
-warning$ -- 10
-while$ -- 97
-width$ -- 33
-write$ -- 330
+type$ -- 128
+warning$ -- 15
+while$ -- 101
+width$ -- 36
+write$ -- 355
 (There were 2 error messages)
