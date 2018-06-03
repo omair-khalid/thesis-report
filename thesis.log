@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.5.29)  3 JUN 2018 07:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.5.29)  3 JUN 2018 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -24,20 +24,19 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
 
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2017/03/19 v3.3-145 Customizing captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2018/04/15 v1.7-167 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
-)
 \captionmargin=\dimen103
 \captionmargin@=\dimen104
 \captionwidth=\dimen105
@@ -48,10 +47,40 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 )
 \c@ContinuedFloat=\count89
 )
-\c@subfigure=\count90
-\c@subtable=\count91
+\c@KVtest=\count90
+\sf@farskip=\skip43
+\sf@captopadj=\dimen110
+\sf@capskip=\skip44
+\sf@nearskip=\skip45
+\c@subfigure=\count91
+\c@subfigure@save=\count92
+\c@lofdepth=\count93
+\c@subtable=\count94
+\c@subtable@save=\count95
+\c@lotdepth=\count96
+\sf@top=\skip46
+\sf@bottom=\skip47
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+
+! Package subcaption Error: This package can't be used in cooperation
+(subcaption)                with the subfig package.
+
+See the subcaption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \subcaption@CheckCompatibility
+                                   
+If you do not understand this error, please take a closer look
+at the documentation of the `subcaption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
@@ -61,20 +90,20 @@ Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
-\col@sep=\dimen110
+\col@sep=\dimen111
 \ar@mcellbox=\box26
-\extrarowheight=\dimen111
+\extrarowheight=\dimen112
 \NC@list=\toks17
-\extratabsurround=\skip43
-\backup@length=\skip44
+\extratabsurround=\skip48
+\backup@length=\skip49
 \ar@cellbox=\box27
 )
-\TX@col@width=\dimen112
-\TX@old@table=\dimen113
-\TX@old@col=\dimen114
-\TX@target=\dimen115
-\TX@delta=\dimen116
-\TX@cols=\count92
+\TX@col@width=\dimen113
+\TX@old@table=\dimen114
+\TX@old@col=\dimen115
+\TX@target=\dimen116
+\TX@delta=\dimen117
+\TX@cols=\count97
 \TX@ftn=\toks18
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
@@ -83,52 +112,52 @@ Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
-\CenteringLeftskip=\skip45
-\RaggedLeftLeftskip=\skip46
-\RaggedRightLeftskip=\skip47
-\CenteringRightskip=\skip48
-\RaggedLeftRightskip=\skip49
-\RaggedRightRightskip=\skip50
-\CenteringParfillskip=\skip51
-\RaggedLeftParfillskip=\skip52
-\RaggedRightParfillskip=\skip53
-\JustifyingParfillskip=\skip54
-\CenteringParindent=\skip55
-\RaggedLeftParindent=\skip56
-\RaggedRightParindent=\skip57
-\JustifyingParindent=\skip58
+\CenteringLeftskip=\skip50
+\RaggedLeftLeftskip=\skip51
+\RaggedRightLeftskip=\skip52
+\CenteringRightskip=\skip53
+\RaggedLeftRightskip=\skip54
+\RaggedRightRightskip=\skip55
+\CenteringParfillskip=\skip56
+\RaggedLeftParfillskip=\skip57
+\RaggedRightParfillskip=\skip58
+\JustifyingParfillskip=\skip59
+\CenteringParindent=\skip60
+\RaggedLeftParindent=\skip61
+\RaggedRightParindent=\skip62
+\JustifyingParindent=\skip63
 )
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen117
-\lightrulewidth=\dimen118
-\cmidrulewidth=\dimen119
-\belowrulesep=\dimen120
-\belowbottomsep=\dimen121
-\aboverulesep=\dimen122
-\abovetopsep=\dimen123
-\cmidrulesep=\dimen124
-\cmidrulekern=\dimen125
-\defaultaddspace=\dimen126
-\@cmidla=\count93
-\@cmidlb=\count94
-\@aboverulesep=\dimen127
-\@belowrulesep=\dimen128
-\@thisruleclass=\count95
-\@lastruleclass=\count96
-\@thisrulewidth=\dimen129
+\heavyrulewidth=\dimen118
+\lightrulewidth=\dimen119
+\cmidrulewidth=\dimen120
+\belowrulesep=\dimen121
+\belowbottomsep=\dimen122
+\aboverulesep=\dimen123
+\abovetopsep=\dimen124
+\cmidrulesep=\dimen125
+\cmidrulekern=\dimen126
+\defaultaddspace=\dimen127
+\@cmidla=\count98
+\@cmidlb=\count99
+\@aboverulesep=\dimen128
+\@belowrulesep=\dimen129
+\@thisruleclass=\count100
+\@lastruleclass=\count101
+\@thisrulewidth=\dimen130
 )
 (/usr/share/texlive/texmf-dist/tex/generic/epsf/epsf.sty
 This is `epsf.tex' v2.7.4 <14 February 2011>
 \epsffilein=\read1
-\epsfframemargin=\dimen130
-\epsfframethickness=\dimen131
-\epsfrsize=\dimen132
-\epsftmp=\dimen133
-\epsftsize=\dimen134
-\epsfxsize=\dimen135
-\epsfysize=\dimen136
-\pspoints=\dimen137
+\epsfframemargin=\dimen131
+\epsfframethickness=\dimen132
+\epsfrsize=\dimen133
+\epsftmp=\dimen134
+\epsftsize=\dimen135
+\epsfxsize=\dimen136
+\epsfysize=\dimen137
+\pspoints=\dimen138
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -146,8 +175,8 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen138
-\Gin@req@width=\dimen139
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
@@ -205,8 +234,8 @@ e
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen140
-\epsfysize=\dimen141
+\epsfxsize=\dimen141
+\epsfysize=\dimen142
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
@@ -239,13 +268,13 @@ Package: anysize 1994/08/13 setting margin sizes
 document style option `anysize' loaded
 Michael Salzenberg, Thomas Esser, Dirk Hillbrecht
 Version 1.0, Aug 13, 1994
-\@Leftmargin=\dimen142
-\@Rightmargin=\dimen143
-\@Topmargin=\dimen144
-\@Bottommargin=\dimen145
+\@Leftmargin=\dimen143
+\@Rightmargin=\dimen144
+\@Topmargin=\dimen145
+\@Bottommargin=\dimen146
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip59
+\@mathmargin=\skip64
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -254,49 +283,49 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
-\ex@=\dimen146
+\ex@=\dimen147
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen147
+\pmbraise@=\dimen148
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count97
+\inf@bad=\count102
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count98
-\leftroot@=\count99
+\uproot@=\count103
+\leftroot@=\count104
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count100
-\DOTSCASE@=\count101
+\classnum@=\count105
+\DOTSCASE@=\count106
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box28
 \strutbox@=\box29
-\big@size=\dimen148
+\big@size=\dimen149
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count102
-\c@MaxMatrixCols=\count103
+\macc@depth=\count107
+\c@MaxMatrixCols=\count108
 \dotsspace@=\muskip10
-\c@parentequation=\count104
-\dspbrk@lvl=\count105
+\c@parentequation=\count109
+\dspbrk@lvl=\count110
 \tag@help=\toks21
-\row@=\count106
-\column@=\count107
-\maxfields@=\count108
+\row@=\count111
+\column@=\count112
+\maxfields@=\count113
 \andhelp@=\toks22
-\eqnshift@=\dimen149
-\alignsep@=\dimen150
-\tagshift@=\dimen151
-\tagwidth@=\dimen152
-\totwidth@=\dimen153
-\lineht@=\dimen154
+\eqnshift@=\dimen150
+\alignsep@=\dimen151
+\tagshift@=\dimen152
+\tagwidth@=\dimen153
+\totwidth@=\dimen154
+\lineht@=\dimen155
 \@envbody=\toks23
-\multlinegap=\skip60
-\multlinetaggap=\skip61
+\multlinegap=\skip65
+\multlinetaggap=\skip66
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
@@ -319,7 +348,7 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (./fancyhdr.sty
-\headwidth=\dimen155
+\headwidth=\dimen156
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
@@ -362,16 +391,16 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen156
-\Hy@linkcounter=\count109
-\Hy@pagecounter=\count110
+\@linkdim=\dimen157
+\Hy@linkcounter=\count114
+\Hy@pagecounter=\count115
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count111
+\Hy@SavedSpaceFactor=\count116
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -383,17 +412,17 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count112
+\c@Hy@tempcnt=\count117
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen157
-\Fld@menulength=\count113
-\Field@Width=\dimen158
-\Fld@charsize=\dimen159
+\XeTeXLinkMargin=\dimen158
+\Fld@menulength=\count118
+\Field@Width=\dimen159
+\Fld@charsize=\dimen160
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -403,23 +432,23 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count114
-\c@Item=\count115
-\c@Hfootnote=\count116
+\Hy@abspage=\count119
+\c@Item=\count120
+\c@Hfootnote=\count121
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count117
-\c@bookmark@seq@number=\count118
+\Fld@listcount=\count122
+\c@bookmark@seq@number=\count123
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip62
+\Hy@SectionHShift=\skip67
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 33.
 
@@ -436,6 +465,12 @@ LaTeX Warning: Label `chap:comp' multiply defined.
 
 
 LaTeX Warning: Label `chap:meth' multiply defined.
+
+
+LaTeX Warning: Label `fig:blocks' multiply defined.
+
+
+LaTeX Warning: Label `fig:blocks' multiply defined.
 
 )
 \openout1 = `thesis.aux'.
@@ -455,6 +490,7 @@ LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EverySelectfont initializing macros
@@ -462,16 +498,16 @@ LaTeX Info: Redefining \selectfont on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count119
-\scratchdimen=\dimen160
+\scratchcounter=\count124
+\scratchdimen=\dimen161
 \scratchbox=\box30
-\nofMPsegments=\count120
-\nofMParguments=\count121
+\nofMPsegments=\count125
+\nofMParguments=\count126
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count122
-\MPscratchDim=\dimen161
-\MPnumerator=\count123
-\makeMPintoPDFobject=\count124
+\MPscratchCnt=\count127
+\MPscratchDim=\dimen162
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
 \everyMPtoPDFconversion=\toks26
 )
 \AtBeginShipoutBox=\box31
@@ -482,7 +518,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count125
+\c@section@level=\count130
 )
 LaTeX Info: Redefining \ref on input line 39.
 LaTeX Info: Redefining \pageref on input line 39.
@@ -517,7 +553,7 @@ ination with the same identifier (name{page.1}) has been already used, duplicat
 e ignored
 <to be read again> 
                    \relax 
-l.41 \end{abstract}
+l.40 \end{abstract}
                     [1] [1] (./thesis.toc
 Missing character: There is no e in font msbm10!
  [2
@@ -526,20 +562,20 @@ Missing character: There is no e in font msbm10!
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [3] (./thesis.lof)
+ [3] (./thesis.lof [4
+
+])
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [4
-
-]
+ [5]
 (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [5
+ [6
 
-]) [6
+]) [7
 
 ] (./intro.tex
 Chapter 1.
@@ -585,7 +621,7 @@ Package epstopdf Info: Source file: <./figures/radarbasics.eps>
 converted-to.pdf ./figures/radarbasics.eps>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/radarbasics-eps-converted-to.pdf, id=378, 340.27126pt x 288.07625pt>
+<./figures/radarbasics-eps-converted-to.pdf, id=389, 340.27126pt x 288.07625pt>
 
 File: ./figures/radarbasics-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/radarbasics-eps-converted-to.pdf>
@@ -595,22 +631,22 @@ put line 19.
 [7
 
 ] [8 <./figures/radarbasics-eps-converted-to.pdf>]
-<./figures/up.png, id=398, 649.42625pt x 375.4025pt>
+<./figures/up.png, id=409, 649.42625pt x 375.4025pt>
 File: ./figures/up.png Graphic file (type png)
 <use ./figures/up.png>
 Package pdftex.def Info: ./figures/up.png  used on input line 56.
 (pdftex.def)             Requested size: 128.0374pt x 74.008pt.
-<./figures/down.png, id=399, 647.41875pt x 369.38pt>
+<./figures/down.png, id=410, 647.41875pt x 369.38pt>
 File: ./figures/down.png Graphic file (type png)
 <use ./figures/down.png>
 Package pdftex.def Info: ./figures/down.png  used on input line 57.
 (pdftex.def)             Requested size: 128.0374pt x 73.05179pt.
-<./figures/tri.png, id=400, 658.46pt x 375.4025pt>
+<./figures/tri.png, id=411, 658.46pt x 375.4025pt>
 File: ./figures/tri.png Graphic file (type png)
 <use ./figures/tri.png>
 Package pdftex.def Info: ./figures/tri.png  used on input line 58.
 (pdftex.def)             Requested size: 128.0374pt x 72.99411pt.
-<./figures/fmcv.png, id=401, 1166.3575pt x 758.835pt>
+<./figures/fmcv.png, id=412, 1166.3575pt x 758.835pt>
 File: ./figures/fmcv.png Graphic file (type png)
 <use ./figures/fmcv.png>
 Package pdftex.def Info: ./figures/fmcv.png  used on input line 66.
@@ -627,7 +663,7 @@ Package epstopdf Info: Source file: <./figures/crep2.eps>
 ted-to.pdf ./figures/crep2.eps>
 (epstopdf)             \includegraphics on input line 107.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/crep2-eps-converted-to.pdf, id=413, 139.52126pt x 154.5775pt>
+<./figures/crep2-eps-converted-to.pdf, id=425, 139.52126pt x 154.5775pt>
 File: ./figures/crep2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/crep2-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/crep2-eps-converted-to.pdf  used on input li
@@ -655,7 +691,7 @@ Missing character: There is no e in font msbm10!
 [15
 
 ]
-<./figures/cnn.png, id=486, 1383.1675pt x 585.18625pt>
+<./figures/cnn.png, id=497, 1383.1675pt x 585.18625pt>
 File: ./figures/cnn.png Graphic file (type png)
 <use ./figures/cnn.png>
 Package pdftex.def Info: ./figures/cnn.png  used on input line 13.
@@ -699,7 +735,7 @@ Package epstopdf Info: Source file: <./figures/convRiverTrailBlog.eps>
 og-eps-converted-to.pdf ./figures/convRiverTrailBlog.eps>
 (epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/convRiverTrailBlog-eps-converted-to.pdf, id=499, 274.02374pt x 164.6
+<./figures/convRiverTrailBlog-eps-converted-to.pdf, id=511, 274.02374pt x 164.6
 15pt>
 File: ./figures/convRiverTrailBlog-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -708,7 +744,7 @@ Package pdftex.def Info: ./figures/convRiverTrailBlog-eps-converted-to.pdf  use
 d on input line 52.
 (pdftex.def)             Requested size: 170.71652pt x 102.55757pt.
 [17]
-<./figures/cConvOperation.png, id=514, 517.935pt x 630.355pt>
+<./figures/cConvOperation.png, id=525, 517.935pt x 630.355pt>
 File: ./figures/cConvOperation.png Graphic file (type png)
 <use ./figures/cConvOperation.png>
 Package pdftex.def Info: ./figures/cConvOperation.png  used on input line 81.
@@ -723,10 +759,11 @@ Underfull \vbox (badness 1584) has occurred while \output is active []
 Missing character: There is no e in font msbm10!
  [20]
 [21]
-File: ./figures/cConvOperation.png Graphic file (type png)
-<use ./figures/cConvOperation.png>
-Package pdftex.def Info: ./figures/cConvOperation.png  used on input line 188.
-(pdftex.def)             Requested size: 142.26378pt x 173.14136pt.
+<./figures/relu.png, id=574, 1195.46625pt x 251.94125pt>
+File: ./figures/relu.png Graphic file (type png)
+<use ./figures/relu.png>
+Package pdftex.def Info: ./figures/relu.png  used on input line 188.
+(pdftex.def)             Requested size: 398.33858pt x 83.94817pt.
 
 ! Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
@@ -740,17 +777,13 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 Missing character: There is no e in font msbm10!
-[22]
+[22 <./figures/relu.png>]
 
 LaTeX Warning: Reference `tanhz' on page 23 undefined on input line 243.
 
-
-Underfull \vbox (badness 2126) has occurred while \output is active []
-
- [23]
+[23]
 Missing character: There is no e in font msbm10!
-
-[24] [25]
+ [24] [25]
 Missing character: There is no e in font msbm10!
  [26] [27]
 Missing character: There is no e in font msbm10!
@@ -769,11 +802,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 [30
 
 ]
-<./figures/MnistExamples.png, id=681, 596.2275pt x 362.35374pt>
-File: ./figures/MnistExamples.png Graphic file (type png)
-<use ./figures/MnistExamples.png>
-Package pdftex.def Info: ./figures/MnistExamples.png  used on input line 33.
-(pdftex.def)             Requested size: 199.16928pt x 121.0423pt.
+<./figures/mnistt.png, id=694, 1917.1625pt x 364.36125pt>
+File: ./figures/mnistt.png Graphic file (type png)
+<use ./figures/mnistt.png>
+Package pdftex.def Info: ./figures/mnistt.png  used on input line 33.
+(pdftex.def)             Requested size: 398.33858pt x 75.70084pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 33.
+See the caption package documentation for explanation.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.35 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
 
 Package caption Warning: \label without proper reference on input line 70.
@@ -783,7 +832,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `table:datadist' on page 31 undefined on input line 40
 .
 
-[31 <./figures/MnistExamples.png>]
+[31 <./figures/mnistt.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 80.
@@ -810,7 +859,7 @@ Package epstopdf Info: Source file: <./figures/1.eps>
 to.pdf ./figures/1.eps>
 (epstopdf)             \includegraphics on input line 89.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/1-eps-converted-to.pdf, id=697, 462.72874pt x 734.745pt>
+<./figures/1-eps-converted-to.pdf, id=710, 462.72874pt x 734.745pt>
 File: ./figures/1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/1-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/1-eps-converted-to.pdf  used on input line 8
@@ -826,7 +875,7 @@ Package epstopdf Info: Source file: <./figures/23.eps>
 -to.pdf ./figures/23.eps>
 (epstopdf)             \includegraphics on input line 91.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/23-eps-converted-to.pdf, id=698, 593.21625pt x 734.745pt>
+<./figures/23-eps-converted-to.pdf, id=711, 593.21625pt x 734.745pt>
 File: ./figures/23-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/23-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/23-eps-converted-to.pdf  used on input line 
@@ -842,7 +891,7 @@ Package epstopdf Info: Source file: <./figures/ARCH.eps>
 ed-to.pdf ./figures/ARCH.eps>
 (epstopdf)             \includegraphics on input line 93.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/ARCH-eps-converted-to.pdf, id=699, 332.24126pt x 534.99875pt>
+<./figures/ARCH-eps-converted-to.pdf, id=712, 332.24126pt x 534.99875pt>
 File: ./figures/ARCH-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/ARCH-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/ARCH-eps-converted-to.pdf  used on input lin
@@ -854,17 +903,38 @@ Chapter 6.
 
 Package array Warning: Column ? is already defined on input line 3.
 
+<./figures/layers.png, id=731, 508.90125pt x 346.29375pt>
+File: ./figures/layers.png Graphic file (type png)
+<use ./figures/layers.png>
+Package pdftex.def Info: ./figures/layers.png  used on input line 10.
+(pdftex.def)             Requested size: 199.16928pt x 135.52957pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 20.
+(caption)                particular \caption on input line 10.
 See the caption package documentation for explanation.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.12 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
 [34
 
-]
+ <./figures/layers.png>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 34.
+(caption)                particular \caption on input line 23.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 37.
 See the caption package documentation for explanation.
 
 ) (./conclusion.tex [35]
@@ -873,9 +943,24 @@ Chapter 7.
 
 ]
 Appendix A.
+<./figures/bike38.jpg, id=747, 923.2238pt x 1731.42633pt>
+File: ./figures/bike38.jpg Graphic file (type jpg)
+<use ./figures/bike38.jpg>
+Package pdftex.def Info: ./figures/bike38.jpg  used on input line 6.
+(pdftex.def)             Requested size: 213.39566pt x 400.20114pt.
+<./figures/bike63.jpg, id=748, 923.2238pt x 1731.42633pt>
+File: ./figures/bike63.jpg Graphic file (type jpg)
+<use ./figures/bike63.jpg>
+Package pdftex.def Info: ./figures/bike63.jpg  used on input line 6.
+(pdftex.def)             Requested size: 213.39566pt x 400.20114pt.
+
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 6--6
+ [][][] 
+ []
+
 ) (./thesis.bbl [37
 
-]
+] [38 <./figures/bike38.jpg> <./figures/bike63.jpg>]
 Overfull \hbox (63.65828pt too wide) in paragraph at lines 7--9
 []\OT1/cmr/m/n/10 By josef step-pan - own work, cc by-sa 4.0, https://commons.w
 ikimedia.org/w/index.php?curid=64810040. 
@@ -887,17 +972,17 @@ Underfull \hbox (badness 1681) in paragraph at lines 59--62
 ral net-works.  \OT1/cmr/m/it/10 CoRR\OT1/cmr/m/n/10 ,
  []
 
-[38
+[39
 
-] [39])
+] [40])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
- [40]
+ [41]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
  (./thesis.aux (./header.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 376720B791EB4787039FFF3B83291593;2962.
+(rerunfilecheck)             Checksum: 879308F87D21C3B71A32285938F05DC2;2952.
 
 
 LaTeX Warning: There were undefined references.
@@ -908,13 +993,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
  ) 
 Here is how much of TeX's memory you used:
- 8565 strings out of 494471
- 126641 string characters out of 6175119
- 218611 words of memory out of 5000000
- 11778 multiletter control sequences out of 15000+600000
+ 8693 strings out of 494471
+ 128837 string characters out of 6175119
+ 221732 words of memory out of 5000000
+ 11892 multiletter control sequences out of 15000+600000
  19761 words of font info for 82 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 42i,14n,60p,1906b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,14n,61p,1906b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -931,10 +1016,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (48 pages, 1141663 bytes).
+Output written on thesis.pdf (50 pages, 7469513 bytes).
 PDF statistics:
- 856 PDF objects out of 1000 (max. 8388607)
- 753 compressed objects within 8 object streams
- 225 named destinations out of 1000 (max. 500000)
- 402 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 882 PDF objects out of 1000 (max. 8388607)
+ 771 compressed objects within 8 object streams
+ 231 named destinations out of 1000 (max. 500000)
+ 422 words of extra memory for PDF output out of 10000 (max. 10000000)
 

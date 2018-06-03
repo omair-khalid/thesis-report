@@ -9,10 +9,12 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces The outputs of each layer of a CNN can be seen as applied to a picture of Samoyed Dog. The RGB channels are fed into the network, and is met by two instances of Convolution, Rectified Linear Unit (RelU), and Max-pooling layer before reaching the output layer. Each image is a feature map corresponding to the output of the learned features at each image position. The output layer provides the probabilities of the image being a specific class. \cite {bloggg}\relax }}{16}{figure.caption.17}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces A schematic sketch of the convolution operation. An unit in the output is the sum of point-wise multiplication of the kernel and input patch \cite {bloggg}\relax }}{18}{figure.caption.19}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces A schematic sketch of the complex-convolution operation. M and K represent the feature map and kernel, respectively. \cite {trabelsi2018deep}\relax }}{19}{figure.caption.21}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Real valued activation functions\relax }}{22}{figure.caption.26}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Variants of ReLU activation function\relax }}{22}{figure.caption.26}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Examples of images in MNIST Dataset \cite {mnistimage}\relax }}{31}{figure.caption.45}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces LEFT: Examples of digits from MNIST Dataset; CENTER: Angle bin sector for each class; RIGHT: Phase channels corresponding to the classes as shown in the left most image\ \cite {mnistimage}\relax }}{31}{figure.5.1}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Architecture of the first residual block in stage 1 (left), and that in stages 2 and 3 (right); General architecture of both $\mathbb {R}$-CNN and $\mathbb {C}$-CNN (bottom)\relax }}{33}{figure.caption.48}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Arrangement of $N$ feature maps in a $\mathbb {C}$-CNN layer\relax }}{34}{figure.6.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Examples of images in MNIST Dataset \cite {mnistimage}\relax }}{38}{figure.caption.50}
