@@ -1,6 +1,10 @@
 \chapter{Literature Review}\label{chap:comp}
 
-Complex-valued neural networks have been widely investigated since and have been found useful in the fields of adpative designing of patch antennas, neurophysiological analysis, and communications \cite{hirose2012complex}. Increased incorporation of complex-valued units in recent works of Recurrent Neural Networks (\cite{ArjovskySB15}, \cite{wisdom2016full}, \cite{danihelka2016associative}) and computer vision tasks(\cite{oyallon2015deep}, \cite{bruna2015theoretical}, \cite{worrall2017harmonic}) has brought significant attention to the virtues of complex-valued representations. 
+Complex-valued neural networks have been widely investigated since before the deep learning boom and have been found useful in the fields of adpative designing of patch antennas, neurophysiological analysis, and communications \cite{hirose2012complex}. 
+
+
+
+Increased incorporation of complex-valued units in recent works of Recurrent Neural Networks (\cite{ArjovskySB15}, \cite{wisdom2016full}, \cite{danihelka2016associative}) and computer vision tasks(\cite{oyallon2015deep}, \cite{bruna2015theoretical}, \cite{worrall2017harmonic}) has brought significant attention to the virtues of complex-valued representations. 
 %Kim and Adal and  Geogiou activation functions!!
 %Guberman
 %Akira
@@ -9,7 +13,18 @@ Complex-valued neural networks have been widely investigated since and have been
 %better analysis of the techniques...
 %interferometric radar....
 
-Utilizing complex-valued representations, Reichert and Serre (2013) \cite{reichert2013neuronal} developed neuronal units of a neural network inspired from a model of neuron in a human brain. In the Spiking Neuron Model, a neuron's output is expressed in terms of its firing rate and phase (relative time of its activity). The authors equated the firing rate with the magnitude and the neuron's phase as the phase of the neuron's output. Their implementation captures the concept of Neuronal Synchrony, which says that a neuron's time of firing (phase) also plays a role in information processing. The firing of a neuron happens on the basis of phases of the inputs such that synchronous (similar in phase) inputs produce an output while the asynchronous phases inhibits the output. This way the network tries to synchronize the phases of those inputs whose activations result in correct outputs.
+ One of the
+most important papers in this domain is [16], which gives
+a mathematical motivation for complex-valued convolutional
+neural networks, showing that they can be seen as nonlinear
+multiwavelet packets, thus making the mathematical analysis
+from the signal processing domain available for a rigorous
+formulation of the properties of complex-valued convolu-
+tional networks. 
+ In [12] a wavelet
+scattering network is proposed, which uses complex numbers
+
+Complex numbers can be better utilized to represent natural phenomena. Utilizing complex-valued representations, Reichert and Serre (2013) \cite{reichert2013neuronal} developed neuronal units of a neural network inspired from a model of neuron in a human brain. In the Spiking Neuron Model, a neuron's output is expressed in terms of its firing rate and phase (relative time of its activity). The authors equated the firing rate with the magnitude and the neuron's phase as the phase of the neuron's output. Their implementation captures the concept of Neuronal Synchrony, which says that a neuron's time of firing (phase) also plays a role in information processing. The firing of a neuron happens on the basis of phases of the inputs such that synchronous (similar in phase) inputs produce an output while the asynchronous phases inhibits the output. This way the network tries to synchronize the phases of those inputs whose activations result in correct outputs. Takahiro and Takashi (2010) developed an output prediction system of a wind power generation using a $\mathbb{C}$-CNN where they expressed the wind information (wind speed and direction) by complex numbers, and use them as input and demonstrated that $\mathbb{C}$-CNN performed better as compared to $\mathbb{R}$-CNN, owing to the fact that complex nature of the data had a physical meaning behind it.
  
 %SAR based
 SARs are typically mounted on a moving platform, such as an aircraft or spacecraft, in order to capture 2D or 3D images of objects including landscapes. The capability of radars to operate in all-weather day-and-night conditions and make high and very high resolution images make them suitable for target classification, reconnaissance,

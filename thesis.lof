@@ -1,18 +1,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Representation of Radar working scheme\relax }}{7}{figure.caption.5}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Types of chirp: Up, Down, Triangle\relax }}{8}{figure.caption.6}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Schematics of a FMCW radar\relax }}{9}{figure.caption.7}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Illustration of complex number in Cartesian form ($z=x+iy$) and Polar form ($|z|,\theta $) on a Complex Plane\relax }}{10}{figure.caption.10}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Representation of Radar working scheme\relax }}{8}{figure.caption.5}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Types of chirp: Up, Down, Triangle\relax }}{9}{figure.caption.6}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Schematics of a FMCW radar\relax }}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Illustration of complex number in Cartesian form ($z=x+iy$) and Polar form ($|z|,\theta $) on a Complex Plane\relax }}{11}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The outputs of each layer of a CNN can be seen as applied to a picture of Samoyed Dog. The RGB channels are fed into the network, and is met by two instances of Convolution, Rectified Linear Unit (RelU), and Max-pooling layer before reaching the output layer. Each image is a feature map corresponding to the output of the learned features at each image position. The output layer provides the probabilities of the image being a specific class. \cite {bloggg}\relax }}{15}{figure.caption.17}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces A schematic sketch of the convolution operation. An unit in the output is the sum of point-wise multiplication of the kernel and input patch \cite {bloggg}\relax }}{17}{figure.caption.19}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces A schematic sketch of the complex-convolution operation. M and K represent the feature map and kernel, respectively. \cite {trabelsi2018deep}\relax }}{18}{figure.caption.21}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Real valued activation functions\relax }}{21}{figure.caption.26}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The outputs of each layer of a CNN can be seen as applied to a picture of Samoyed Dog. The RGB channels are fed into the network, and is met by two instances of Convolution, Rectified Linear Unit (RelU), and Max-pooling layer before reaching the output layer. Each image is a feature map corresponding to the output of the learned features at each image position. The output layer provides the probabilities of the image being a specific class. \cite {bloggg}\relax }}{16}{figure.caption.17}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A schematic sketch of the convolution operation. An unit in the output is the sum of point-wise multiplication of the kernel and input patch \cite {bloggg}\relax }}{18}{figure.caption.19}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces A schematic sketch of the complex-convolution operation. M and K represent the feature map and kernel, respectively. \cite {trabelsi2018deep}\relax }}{19}{figure.caption.21}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Real valued activation functions\relax }}{22}{figure.caption.26}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Examples of images in MNIST Dataset \cite {mnistimage}\relax }}{29}{figure.caption.43}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Architecture of the first residual block in stage 1 (left), and that in stages 2 and 3 (right); General architecture of both $\mathbb {R}$-CNN and $\mathbb {C}$-CNN (bottom)\relax }}{31}{figure.caption.44}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Examples of images in MNIST Dataset \cite {mnistimage}\relax }}{31}{figure.caption.45}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Architecture of the first residual block in stage 1 (left), and that in stages 2 and 3 (right); General architecture of both $\mathbb {R}$-CNN and $\mathbb {C}$-CNN (bottom)\relax }}{33}{figure.caption.48}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

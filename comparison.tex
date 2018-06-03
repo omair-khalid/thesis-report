@@ -370,9 +370,29 @@ Averaging operator is trivially generalized to the complex domain. As th
  where $z$ is a complex number, and $i,j$ are the indices of the patch.
  
  \subsection{Fully-connected Layer}
+ Fully-connected (FC) layer converts the CNN into a traditional neural network in that the 2D grid structure of the feature maps of the layers are vectorized and, unlike a CNN, each input is connected to each output through a weight. A single FC layer can exist at the end of the network, or a number of FC layers can exist until the output. If and when the FC layer becomes the output layer, it serves to provide the class-wise probability in a classification problem. If and when an FC layer exists as a hidden layer, an affine transformation is performed on the input: weight multiplication and bias addition, followed by application of the activation function.
  
- \subsection{Loss function}
- Loss functions take on two roles in a convolutional neural network - regularization, and provide a measure of comparison between the prediction and the ground truth label. Regularization refers to the idea that the loss function can help enforce a specific quality of the learning in a neural network i.e. L2 regularization prefers that the result obtained is not a consequence of a little number of peaky weight vectors, but a large number of diffused weight vectors. In a classification problem solved with the help of neural networks, we intend to minimize the error, i.e. the difference between the prediction and the ground truth label, using an optimization technique, most common of which is Stochastic Gradient Descent (discussed in Section \ref{optbp}). Different loss functions will give different errors for the same prediction, and thus have a considerable effect on the performance of the model. One of the strict requirements is that loss functions are differentiable so that error gradients can be calculated.
+  \subsubsection{FC layer in $\mathbb{R}$-CNNs}
+ In $\mathbb{R}$-CNNs, the FC layer at the output usually employ the Softmax function which squashes the input between 0 and 1 so that it gives non-negative class-wise probability distribution over the classes. It is given by:
+ 
+ 
+ 
+ \begin{equation} p_j^{(i)}=\frac{e^{z_j^i}}{\underset{l=1...K}{\sum}e^{z_l^{(i)}}} 
+ \end{equation}
+ 
+ where $z_j^{(i)}$ is the activation of the FC layer. 
+
+\subsubsection{FC layer in $\mathbb{C}$-CNNs}
+In $\mathbb{C}$-CNNs, the FC layer which act as hidden layers, same as in $\mathbb{R}$-CNNs, undergo an affine transformation (weight multiplication and bias addition) followed by an acitvation function. As complex numbers cannot be ordered, meaning that one cannot tell if a complex number is greater than the other, we are compelled to convert the complex numbers into real numbers. For this purpose, we find three ways of implementation in the literature: 
+\begin{enumerate}
+\item Choosing to project the complex numbers to real domain by magnitude projection and feeding them to a real-valued FC layer, as proposed by Guberman (2016) \cite{Guberman}.
+\item Treating the real and imaginary components as two independent real-valued channels feeding into two output FC layers, as in Zhang $et \ al.$ (2017) \cite{polsarzhang2017complex}.
+\item Ignoring the distinction between real and imaginary components by feeding them directly to a real-valued output FC layer, as in Chiheb $et \ al.$ (2018) \cite{trabelsi2018deep} 
+\end{enumerate}
+
+
+	 \subsection{Loss function}
+ Loss functions take on two roles in a convolutional neural network - regularization, and providing a measure of comparison between the prediction and the ground truth label. Regularization refers to the idea that the loss function can help enforce a specific quality of the learning in a neural network i.e. L2 regularization prefers that the result obtained is not a consequence of a little number of peaky weight vectors, but a large number of diffused weight vectors. In a classification problem solved with the help of neural networks, we intend to minimize the error, i.e. the difference between the prediction and the ground truth label, using an optimization technique, most common of which is Stochastic Gradient Descent (discussed in Section \ref{optbp}). Different loss functions will give different errors for the same prediction, and thus have a considerable effect on the performance of the model. One of the strict requirements is that loss functions are differentiable so that error gradients can be calculated.
  
  
  
@@ -382,13 +402,13 @@ Averaging operator is trivially generalized to the complex domain. As th
   \begin{equation}\label{rloss}
   L_{y^{'}}(y) = - \sum_{i=1} y_{i}^{'} \log(y_{i})
  \end{equation}
- where $y_{i}$ is the predicted probability for class $i$ and $y_{i}^{'}$ is the ground truth label of the class. Cross entropy, true to the nature of a loss function, shows a trend of increase as the difference between the predicted and the ground truth class label increases.
+ where $y_{i}$ is the predicted probability for class $i$ and $y_{i}^{'}$ is the ground truth label of the class. Cross Entropy, true to the nature of a loss function, shows a trend of increase as the difference between the predicted and the ground truth class label increases.
  
  
  
  \subsubsection{Loss functions in $\mathbb{C}$-CNNs}
- In the literature, we find that the output of the final layer of $\mathbb{C}$-CNNs can be complex-valued or real-valued in nature. Since complex domain is not an ordered field, the output of the loss function has to real-valued, making it a real-valued complex function. When the output of the $\mathbb{C}$-CNN is complex-valued, the loss function maps from complex domain to real domain. Examples of such loss functions include Complex Quadratic Error Function, Complex FOurth Power Error Function, Complex Cauchy Error Function, Complex Log-Cosh Error Function, Adapted Least-Squares Error, among others \cite{hansch2009classification}\cite{polsarzhang2017complex}\cite{hansch2010complex}. 
- In the other case when the loss function maps from complex domain to real domain, we have two options: either project the data from complex domain to real domain and use a real valued loss function \cite{Guberman}, or use a real-valued complex loss function whose input is complex but the output is real (image recognition problem in \cite{trabelsi2018deep}).    
+ The loss function is preceded by an FC layer which gives us probability scores of the output. Examples of loss functions used in $\mathbb{C}$-CNNs when the real and imaginary channels are compared with the respective real and imanginary components of the complex-valued label include Complex Quadratic Error Function, Complex FOurth Power Error Function, Complex Cauchy Error Function, Complex Log-Cosh Error Function, Adapted Least-Squares Error, among others, as found in \cite{hansch2009classification}\cite{polsarzhang2017complex}\cite{hansch2010complex}. 
+ In the other cases when the loss function compares two real numbers (prediction and label), any $\mathbb{R}$-CNN based loss function can be used e.g. Categorical Cross Entropy.    
  
  \subsection{Optimization through backpropagation}\label{optbp}
  In the supervised learning problem involving CNNs, the output layer of the system produces a vector of scores, each denote the probability of each hypothesis class $i$, where $i \in [1,P]$. Ideally, the $k^{th}$ entry of the vector, $O(k)$, should larger than the others, corresponding to and correctly identifying the input data class. However, the system needs to go through a training or optimization, in which the parameters or weights of the system are tuned such that they give us correct predictions of the result.
