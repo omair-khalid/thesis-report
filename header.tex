@@ -34,7 +34,10 @@ $\cdot$}
 
 %ABSTRACT
 \begin{abstract}
-Complex numbers are aptly used to describe natural phenomena: wind (speed and direction), electromagnetic waves, MRI data etc. However, CNNs are dominated by the use of real numbers. If we aim to better exploit the camplex-natured data in order to improve the classsification, the CNN should be able to process the complex data. In this work, we explore the design choices and challenges faced while working with $\mathbb{C}$-CNNs. We propose the architectures of and compare the performance of $\mathbb{C}$-CNN and $\mathbb{R}$-CNNs on a synthetic data set (MNIST+P) and two real world radar-datasets. The results are inconclusive to establish the relevance of $\mathbb{C}$-CNNs.
+Complex number system ($\mathbb{C}$), a natural extension of Real number system ($\mathbb{R}$), is used to describe many natural phenomena: wind (speed and direction), electromagnetic waves, fMRI data etc. Complex-valued neural networks $\mathbb{C}$-NNs, a variant of neural networks, aim to exploit richer representational capacity of complex-valued data and have been demonstrated to outperform Real-valed Neural Networks $\mathbb{R}$-NNs at the tasks where the input data is complex in nature e.g. music transcription, speech spectrum prediction, etc. However, the recent advancements in deep learning literature, especially regarding Convolutional Neural Networks (CNNs) and its improvements, have not seen much overlap with $\mathbb{C}$-NNs, and has been dominated mostly by Real number representations. If we are to exploit the recent advancements and complex-natured data, CNNs should be able to incorporate processes suited for complex numbers with the recent techniques. We call such CNNs as Complex-valued Convolutional Neural Networks $\mathbb{C}$-CNNs. 
+
+%The design of $\mathbb{C}$-CNNs comes with its own set of challenges.
+In this work, we explore if $\mathbb{C}$-CNNs can better exploit information from complex-valued data source as compared to Real-valued CNNs ($\mathbb{R}$-CNNs) to solve a classification problem. We explore the design choices and challenges associated with $\mathbb{C}$-CNNs in particular, and propose two comparable architectures of $\mathbb{C}$-CNN and $\mathbb{R}$-CNNs and test them on a toy dataset (MNIST+P) and on two real-world radar datasets (Radar-150 and Radar-300). Our results, although inconclusive, suggest comparable performance of $\mathbb{C}$-CNNs and $\mathbb{R}$-CNNs. We further detail future work to validate our results. 
 
 \vspace*{5cm}
 \end{abstract}
@@ -70,13 +73,13 @@ Complex numbers are aptly used to describe natural phenomena: wind (speed and di
          {\protect\numberline{Acknowledgments\hspace{-96pt}}}
 \begin{itemize}
 \item[--] God. 
-\item[--] Parents, the big sibling and the little sibling.
-\item[--] My supervisor, Prof. Andrew Wallace, for his support. Marcel Sheeny de Moraes for his guidance throughout the journey.
-\item[--] VIBOTians: Wajee, Albert, Dani, Thomas, Savinien, Anirudh, Darja, and the Vision Lab-mates without Clear Vision: Shubham, Alpha, Ziyang and Zaal. 
-\item[--] Saptarshi for his generosity.
-\item[--] Christina Kuhl and Ahmed Riaz Khan for their endless supply of positivity. 
-\item [--]Rao, Ahdab, and Hammad for being there. 
-\item[--] Myself, for getting it done.
+\item[--] Parents, the big sibling, and the little sibling.
+\item[--] Prof. Andrew Wallace, \textit{for the opportunity and supervision}. 
+\item [--] Marcel Sheeny de Moraes, \textit{for the helpful guidance throughout the journey}.
+\item[--] Vision Lab-mates without Clear Vision: Shubham, Alpha, Zaal, and Ziyang, \textit{for the camaraderie}.  
+\item[--] Saptarshi, \textit{for generosity in the tough times}.
+\item[--] Christina Kuhl and Ahmed Riaz Khan, \textit{for the endless supply of positivity}. 
+\item[--] Myself, \textit{for getting it done}.
 \end{itemize}
 
 \pagestyle{fancy}

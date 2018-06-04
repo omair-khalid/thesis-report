@@ -1,20 +1,34 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Representation of Radar working scheme\relax }}{5}{figure.caption.5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Types of chirp: Up, Down, Triangle\relax }}{6}{figure.caption.6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Schematics of a FMCW radar\relax }}{7}{figure.caption.7}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Illustration of complex number in Cartesian form ($z=x+iy$) and Polar form ($|z|,\theta $) on a Complex Plane\relax }}{8}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Representation of Radar working scheme\relax }}{8}{figure.caption.5}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Types of chirp: Up, Down, Triangle\relax }}{9}{figure.caption.6}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Schematics of a FMCW radar\relax }}{10}{figure.caption.7}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Illustration of complex number in Cartesian form ($z=x+iy$) and Polar form ($|z|,\theta $) on a Complex Plane\relax }}{11}{figure.caption.10}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces The outputs of each layer of a CNN can be seen as applied to a picture of Samoyed Dog. The RGB channels are fed into the network, and is met by two instances of Convolution, Rectified Linear Unit (RelU), and Max-pooling layer before reaching the output layer. Each image is a feature map corresponding to the output of the learned features at each image position. The output layer provides the probabilities of the image being a specific class. \cite {bloggg}\relax }}{16}{figure.caption.17}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces A schematic sketch of the convolution operation. An unit in the output is the sum of point-wise multiplication of the kernel and input patch \cite {bloggg}\relax }}{18}{figure.caption.19}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces A schematic sketch of the complex-convolution operation. M and K represent the feature map and kernel, respectively. \cite {trabelsi2018deep}\relax }}{19}{figure.caption.21}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Variants of ReLU activation function\relax }}{22}{figure.caption.26}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces LEFT: Examples of digits from MNIST Dataset; CENTER: Angle bin sector for each class; RIGHT: Phase channels corresponding to the classes as shown in the left most image\ \cite {mnistimage}\relax }}{31}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Architecture of the first residual block in stage 1 (left), and that in stages 2 and 3 (right); General architecture of both $\mathbb {R}$-CNN and $\mathbb {C}$-CNN (bottom)\relax }}{33}{figure.caption.48}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces LEFT: Examples of digits from MNIST Dataset; CENTER: Angle bin sector for each class; RIGHT: Phase channels corresponding to the classes shown in the left most image \cite {mnistimage}\relax }}{31}{figure.caption.45}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Architecture of the first residual block in stage 1 (left), and that in stages 2 and 3 (right); General architecture of both $\mathbb {R}$-CNN and $\mathbb {C}$-CNN (bottom)\relax }}{34}{figure.caption.48}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Arrangement of $N$ feature maps in a $\mathbb {C}$-CNN layer\relax }}{34}{figure.6.1}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Arrangement of $N$ feature maps in a $\mathbb {C}$-CNN layer\relax }}{35}{figure.caption.49}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Examples of images in MNIST Dataset \cite {mnistimage}\relax }}{38}{figure.caption.50}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces [Left to Right]Bike-3.8m-Polar;Bike-6.3m-Polar;Cone-3.8m-Polar;Cone-6.3m-Polar;\relax }}{39}{figure.caption.50}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces [Left to Right] Dog-3.8m-Polar;Dog-6.3m-Polar;Dog-3.8m-Polar;Dog-6.3m-Polar;\relax }}{40}{figure.caption.51}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces [Left to Right]Sign-3.8m-Polar;Sign-6.3m-Polar;Sign-3.8m-Polar;Sign-6.3m-Polar;\relax }}{41}{figure.caption.52}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces [Left to Right]Bike-3.8m-Cartesian;Bike-6.3m-Cartesian;Cone-3.8m-Cartesian;Cone-6.3m-Cartesian;\relax }}{41}{figure.caption.53}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces [Left to Right]Dog-3.8m-Cartesian;Dog-6.3m-Cartesian;Mannequin-3.8m-Cartesian;Mannequin-6.3m-Cartesian;\relax }}{42}{figure.caption.54}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces [Left to Right]Sign-3.8m-Cartesian;Sign-6.3m-Cartesian;Trolleu-3.8m-Cartesian;Trolley-6.3m-Cartesian;\relax }}{42}{figure.caption.55}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces [Left to Right]Bike-3.8m-Polar;Bike-6.3m-Polar;Cone-3.8m-Polar;Cone-6.3m-Polar;\relax }}{43}{figure.caption.56}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces [Left to Right]Dog-3.8m-Polar;Dog-6.3m-Polar;Mannequin-3.8m-Polar;Mannequin-6.3m-Polar;\relax }}{44}{figure.caption.57}
+\contentsline {figure}{\numberline {B.3}{\ignorespaces [Left to Right]Sign-3.8m-Polar;Sign-6.3m-Polar;Sign-3.8m-Polar;Sign-6.3m-Polar;\relax }}{45}{figure.caption.58}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Confusion matrix for test accuracy of the $\mathbb {C}$-CNN with $\mathbb {C}$ReLU [Left] and Confusion matrix for the test accuracy of $\mathbb {R}$-CNN[Right] for MNIST+P dataset\relax }}{46}{figure.caption.59}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Confusion matrix for test accuracy of the $\mathbb {C}$-CNN with $\mathbb {C}$ReLU [Left] and Confusion matrix for the test accuracy of $\mathbb {R}$-CNN[Right] for Radar-300-$\mathbb {R}$-CNN-Cartesian dataset\relax }}{47}{figure.caption.60}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Confusion matrix for test accuracy of the $\mathbb {C}$-CNN with $\mathbb {C}$ReLU [Left] and Confusion matrix for the test accuracy of $\mathbb {R}$-CNN[Right] Radar-300-$\mathbb {R}$-CNN-Polar dataset\relax }}{47}{figure.caption.61}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Confusion matrix for test accuracy of the $\mathbb {C}$-CNN with $\mathbb {C}$ReLU [Left] and Confusion matrix for the test accuracy of $\mathbb {R}$-CNN[Right] Radar-150-$\mathbb {R}$-CNN-Polar dataset\relax }}{47}{figure.caption.62}

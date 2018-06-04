@@ -1,6 +1,6 @@
 \documentclass[twoside,a4,12p]{report} %,draft,openright]
 
-\usepackage{subfig}
+%\usepackage{subfig}
 \usepackage{subcaption}
 \usepackage[utf8]{inputenc}
 \usepackage{tabularx,ragged2e,booktabs,caption}
@@ -21,7 +21,6 @@
 %does the headers on the pages - keep in
 \usepackage{fancyhdr}
 %to make contents clickable
-
 
 \usepackage{hyperref}
 \hypersetup{
@@ -59,20 +58,20 @@
 \fancyhead[LE]{\sl\leftmark} \fancyhead[LO,RE]{\rm\thepage}
 \fancyhead[RO]{\sl\rightmark} \fancyfoot[C,L,E]{}
 \pagenumbering{arabic}
-
 %\singlespacing
 %\doublespacing
 \onehalfspacing
 \input{intro.tex}
-\input{sota.tex}
 \input{background.tex}
+\input{sota.tex}
 \input{comparison.tex}
 \input{methodology.tex}
 \input{experiments.tex}
 \input{conclusion.tex}
 \appendix
 \input{appendix.tex}
-
+\input{appendix2.tex}
+\input{appendix3.tex}
 %   this is for BibTeX.  remove if you plan to write the references in the document
 
 \bibliography{refs,theano-short}

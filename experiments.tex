@@ -3,38 +3,44 @@
 \newcolumntype{?}{!{\vrule width 1.5pt}}
 
  \section{Practical implementation of complex numbers}
-Consider a complex number $z=a+ib$ with the real component $a$ and the imaginary component $b$. In $\mathbb{R}$-CNNs, the filter bank or the feature maps of a layer exist in 3 dimensions, where two of them denote the size of the filter or feature map in 2D, and the third dimension indicates how many there are. If we have $N$ feature maps (where $N$ is divisible by 2), the first $N/2$ feature maps would be dedicated to the real components ($a$) and the last $N/2$ feature maps would be dedicated to the imaginary components ($b$). In this manner, the imaginary feature map corresponding to the real feature map on index one of the 3rd dimension would like on the $\frac{N}{2} +1$ position.
+Consider a complex number $z=a+ib$ with the real component $a$ and the imaginary component $b$. In $\mathbb{R}$-CNNs, the filter bank or the feature maps of a layer exist in 3 dimensions, where two dimensions  denote the size of the filter or feature map in 2D, and the third dimension indicates the quantity. If we have $N$ feature maps (where $N$ is divisible by 2), the first $N/2$ feature maps would be dedicated to the real components ($a$) and the last $N/2$ feature maps would be dedicated to the imaginary components ($b$). In this manner, the imaginary feature map corresponding to the real feature map on index one of the 3rd dimension would lie on the $(\frac{N}{2} +1)$ position.
    \begin{figure}[htb]
 	\centering
 	\epsfxsize=7cm
-	{\epsfbox{layers.png}}}\caption{Arrangement of $N$ feature maps in a $\mathbb{C}$-CNN layer}
+	{\epsfbox{layers.png}}\caption{Arrangement of $N$ feature maps in a $\mathbb{C}$-CNN layer}
 \label{fig:blocks}
 \end{figure}
 
-
-How to write about polar and cartesian form?
-
 \section{Experimentation details}
 %For fair comparison of $\mathbb{R}$-CNNs and $\mathbb{C}$-CNNs, we setup conditions as follows.
-For experimentation with MNIST+P dataset, we trained using Stochastic Gradient Descent for 64 batch size, 50 epochs, batch 64, and with learning rate 0.001. For the radar datasets, these hyperparameters were the same except for epochs which were 200. The number of starting filters in each stage are 12, 24, and 48, respectively. 
+\subsection{Experimentation with MNIST+P dataset}
+For experimentation with MNIST+P dataset, we trained our $\mathbb{C}$-CNN and $\mathbb{R}$-CNN using Stochastic Gradient Descent algorithm with 64 batch size, for 50 epochs, and with learning rate 0.001. The number of starting filters in each stage are 12, 24, and 48, respectively. The results show the performance comparable architectures of $\mathbb{C}$-CNN and $\mathbb{R}$-CNN.  
 
 %\begin{table}
 \begin{center}
-	\captionof{table}{Test accuracy (\%) of activation functions in $\mathbb{C}$-CNNs ($z$ReLU(z), $\mathbb{C}$ReLU(z)), $tanh(z)$), $\mathbb{R}$-CNNs (ReLU) on MNIST+P dataset}
+
 	\begin{tabular}{ c|c|c|c?c } 
 		%\hline
 		- &$z$ReLU(z) & $\mathbb{C}$ReLU(z) & tanh($z$) & ReLU\\
 		\hline Test Accuracy (\%) & 98.31 & 99.07 & 88.42&\textbf{99.59}\\
 		%\hline
 	\end{tabular}
+	\captionof{table}{Test accuracy (\%) of activation functions in $\mathbb{C}$-CNNs ($z$ReLU(z), $\mathbb{C}$ReLU(z)), $tanh(z)$), $\mathbb{R}$-CNNs (ReLU) on MNIST+P dataset}
 
 \end{center}
 %\end{table}
 
-Peculiar problem with class with digit 1
+The results suggest that although the performace of $\mathbb{C}$-CNN (with $\mathbb{C}$ReLU) and $\mathbb{R}$-CNN is comparable, the additional phase information did not help $\mathbb{C}$-CNN perform better than $\mathbb{R}$-CNN. Among three $\mathbb{C}$-CNN variants, the one with $\mathbb{C}$ReLU outperforms the other two. We further notice the problem with the result of $\mathbb{C}$-CNN with $\mathrm{tanh}$(z) activation function that it provides 0\% classification accuracy for class with digit 1, a problem we associate to the data imbalance found for that class in the dataset which lead to poor training, and consequently poor results. 
+
+
+
+
+\subsection{Experimentation with radar datasets}
+
+For experimentation with radar datasets (Radar-150 with Polar data, Radar-300 with Cartesian and Polar data), we trained our $\mathbb{C}$-CNN and $\mathbb{R}$-CNN using Stochastic Gradient Descent algorithm with 64 batch size, for 200 epochs, and with learning rate 0.001. The number of starting filters in each stage are 12, 24, and 48, respectively. 
 
 \begin{center}
-		\captionof{table}{Test accuracy (\%) of activation functions in $\mathbb{C}$-CNNs ($z$ReLU(z), $\mathbb{C}$ReLU(z)), $tanh(z)$) and $\mathbb{R}$-CNNs (ReLU) on Cartesian and Polar representation of Radar-150 and Radar-300 datasets}
+
 	\begin{tabular}{ c|c|c|c?c } 
 		%\hline
 		- &$z$ReLU(z) & $\mathbb{C}$ReLU(z) & tanh($z$) & ReLU\\
@@ -44,11 +50,24 @@ Peculiar problem with class with digit 1
 		\hline Radar-300-Polar (\%) & 85.88 & 89.36 & NaN & 92.87\\
 		
 	\end{tabular}
+		\captionof{table}{Test accuracy (\%) of activation functions in $\mathbb{C}$-CNNs ($z$ReLU(z), $\mathbb{C}$ReLU(z)), $tanh(z)$) and $\mathbb{R}$-CNNs (ReLU) on Cartesian and Polar representation of Radar-150 and Radar-300 datasets}
 \end{center}
 
-* 300-cart-zrelu missclassifiying two classes(2,3). no convergence
+
+
+
+The results suggest us that $\mathbb{R}$-CNNs consistently outperforms $\mathbb{C}$-CNNs in this experiment. Among the $\mathbb{C}$-CNNs, the one with CReLU and zReLU provide no convergence difficulties, although the performance of zReLU is worse. With tanh(z) as the activation function, the $\mathbb{C}$-CNN fails to converge, a problem which we speculatively associate with the non-Holomorphic nature of this activation function and the nature of the data.
+
+%* 300-cart-zrelu missclassifiying two classes(2,3). no convergence
+
+} 
+
+
+
 
 \section{Discussion}
+One reason could be the absence of discriminatory information in the phase of the data. 
+
 We DID experience convergence difficulties.
 Generalization what?
 Perform at par

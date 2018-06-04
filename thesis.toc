@@ -1,26 +1,26 @@
-\contentsline {chapter}{\numberline {Acknowledgments\hspace {-96pt}}}{vii}{chapter*.4}
+\contentsline {chapter}{\numberline {Acknowledgments\hspace {-96pt}}}{ix}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Objectives}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}Document structure}{2}{section.1.3}
-\contentsline {chapter}{\numberline {2}Literature Review}{4}{chapter.2}
-\contentsline {chapter}{\numberline {3}Background}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Radar technology}{7}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Working principle of radar}{7}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Frequency modulated continuous-wave radar}{8}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Complex numbers theory}{9}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Representations of complex numbers}{10}{subsection.3.2.1}
-\contentsline {subsubsection}{Cartesian form}{10}{section*.8}
-\contentsline {subsubsection}{Polar form}{11}{section*.9}
-\contentsline {subsubsection}{Exponential form}{11}{section*.11}
-\contentsline {subsubsection}{Basic operations of complex numbers }{12}{section*.12}
-\contentsline {paragraph}{Conjugate}{12}{section*.13}
-\contentsline {paragraph}{Multiplication}{12}{section*.14}
-\contentsline {paragraph}{Division}{12}{section*.15}
-\contentsline {paragraph}{Addition and Substraction}{12}{section*.16}
-\contentsline {subsection}{\numberline {3.2.2}Trichotomy law and comparison of two complex numbers}{12}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Holomorphism \& complex differentiability}{13}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Generalized chain rule for real-valued complex function}{13}{subsection.3.2.4}
+\contentsline {chapter}{\numberline {2}Background}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Radar technology}{4}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Working principle of radar}{4}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Frequency modulated continuous-wave radar}{5}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Complex numbers theory}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Representations of complex numbers}{7}{subsection.2.2.1}
+\contentsline {subsubsection}{Cartesian form}{7}{section*.8}
+\contentsline {subsubsection}{Polar form}{8}{section*.9}
+\contentsline {subsubsection}{Exponential form}{8}{section*.11}
+\contentsline {subsubsection}{Basic operations of complex numbers }{9}{section*.12}
+\contentsline {paragraph}{Conjugate}{9}{section*.13}
+\contentsline {paragraph}{Multiplication}{9}{section*.14}
+\contentsline {paragraph}{Division}{9}{section*.15}
+\contentsline {paragraph}{Addition and Substraction}{9}{section*.16}
+\contentsline {subsection}{\numberline {2.2.2}Trichotomy law and comparison of two complex numbers}{9}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Holomorphism \& complex differentiability}{10}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Generalized chain rule for real-valued complex function}{10}{subsection.2.2.4}
+\contentsline {chapter}{\numberline {3}Literature Review}{12}{chapter.3}
 \contentsline {chapter}{\numberline {4}Comparison of $\mathbb {Re}$-CNNs with $\mathbb {C}$-CNNs}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Convolutional neural networks}{15}{section.4.1}
 \contentsline {section}{\numberline {4.2}The building blocks of $\mathbb {R}$-CNNs and $\mathbb {C}$-CNNs}{16}{section.4.2}
@@ -63,13 +63,20 @@
 \contentsline {subsection}{\numberline {5.2.2}Radar datasets}{31}{subsection.5.2.2}
 \contentsline {subsubsection}{Preprocessing of Radar Dataset}{32}{section*.47}
 \contentsline {section}{\numberline {5.3}Architecture -- $\mathbb {R}$-CNNs \& $\mathbb {C}$-CNNs}{32}{section.5.3}
-\contentsline {chapter}{\numberline {6}Experimentation}{34}{chapter.6}
-\contentsline {section}{\numberline {6.1}Practical implementation of complex numbers}{34}{section.6.1}
-\contentsline {section}{\numberline {6.2}Experimentation details}{35}{section.6.2}
-\contentsline {section}{\numberline {6.3}Discussion}{35}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Generalizibility testing experiment}{35}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}effect of complex weight initialization without batch normalization}{35}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Other architecture}{35}{subsection.6.3.3}
-\contentsline {chapter}{\numberline {7}Conclusion \& future work}{36}{chapter.7}
-\contentsline {chapter}{\numberline {A}Appendix}{37}{appendix.A}
-\contentsline {chapter}{\numberline {Bibliography\hspace {-96pt}}}{41}{appendix*.51}
+\contentsline {chapter}{\numberline {6}Experimentation}{35}{chapter.6}
+\contentsline {section}{\numberline {6.1}Practical implementation of complex numbers}{35}{section.6.1}
+\contentsline {section}{\numberline {6.2}Experimentation details}{36}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Experimentation with MNIST+P dataset}{36}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Experimentation with radar datasets}{36}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Discussion}{37}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Generalizibility testing experiment}{37}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}effect of complex weight initialization without batch normalization}{37}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Other architecture}{37}{subsection.6.3.3}
+\contentsline {chapter}{\numberline {7}Conclusion \& future work}{38}{chapter.7}
+\contentsline {chapter}{\numberline {A}}{39}{appendix.A}
+\contentsline {section}{\numberline {A.1}Radar-300 dataset}{39}{section.A.1}
+\contentsline {chapter}{\numberline {B}}{43}{appendix.B}
+\contentsline {section}{\numberline {B.1}Radar-150 dataset}{43}{section.B.1}
+\contentsline {chapter}{\numberline {C}}{46}{appendix.C}
+\contentsline {section}{\numberline {C.1}Confusion matrices from MNIST+P and radar datasets experiments}{46}{section.C.1}
+\contentsline {chapter}{\numberline {Bibliography\hspace {-96pt}}}{46}{figure.caption.62}
