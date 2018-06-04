@@ -1,11 +1,11 @@
-\chapter{Comparison of $\mathbb{Re}$-CNNs with $\mathbb{C}$-CNNs}\label{chap:meth}
+\chapter{Comparison of $\mathbb{Re}$-CNNs with $\mathbb{C}$-CNNs}\label{chap:comparison}
  
  
  \section{Convolutional neural networks}\label{cnn41}
  
  Convolutional Neural Networks (CNNs) (LeCun, 1989) \cite{lecun1989backpropagation} are specialized neural networks that are used for processing data that can be represented in the form of a grid or arrays e.g. 1D arrays of audio signals, three channels of 2D arrays of RGB images, or any other higher dimensional data. CNNs take their name due to the presence of a specialized kind of linear operation called convolution. CNNs are inspired by the visual cortex in the brain, which consists of alternating layers of simple and complex cells  (Hubel \& Wiesel, 1959, 1962) \cite{hubel1959receptive}\cite{hubel1962receptive}. 
  
-In the context of image classification, CNNs make use of the inherent compositional hierarchies present in images such that higher-level features are obtained by composing lower-level ones. Additionally, there are three key ideas behind ConvNets that makes them attractive for learning: sparse interactions, shared weights, and equivariant representations \cite{DeepLearning}. In traditional neural networks, one learned parameter interacts with one input unit in order to produce an output. In the case of images where there are millions of pixels, this approach becomes extremely expensive. In this respect, CNNs offer sparse interactions between inputs and the outputs in the sense that kernels of very few parameters need to be learned to extract features from an input of, let's say, a million pixels. This reduces the memory requirements and improve statistical efficiency. Parameter sharing refers to the use of the same parameters for than one function in the model. When kernels are learned in a CNN, the same kernel is used for different spatial locations of the input rather than learning different parameters for different spatial locations. This further reduces the memory requirements. CNNs also grant equivariance to translations, meaning that if the presence of a feature translates in an image, the output of a convolutional layer will also move by the same amount. This behavior is useful if we want to detect the same feature in different parts of the image. An example of a CNN, provided in LeCun (2015) paper \cite{nature}, is given in Figure \ref{fig:cnn}.
+In the context of image classification, CNNs make use of the inherent compositional hierarchies present in images such that higher-level features are obtained by composing lower-level ones. Additionally, there are three key ideas behind ConvNets that makes them attractive for learning: sparse interactions, shared weights, and equivariant representations \cite{DeepLearning}. In traditional neural networks, one learned parameter interacts with one input unit in order to produce an output. In the case of images where there are millions of pixels, this approach becomes extremely expensive. In this respect, CNNs offer sparse interactions between inputs and the outputs in the sense that kernels of very few parameters need to be learned to extract features from an input of, let's say, a million pixels. This reduces the memory requirements and improves statistical efficiency.  When kernels are learned in a CNN, the same kernel is used for different spatial locations of the input rather than learning different parameters for different spatial locations. This further reduces the memory requirements. CNNs also grant equivariance to translations, meaning that if the presence of a feature translates in an image, the output of a convolutional layer will also move by the same amount. This behavior is useful if we want to detect the same feature in different parts of the image. An example of a CNN, provided in LeCun (2015) paper \cite{nature}, is given in Figure \ref{fig:cnn}.
 
 \begin{figure}[htb]
 	\centering
@@ -66,7 +66,7 @@ Like complex domain can be thought of as an extension of real domain, complex-va
 \label{eqCinput}
 \end{equation}
  
-where A and B are real-valued matrices which belong to one complex kernel, implemented as seperate layers. x and y are real-valued input vecetors  representing the real and imaginary part of the complex-valued patch of the input layer. Note that the real and imaginary parts of both the kernel and the input are present as separate layers, and the result of the convolution is one complex-valued layer represented as two real-valued layers \cite{Guberman}. 
+where A and B are real-valued matrices which belong to one complex kernel, implemented as separate layers. x and y are real-valued input vectors  representing the real and imaginary part of the complex-valued patch of the input layer. Note that the real and imaginary parts of both the kernel and the input are present as separate layers, and the result of the convolution is one complex-valued layer represented as two real-valued layers \cite{Guberman}. 
 
 Taking advantage of the fact that convolution is distributive, the result of $\mathrm{W*h}$ is given in equation \ref{eqCconv}. A schematic of the implementation of convolution in our experiments is depicted in \ref{fig:complexconv}.
 
@@ -85,7 +85,7 @@ Taking advantage of the fact that convolution is distributive, the result of $\m
 
 %This convolution strategy has been used in \cite{Guberman}, \cite{trabelsi2018deep} , Learning Rep, Polsar and ...  
  \subsection{Batch normalization}\label{ssec:bn}
-One of the most widespread methods used to improve the performance of Deep Neural networks, including CNNs, is called Batch Normalization (BN). 
+One of the most widespread methods used to improve the performance of neural networks, including CNNs, is called Batch Normalization (BN). 
 %Problem faced, how it is solved: 
 Introduced by Ioffe and Szegedy in 2015 \cite{bnIoffeS15}, BN helps speed up the training of the network and enables the use of a wider variety of acceptable hyper-parameters by reducing internal covariate shift. 
 Internal Covariate Shift is defined as the change in the distribution of network activations, the input to the next layer, due to the change in network parameters during training \cite{bnIoffeS15}. Normalization of input data is widely accepted method to make the nerual networks converge faster, as stated in \cite{LeCun1998}. In the case of BN, this idea of input normalization is applied on the input of each layer which happens to be the output of the previous layer. It fights the internal covariate shift problem by a normalization step that fixes the means and variances of layer inputs where the estimations of mean and variance are computed
@@ -131,8 +131,7 @@ V = \begin{pmatrix} V_{rr} & V_{ri}\\ V_{ir} & V_{ii} \end{pmatrix} =
 \label{eqcbn2}
 \end{equation}
 
-As described by the equations above, the mean-centered input ($x - \mathbb{E}[x]$) is multiplied by the inverse of the square-root of input variance $\mathrm{V}$ in the normalization step.%The guarantee of positive definiteness of $\mathrm{V} 
-Whereas in real-valued BN, the first step entailed converting the input distribution into a standard normal distribution, the complex-valued BN requires it to be converted to standard complex normal distribution, which is characterized by having location parameter (also called mean) $\mu = 0$, covariance matrix $\Gamma = 1$, and the relation matrix (also called pseudo-covariance) $C = 0$. The formulae of these parameters are given by:
+As described by the equations above, the mean-centered input ($x - \mathbb{E}[x]$) is multiplied by the inverse of the square-root of input variance $\mathrm{V}$ in the normalization step. Whereas in real-valued BN, the first step entailed converting the input distribution into a standard normal distribution, the complex-valued BN requires it to be converted to standard complex normal distribution, which is characterized by having location parameter (also called mean) $\mu = 0$, covariance matrix $\Gamma = 1$, and the relation matrix (also called pseudo-covariance) $C = 0$. The formulae of these parameters are given by:
 
 \begin{equation}
 \label{eqcbn3}
@@ -179,18 +178,9 @@ x , &\textrm{for} \ x\ge 0\\
 %benefits of ReLU
 %other 
  
- Other variants of ReLU include Leaky ReLU (LReLU), Parametric ReLU (PReLU), Randomized ReLU (RReLU), and Exponential Linear Unit (ELU), as shown in Figure \ref{ractfn}. 
+ Other variants of ReLU include Leaky ReLU (LReLU), Parametric ReLU (PReLU), Randomized ReLU (RReLU), and Exponential Linear Unit (ELU) \cite{recent_advances}. 
   
- 
-  \begin{figure}[htb]
- 	\centering
- 	\epsfxsize=14cm
- 	{\epsfbox{relu.png}}
- 	\caption{Variants of ReLU activation function}
- 	\label{ractfn}
- \end{figure}
-  
-  
+
   
  \subsubsection{Complex-Valued Activation Functions}\label{cvaf}
  
@@ -203,7 +193,7 @@ x , &\textrm{for} \ x\ge 0\\
  Complex-valued activation functions can be divided into two types: Split-complex type and Transcendental type.
  Split-complex type functions deals with real and imaginary parts (Real-Imaginary subtype) or magnitude and phase (Magnitude-phase subtype) independently but identically. Hence, they can be thought to work similar to real-valued networks with double the number of dimensions. The Split-complex activation functions are said to be appropriate when we can assume that our data contains cartesian symmetry when using Real-imaginary type, rotational symmtery when using Magnitude-phase type. Split-complex functions are Holomorphic but unbounded.
  
- Transcendental type is the one which are bounded almost everywhere, with well-defined first order derivatives. They do have singularities but it is suggested by Kima and Adali (2003) \cite{kim2003approximation} that with proper weight initialization and regularization schemes, this type of activation functions will not hamper the process of backpropagation.
+ Transcendental type are bounded almost everywhere, with well-defined first order derivatives. They do have singularities but it is suggested by Kima and Adali (2003) \cite{kim2003approximation} that with proper weight initialization and regularization schemes, will not hamper the process of backpropagation.
  
  %suitability of the two types functions???
  
@@ -240,7 +230,7 @@ $\mathbb{C}$ReLU is Real-Imaginary type activation function introduced by Chiheb
 \subsubsection{tanh($z$)}
 A Transcendental type, tanh($z$) is a complex- hyperbolic tangent function suggested by Kim and Adali 2003 \cite{kim2003approximation}.
 This function gives us a periodic singularity at every
-$(1/2 + n)\pi i$, $n \in \mathbb{N}$, as shown in Fig. \ref{tanhz}. However, even in the presence of singularities, this activation function can be used to train the network with some success, although the possibility of hitting the singularity remains.
+$(1/2 + n)\pi i$, $n \in \mathbb{N}$. However, even in the presence of singularities, this activation function can be used to train the network with some success, although the possibility of hitting the singularity remains.
 
 \begin{equation}
 \mathrm{tanh}(z) = \mathrm{tanh}(x+iy) = 

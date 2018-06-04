@@ -29,19 +29,19 @@ In our experimentation, we aim to answer the following question:\\
  
  
  \subsection{MNIST+P dataset}\label{data-mnistp}
- The MNIST database of handwritten digits (10 classes) has a training set of 60,000 examples, and a test set of 10,000 examples, where each image is of dimensions 28x28. It is a commonly used benchmark for supervised learning algorithm performance. In the MNIST+P dataset created for our experimentation, we consider that an image of MNIST dataset represents the magnitude of a complex number. Each pixel in an image is scaled such that the black part of the image corresponds to the value of 50, and the white part to 200. The phase for each image class (0,1,2,3,4,5,6,7,8,9) is picked from uniform distribution whose range is determined class-wise: The range for class 1 representing the digit 0 is [0,$\pi$/10], that for class 2 representing the digit 1 is [$\pi$/10,2$\pi$/10],...., that for class 10 representing digit 9 is [9$\pi$/10,$\pi$]. 
+ The MNIST database of handwritten digits (10 classes) has a training set of 60,000 examples, and a test set of 10,000 examples, where each image is of dimensions 28x28. It is a commonly used benchmark for supervised learning algorithm performance. In the MNIST+P dataset created for our experimentation, we consider that an image of MNIST dataset represents the magnitude of a complex number. Each pixel in an image is scaled such that the black part of the image corresponds to the value of 50, and the white part to 200. The phase for each image class (0,1,2,3,4,5,6,7,8,9) is picked from uniform distribution whose range is determined class-wise: The range for class 1 representing the digit 0 is [0,$\pi$/10], that for class 2 representing the digit 1 is [$\pi$/10,2$\pi$/10],...., that for class 10 representing digit 9 is [9$\pi$/10,$\pi$]. Each samples image in the dataset becomes complex natured i.e. having magnitude and phase values for each pixel.
  
    \begin{figure}[htb]
 	\centering
 	\epsfxsize=14cm
-	{\epsfbox{mnistt.png}}\caption{LEFT: Examples of digits from MNIST Dataset; CENTER: Angle bin sector for each class; RIGHT: Phase channels corresponding to the classes shown in the left most image \cite{mnistimage}}
+	{\epsfbox{mnistt.png}}\caption{LEFT: Examples of digits from MNIST Dataset; CENTER: Angle bin sector for each class; RIGHT: Depiction of phase channels corresponding to the classes shown in the left most image (color corresponds to angle sector in the center image) \cite{mnistimage}}
 \label{fig:blocks}
 \end{figure}
  
  \subsection{Radar datasets}\label{data-radar}
  
- Radar-150 and Radar-300 are two complex-valued datasets whose source is two FMCW radars with bandwidth of 6GHz and central frequencies of 150GHz and 300GHz, respectively.
- Both the datasets contain scans of six static objects (bike , cone, dog, mannequin, sign, trolley), performed by rotating the radar around a single object at different angles. Total number of images in both the datasets are 813. In each class, the scans are taken at two different distances from the object i.e. 3.8m and 6.3m. Table \ref{table:datadist} provides the data distribution among the classes. \ref{apa} and \ref{apb} show some examples of images present in the datasets. Radar-300 is present in Cartesian representation and Polar representation while Radar-150 is present in only Polar distribution. 
+ Radar-150 and Radar-300 are two complex-valued datasets whose source is two FMCW radars with bandwidth of 6GHz and central frequencies of 150GHz (Type 2) and 300GHz (Type 1), respectively.
+ Both the datasets contain scans of six static objects (bike , cone, dog, mannequin, sign, trolley), performed by rotating the radar around a single object at different angles. Total number of images in both the datasets are 813. In each class, the scans are taken at two different distances from the object i.e. 3.8m and 6.3m. Table 5.1 shows the data distribution among the classes. Appendices \ref{apa} and \ref{apb} show some examples of images present in the datasets. Radar-300 is present in Cartesian representation and Polar representation while Radar-150 is present in only Polar distribution. 
  
  
  
@@ -49,6 +49,10 @@ In our experimentation, we aim to answer the following question:\\
  
  \newcolumntype{?}{!{\vrule width 1.5pt}}
  \begin{table}
+ 	
+ 		\label{ta}
+ 		
+ 		
  	\begin{center}
  
  		\begin{tabular}{ c|c|c|c } 
@@ -71,7 +75,7 @@ In our experimentation, we aim to answer the following question:\\
  		\end{tabular}
  				\captionof{table}{Distribution of data over classes in Radar datasets}
  	\end{center}
- 	\label{table:datadist}
+ 
  \end{table}
 
  \subsubsection{Preprocessing of Radar Dataset}
@@ -94,7 +98,7 @@ In our experimentation, we aim to answer the following question:\\
 	
 	\item \textit{Batch normalization $(\mathrm{BN})$:} $\mathbb{R}$-CNN and $\mathbb{C}$-CNN employ the seperate BN processes as described in Section \ref{ssec:bn}.
 	
-	\item \textit{Pooling $(\mathrm{BN})$:} Both $\mathbb{R}$-CNN and $\mathbb{C}$-CNN employ average pooling of size (8,  8). Due to the drawback that a max-by-magnitude pooling would make sense only if the input is positive, we do not choose it. 
+	\item \textit{Average Pooling $(\mathrm{AP})$:} Both $\mathbb{R}$-CNN and $\mathbb{C}$-CNN employ average pooling of size (8,  8). Due to the drawback that a max-by-magnitude pooling would make sense only if the input is positive, we do not choose it. 
 	
 	\item \textit{Fully-Connected Layer :}  The last layer is a Fully Connected (FC) layer with Softmax squashing function. At this stage, the real and imaginary parts of $\mathbb{C}$-CNN are treated as if they were two real numbers and having their individual weights, and the $\mathbb{C}$-CNN loses its "complex" sense.
 	
@@ -110,7 +114,7 @@ In our experimentation, we aim to answer the following question:\\
  	{\epsfbox{23}}\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \
  		\epsfxsize=5cm
  	{\epsfbox{ARCH}}
- 	\caption{Architecture of the first residual block in stage 1 (left), and that in stages 2 and 3 (right); General architecture of both $\mathbb{R}$-CNN and $\mathbb{C}$-CNN (bottom)}
+ 	\caption{Architecture of the first residual block in stage 1 [LEFT], and that in stages 2 and 3 [RIGHT]; General architecture of both $\mathbb{R}$-CNN and $\mathbb{C}$-CNN [BOTTOM]}
  	\label{fig:architecture}
  \end{figure}
  

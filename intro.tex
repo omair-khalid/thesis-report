@@ -2,15 +2,15 @@
 
 \section{Motivation} \label{sect:moti}
 
-Complex-valued Convolutional Neural Networks ($\mathbb{C}$-CNNs) are a class of Convolutional Neural Networks (CNNs) that incorporates complex number representations in their operation. This may mean that either data, internal parameters (weights), or both data and weights are complex in nature. We motivate our problem by first describing why CNNs are a suitable choice for image classification, followed by why complex numbers should be incorporated into CNNs for complex-natured data.
+Complex-valued Convolutional Neural Networks ($\mathbb{C}$-CNNs) are a class of Convolutional Neural Networks (CNNs) that incorporates complex number representations in its operation. This may mean that either input data, internal parameters (weights), or both data and weights are complex in nature. We motivate our problem by first describing why CNNs are a suitable choice for image classification, followed by why complex numbers should be incorporated into CNNs for complex-natured data.
 
-CNNs have emerged to be one of the most powerful tool in computer vision for the tasks including, but not limited to, image classification, and segmentation. CNNs make use of the compositional hierarchy of features present in natural images, i.e. low-level elements coming together to form higher-level representations, while enjoying the benefits of sparse connectivity, weight-sharing, and invariance to translations (further explained in Section \ref{cnn41})  They gained tremendous popularity after they were used by Krizhevsky $et \ al.$ (2012) \cite{krizhevsky2012imagenet} used them to win the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 2012 by achieving record-breaking results. Recent years have seen major advancements in their performance which includes techniques like Batch Normalization \cite{bnIoffeS15}, Drop-Out regularization, different architecture designs (AlexNet, ResNet) etc. All this makes CNNs the suitable choice for data classification problem.
+CNNs have emerged to be one of the most powerful tool in computer vision for the tasks including, but not limited to, image classification, and segmentation. CNNs make use of the compositional hierarchy of features present in natural images, i.e. low-level elements coming together to form higher-level representations, while enjoying the benefits of sparse connectivity, weight-sharing, and invariance to translations (further explained in Section \ref{cnn41}).  They gained tremendous popularity after Krizhevsky $et \ al.$ (2012) \cite{krizhevsky2012imagenet} used them to win the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 2012 by achieving record-breaking results. Recent years have seen major advancements in their performance which includes techniques like Batch Normalization \cite{bnIoffeS15}, Drop-Out regularization, different architecture designs (AlexNet, ResNet) etc. All this makes CNNs the suitable choice for data classification problem.
 
 Complex numbers can help us achieve a closer representation of natural phenomena as compared to only real-valued numbers. Complex numbers lend themselves to neuronal models in a neural network that exhibit the properties of a human brain (Reichert and Serre (2013) \cite{reichert2013neuronal}, represent wind's speed and direction \cite{wind}, and electromagnetic waves \cite{hirose2012complex}, among others. The idea of using complex-valued representations which closely mimic natural phenomena in a framework that can exploit such data ($\mathbb{C}$-CNN) is a promising one, as demonstrated in \cite{wind}, \cite{polsarzhang2017complex}.
 
 % incorporated complex-valued neurons to represent the functioning of a biologically inspired neuron in a deep learning network that exhibits dynamic binding: depending on the input of the network, the phases of particular neurons add up or cancel each other, so that as a whole, the network provides the correct output. 
 
-According to literature, one of the advantages of $\mathbb{C}$-NNs can provide better guard against over-fitting phenomenon, leading to better generalization. This idea is also put forward by Hirose and Yoshida (2012) \cite{hirose2012complex} who explain that the benefit of complex-valued neural networks ($\mathbb{C}$-NNs) compared to real-valued neural networks ($\mathbb{R}$-NNs) lies in the restricted  flexibility in learning brought by the nature of multiplication, as it entails rotation and scaling, not just scaling as in real-valued case. This grants the network relief from "ineffective degrees of freedom" that can lead to poor generalization. Guberman (2016) \cite{Guberman} also reports better generalization for $\mathbb{C}$-CNNs as compared to $\mathbb{R}$-CNNs. Hence, if better generalization is desired, $\mathbb{C}$-CNNs might have the answer.
+According to literature, one of the advantages of $\mathbb{C}$-NNs can provide better guard against over-fitting phenomenon, leading to better generalization. This idea is also put forward by Hirose and Yoshida (2012) \cite{hirose2012complex} who explain that the benefit of complex-valued neural networks ($\mathbb{C}$-NNs) compared to real-valued neural networks ($\mathbb{R}$-NNs) lies in the restricted  flexibility in learning brought by the nature of multiplication, as it entails rotation and scaling, not just scaling as in real-valued case. This grants the network relief from "ineffective degrees of freedom" that can lead to poor generalization. Guberman (2016) \cite{Guberman} also reports better generalization capability of $\mathbb{C}$-CNNs as compared to $\mathbb{R}$-CNNs. Hence, if better generalization is desired, $\mathbb{C}$-CNNs might have the answer.
 
 The recent success of $\mathbb{C}$-CNNs with Polarimetric Synthetic Aperture (SAR) data in various classification tasks (\cite{polsarzhang2017complex}, \cite{hansch2010complex}, \cite{wilmanski2016complex}), audio transcription, and speech spectrum prediction \cite{trabelsi2018deep}, against $\mathbb{R}$-CNNs presents us with a strong case of their potential advantages when the input data is complex-natured itself. Although the research of $\mathbb{C}$-NNs is not new, the recent advancements in CNNs and general deep learning architectures offer us an opportunity to further investigate how complex number representations can be useful in this new light.
 
@@ -32,7 +32,7 @@ We aim to experiment and analyse if $\mathbb{C}$-CNNs can perfom better than $\m
 \begin{enumerate}
 	\item Review literature concerning Complex-Valued Convolution Networks ($\mathbb{C}$-CNNs) to explore design possibilities.
 	\item Propose and implement comparable architectures $\mathbb{C}$-CNN and $\mathbb{R}$-CNN in the wake of recent deep learning advancements.
-	\item Experiment with an in-house complex-natured radar dataset to establish the benefit, or lack thereof, of $\mathbb{C}$-CNNs in terms of generalization capability and test accuracy as compared to $\mathbb{R}$-CNNs.
+	\item Experiment with a complex-natured radar dataset to establish the benefit, or lack thereof, of $\mathbb{C}$-CNNs in terms of generalization capability and test accuracy as compared to $\mathbb{R}$-CNNs.
 \end{enumerate}
 
 
@@ -40,11 +40,13 @@ We aim to experiment and analyse if $\mathbb{C}$-CNNs can perfom better than $\m
 
 This document is organized as follows:
 \begin{itemize}
-	\item \textbf{Chapter 2}
-	\item \textbf{Chapter 3}
-	\item \textbf{Chapter 4}
-	\item \textbf{Chapter 5}
-	\item \textbf{Chapter 6}	
+	\item \textbf{Chapter 2} concerns with providing useful theoretical knowledge needed to understand complex number operations and basic principles of radars
+	\item \textbf{Chapter 3} discusses the existence of $\mathbb{C}$-NNs and $\mathbb{C}$-CNNs in literature including state-of-the-art approaches 
+	\item \textbf{Chapter 4} explains in detail different components of a $\mathbb{R}$-CNN and $\mathbb{C}$-CNN and the differences between them
+	\item \textbf{Chapter 5} details the methodology adopted to solve the problem, provide details about the datasets and experimental setup
+	\item \textbf{Chapter 6} gives us the results of the experiments and presents an analysis	
+	\item \textbf{Chapter 7} gives us a conclusion 
+	\item \textbf{Chapter 8} proposes the direction of future work
 	
 \end{itemize}
 

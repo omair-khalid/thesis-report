@@ -1,6 +1,6 @@
 \chapter{Background}\label{chap:comp}
 
-This chapter presents the pre-requisite knowledge for understanding the challenges of the problem. The following subsections explain about the Radar technology and Complex Numbers theory.
+This chapter presents the pre-requisite knowledge for understanding context of the problem. The following subsections explain about the Radar technology and Complex Numbers theory.
 
 \section{Radar technology}
 Radar stands for Radio Detection and Range is a sensing technology that uses radio waves to detect range, angle, and velocity of objects. Radar technology was first developed to aid enemy target detection in World War II, and extended to other applications such as monitoring precipitation (meteorology), mapping componsition of Earth's crust (geology), monitoring speeds of road vehicles, among others. Nowadays, radars are also widely used in automotive industry in Advanced Driver Assistance Systems (ADAS) for automatic emergency braking system (AEBS), adaptive cruise control (ACC), automatic parking, among others.
@@ -16,7 +16,7 @@ where $v$ is the constant for speed of light, $t$ is the time taken for a round 
 \begin{figure}[htb]
 	\centering
 	\epsfxsize=5cm
-	{\epsfbox{radarbasics}}
+	{\epsfbox{radarbasics.eps}}
 	\caption{Representation of Radar working scheme}
 	\label{fig:rad}
 \end{figure}
@@ -45,9 +45,9 @@ S_{min} &= \mathrm{Minimum \ detectable \ signal, \ in \ Watts}.\\
 All the above parameters, except $\sigma$, are to some extent under the control of the radar designer. As this model does not exactly capture the nature of the physical world, a number of other factors play a role in deteriorating the performance of the radar, namely, variance in performance of electronic components according to the environment, probabilistic nature of variables ($S_{min},\  \sigma$), variance in environmental conditions, among others.
 
 \subsection{Frequency modulated continuous-wave radar}
-Frequency Modulated Continuous-Wave Radar (FMCW) transmits a continuous carrier signal, whose frequency modulated by periodic function such as a sinusoid or sawtooth wave to provide range data. 
+Frequency Modulated Continuous-Wave Radar (FMCW) transmits a continuous carrier signal, whose frequency is modulated by a periodic function such as a sinusoid or sawtooth wave to provide range data. 
 
-The internal schematics of one type of FMCW radar are presented in Figure \ref{fig:fmcwrad}, which will refer in this text as Type 1. Wave generator produces a Up, Down or Triangular Chirp, as illustrated in Figure \ref{fig:chirps}, that will be transmitted by the radar. Next, the transmitter components transmits this wave, which, after reflecting from an object, returns back to the receiver as a scaled and delayed version of the original signal. The receiver consists of two mixers: one to mix with the transmitted signal, and one to mix with the transmitted signal shifted 90 degrees. This type of mixing creates two channels for the received signal, denoted by $I$ and $Q$. Both the channels are treated with a Low Pass Filter which removes the high-frequency noise, followed by an Analog-to-Digital Converter which makes it suitable for digital processing. The individual channels are added together to form one signal $I+jQ$. A windowing operation is performed to remove the side lobes before applying Fast Fourier Transform (FFT) on the signal. FFT  is applied to this signal and the magnitude represents the range of the object, represented in the 2D plot in Figure \ref{fig:fmcwrad}. 
+The internal schematics of one type of FMCW radar (which will refer in this text as Type 1) are presented in Figure \ref{fig:fmcwrad}. Wave generator produces a Up, Down or Triangular Pulse, as illustrated in Figure \ref{fig:chirps}, that will be transmitted by the radar. Next, the transmitter components transmits this wave, which, after being reflected from an object, returns back to the receiver as a scaled and delayed version of the original signal. The receiver consists of two mixers: one to mix with the transmitted signal, and one to mix with the transmitted signal shifted 90 degrees. This type of mixing creates two channels for the received signal, denoted by $I$ and $Q$. Both the channels are treated with a Low Pass Filter which removes the high-frequency noise, followed by an Analog-to-Digital Converter which makes it suitable for digital processing. The individual channels are added together to form one signal $I+jQ$. A windowing operation is performed to remove the side lobes before applying Fast Fourier Transform (FFT) on the signal. FFT  is applied to this signal and the magnitude represents the range of the object, represented in the 2D plot in Figure \ref{fig:fmcwrad}. 
   
 
 \begin{figure}[htb]
@@ -64,25 +64,40 @@ The internal schematics of one type of FMCW radar are presented in Figure \ref{f
 	\centering
 	\epsfxsize=14cm
 	{\epsfbox{fmcv}}
-	\caption{Schematics of a FMCW radar}
+	\caption{Schematics of a FMCW Type 1 radar}
 	\label{fig:fmcwrad}
 \end{figure}
 
-Another type of internal schematics found in a FMCW radar involve calculation of distance based on the difference between the instantaneous frequency of transmitted and received signals i.e. beat frequency. After receiving the signal, it is mixed with the original signal, and passed through a Low-Pass filter in order to retrieve the beat frequency. Beat frequency is given by $f_b=\bigg(\frac{2R}{c}\bigg)\bigg(\frac{B}{T_c}\bigg)$, where $R$ is the range of the object, $c$ is the speed of light and $t_d$ is the round-trip delay of reflection. For a static object, the beat frequency is a single tone on the frequency spectrum, whereas multiple objects provide multiple tones. Moving objects are detected as the phase change across multiple chirps. In this text, we will refer to this type of radar as Type 2. FIGURE xyz shows the schematics of such type of a FMCW radar.  
+Another type of internal schematics found in a FMCW radar involve calculation of distance based on the difference between the instantaneous frequency of transmitted and received signals i.e. beat frequency. After receiving the signal, it is mixed with the original signal, and passed through a Low-Pass filter in order to retrieve the beat frequency. Beat frequency is given by $f_b=\bigg(\frac{2R}{c}\bigg)\bigg(\frac{B}{T_c}\bigg)$, where $R$ is the range of the object, $c$ is the speed of light and $t_d$ is the round-trip delay of reflection. For a static object, the beat frequency is a single tone on the frequency spectrum, whereas multiple objects provide multiple tones. Moving objects are detected as the phase change across multiple chirps. In this text, we will refer to this type of radar as Type 2. Figure \ref{type2} shows the schematics of such type of a FMCW radar.  
 
+\begin{figure}[htb]
+	\centering
+	\epsfxsize=14cm
+	{\epsfbox{type2}}
+	\caption{Schematics of a FMCW Type 2 radar}
+	\label{type2}
+\end{figure}
 \section{Complex numbers theory}
 
-Complex number field ($\mathbb{C}$) is an extension of the Real numbers field ($\mathbb{R}$); alternatively, $\mathbb{R}\subset\mathbb{C}$. In their Cartesian form, further described later in this chapter, they consist of a real part and an imaginary part ($z=a+ib$). If the imaginary part is $0$, the complex number reduces to a real number. The term $i$, known as the Imaginary Quantiy, was proposed by Euler as a substitute for the quantity $\sqrt{-1}$. 
+Complex number field ($\mathbb{C}$) is an extension of the Real numbers field ($\mathbb{R}$); alternatively, $\mathbb{R}\subset\mathbb{C}$ (Figure \ref{cfield}). In their Cartesian form (further described later in this chapter), they consist of two parts: a real part and an imaginary part i.e. ($z=a+ib$). If the imaginary part is $0$, the complex number reduces to a real number. The term $i$, known as the Imaginary Quantity, was proposed by Euler as a substitute for the quantity $\sqrt{-1}$. 
+\begin{figure}[htb]
+	\centering
+	\epsfxsize=6cm
+	{\epsfbox{cfield}}
+	\caption{Number systems. Note that Real numbers $\mathbb{R}$ are a subset of Complex numbers $\mathbb{C}$ \cite{cflied}}
+	\label{cfield}
+\end{figure}
 
 Complex numbers are useful abstract quantities that can be used in calculations and result in physically meaningful solutions. They can be found in the fields of control theory, fluid dynamics, electromagnetism, signal analysis, and quantum mechanics, among others.
-One such example is the strength of an electromagnetic field. The field has both an electric and a magnetic component, so it takes a pair of real numbers (one for the intensity of the electric field, one for the intensity of the magnetic field) to describe the field strength. This pair of real numbers can be thought of as a complex number. In radar-sensing, the phase difference of the reflected wave can be interpreted as a measure of distance of the target object and the magnitude can be attributed to the surface properties of the object. 
-where complex number representations are naturally befitting. 
+One such example is denoting the strength of an electromagnetic field. The field has both an electric and a magnetic component, so it takes a pair of real numbers (one for the intensity of the electric field, one for the intensity of the magnetic field) to describe the field strength. This pair of real numbers can be thought of as a complex number.  
 
 \subsection{Representations of complex numbers}
 
 \subsubsection{Cartesian form}
-In the Cartesian form, a complex number is represented by $z=x+iy$, where $x$ is the imaginary part and $y$ is the real part. They can be visualized in a rectangular plane, called the Complex Plane, where the x-axis represents the real part and the y-axis represents the imaginary part (demonstrated in Figure \ref{fig:complexrep}). 
-
+In the Cartesian form, complex numbers are represented by $z=x+iy$, where $x$ is the imaginary part and $y$ is the real part. They can be visualized in a rectangular plane, called the Complex Plane, where the x-axis represents the real part and the y-axis represents the imaginary part (demonstrated in Figure \ref{fig:complexrep}). 
+\begin{equation}
+z = x+iy 
+\end{equation}
 \subsubsection{Polar form}
 The Polar form of a complex number can be denoted by two quantities: 
 the distance to a point (x,y) from the origin on the complex plane, $|z|$, and the phase of the complex number, $\theta$, measured positive counter-clockwise from the x-axis. The conversion formulae to and from Cartesian form and Polar form are given by:
@@ -99,7 +114,7 @@ x = |z|cos\theta  ~~,~~ y = |z|sin\theta
 |z| = \sqrt{x_{2}+y_{2}}  ~~,~~ \theta = \arctan(y/x) 
 \end{equation}
 
-The magnitude or distance quantity $|z|$ is unique for each $(x,y)$ in the complex domain, but the $\theta$ can have the following values: $\theta$, $\theta \pm \mathrm{2}\pi$,...,, $\theta \pm \mathrm{2}n\pi$ where $n$ = 1,2,3,... However, we often choose a valued between $0$ and 2$\pi$ and call it the \textit{Principal Argument}.
+The magnitude or distance quantity $|z|$ is unique for each $(x,y)$ in the complex domain, but the $\theta$ can have the following values: $\theta$, $\theta \pm \mathrm{2}\pi$,...,, $\theta \pm \mathrm{2}n\pi$ where $n$ = 1,2,3,.... However, we often choose a value between $0$ and 2$\pi$ and call it the \textit{Principal Argument}.
 
 \begin{figure}[htb]
 	\centering
@@ -110,7 +125,7 @@ The magnitude or distance quantity $|z|$ is unique for each $(x,y)$ in the compl
 \end{figure}
 
 \subsubsection{Exponential form}
-Utilizing Euler's formula given in equation \ref{ef}, we can rewrite the Polar form of a complex number into the exponential form, defined in equation \ref{eform}, where $r = |z|$.
+Utilizing Euler's formula given in equation \ref{ef}, we can rewrite the Polar form of a complex number into the exponential form, defined in Equation \ref{eform}, where $r = |z|$.
 
 
 \begin{equation}\label{ef}
@@ -126,7 +141,7 @@ e^{i\theta} = cos\theta+isin\theta
 
 \subsubsection{Basic operations of complex numbers }
 \paragraph{Conjugate}
-The complex conjugate of a complex number $z=x+iy$ is given by $x-iy$, denoted by $z^{*}$ or $\bar{z}$. Conjugate of a complex number can be used to extract the real and imaginary parts of a complex number, as follows:
+The complex conjugate of a complex number $z=x+iy$ is given by $x-iy$, and denoted by $z^{*}$ or $\bar{z}$. Conjugate of a complex number can be used to extract the real and imaginary parts of a complex number, as follows:
 
 \begin{equation}
 \begin{aligned}
@@ -178,7 +193,7 @@ One way of comparing two complex numbers is by comparing the real components fir
 
 The law of trichotomy states that "for arbitrary real numbers a and b, exactly one of the relations $a<b$, $a=b$, $a>b$ holds" \cite{trichotomy}. However, this relationship is not true for complex numbers and it becomes clear when dealing with multiplication of complex numbers (described below).
 
-For an order to satisfy Trichomoty Law, $a<b$ and $0<c$, then $ac<bc$ must be true. Now, consider that $a=0+i1$, and $0$ is represented as $b=0+i0$. By lexicographic order, $0<i$. We move forward to see that if we multiply both sides by $i$ twice, we turn this inequality into $1<-1$, which is a contradiction to our previous claim.
+For an order to satisfy Trichotomy Law, it must be true that if$a<b$ and $0<c$, then $ac<bc$. Now, consider that $a=0+i1$, and $0$ is represented as $b=0+i0$. By lexicographic order, $0<i$. We move forward to see that if we multiply both sides by $i$ twice, we turn this inequality into $1<-1$, which is a contradiction to our previous claim.
 
 Another way to compare complex numbers is to compare their respective magnitude, instead of comparing the individual components lexicographically. But the shortcoming of this approach is that the distinction between negative and positive quantities is foregone i.e. if $z=-9+i0$ and $t=9+i0$, $|z|=|t|$ even though the real part of both numbers have opposite signs.  
 
@@ -188,7 +203,7 @@ Holomorphism guarantees that a complex-valued function is complex differentiable
 A complex function $f(z)= u(z) + iv(z)$, where $u(z)$ and $v(z)$ are real-valued functions, is complex differentiable if it satisfies the following two conditions:
 \begin{enumerate}
 
-	\item It satisfies the Cauchy-Riemann (CR) equations, given by:
+	\item It satisfies the Cauchy-Riemann (CR) equations which are given by:
 \begin{equation}\label{eq:compdiff}
 \frac{\delta u}{\delta x} = \frac{\delta v}{\delta y} ~~,~~ \frac{\delta u}{\delta y} = - \frac{\delta v}{\delta x} 
 \end{equation}
@@ -196,6 +211,49 @@ A complex function $f(z)= u(z) + iv(z)$, where $u(z)$ and $v(z)$ are real-valued
 \end{enumerate} 
 
 
+If a complex function satisfies the second condition, it is called  $Real \ Differentiable$. If it also satisfies the first condition it is called $Complex \ Differentiable$ or $Holomorphic$.
+
+However, real-valued complex functions (functions whose output is real-vlaued but input is complex valued) are not Holomorphic and pose a problem in the face of the requirement of differentiability for the chain rule. Here, Wirtinger derivatives provide us with a way to compute gradients.
+
+Considering that $f(z) = g(x,y)=u(x,y)+iv(x,y)$, we extend the definition of $f$ as follows:
+
+\begin{equation}
+\begin{aligned}
+f(z) = f(z,\overline{z}) = u(x,y)\\
+z = x+iy\\
+\overline{z} = x-iy
+\end{aligned}
+\end{equation}
+
+The Wirtinger derivatives are given by:
+
+\begin{equation}
+\frac{\partial f}{\partial z} = \dfrac{1}{2}\bigg(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\bigg)
+\end{equation}
+
+
+\begin{equation}
+\label{derr}
+\frac{\partial f}{\partial z} = \dfrac{1}{2}\bigg(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\bigg)
+\end{equation}
+
+Extending it for multivariate functions $f:\mathbb{C}^{N} \mapsto \mathbb{R}$, where a complex vector $z \in \mathbb{C}^{N}$, we get:
+
+\begin{equation}
+\begin{aligned}
+\nabla_{z} = \bigg( \frac{\partial}{\partial z_1},...,\frac{\partial}{\partial z_n}\bigg)\\
+\nabla_{z^*} = \bigg( \frac{\partial}{\partial z_1^*},...,\frac{\partial}{\partial z_n^*}\bigg)
+\end{aligned}
+\end{equation}
+
+As pointed out by Scardapane $et \ al.$ (2018) \cite{scardapane2018complex} , the sufficient and necessary condition for the function to have a minimum value is that either $\nabla_{z} = 0$ or $\nabla_{\overline{z}} = 0$. In case that our function is real-valued complex loss function, we have an additional property:
+
+
+\begin{equation}
+\bigg(\nabla_zf(z,z^{*})\bigg)^{*}= \nabla_{z^{*}}f(z,z^{*})
+\end{equation}
+
+This property, combined with Taylor's expansion of a function, tells us that the gradient of such a function is given by conjugate cogradient operator at the point. This means that Equation \ref{derr} would provide us with the gradient calculation, and it is pretty straight forward to implement in the available deep learning frameworks \cite{sarroff2015learning}.
 
 \subsection{Generalized chain rule for real-valued complex  function}\label{cchainrule}
 Consider that we have a real-valued function $L(z): \mathbb{C}\rightarrow\mathbb{R}$, where $z$ is a complex variable $z=x+iy$ with $x,y \in \mathbb{R}$. The gradient of real-valued complex function is defined as follows:

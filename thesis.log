@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.5.29)  4 JUN 2018 01:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.5.29)  4 JUN 2018 05:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -435,9 +435,6 @@ LaTeX Warning: Label `sect:thefirst' multiply defined.
 LaTeX Warning: Label `chap:comp' multiply defined.
 
 
-LaTeX Warning: Label `chap:meth' multiply defined.
-
-
 LaTeX Warning: Label `fig:blocks' multiply defined.
 
 
@@ -566,54 +563,39 @@ Missing character: There is no e in font msbm10!
 \openout4 = `thesis.toc'.
 
  [4] (./thesis.lof
+Underfull \vbox (badness 1694) has occurred while \output is active []
 
-LaTeX Warning: Citation `bloggg' on page v undefined on input line 9.
-
-
-LaTeX Warning: Citation `bloggg' on page v undefined on input line 10.
-
-
-LaTeX Warning: Citation `trabelsi2018deep' on page v undefined on input line 11
-.
-
-
-LaTeX Warning: Citation `mnistimage' on page v undefined on input line 14.
-
-[5
+ [5
 
 ]
-Overfull \hbox (15.07475pt too wide) in paragraph at lines 23--23
+Overfull \hbox (15.07475pt too wide) in paragraph at lines 25--25
  [][] [][][]\OT1/cmr/m/n/10 [Left to Right]Bike-3.8m-Cartesian;Bike-6.3m-Cartes
 ian;Cone-3.8m-Cartesian;Cone- 
  []
 
 
-Overfull \hbox (65.0749pt too wide) in paragraph at lines 24--24
+Overfull \hbox (65.0749pt too wide) in paragraph at lines 26--26
  [][] [][][]\OT1/cmr/m/n/10 [Left to Right]Dog-3.8m-Cartesian;Dog-6.3m-Cartesia
 n;Mannequin-3.8m-Cartesian;Mannequin- 
  []
 
 
-Overfull \hbox (31.24147pt too wide) in paragraph at lines 25--25
+Overfull \hbox (31.24147pt too wide) in paragraph at lines 27--27
  [][] [][][]\OT1/cmr/m/n/10 [Left to Right]Sign-3.8m-Cartesian;Sign-6.3m-Cartes
 ian;Trolleu-3.8m-Cartesian;Trolley- 
  []
 
 
-Overfull \hbox (9.4915pt too wide) in paragraph at lines 28--28
+Overfull \hbox (9.4915pt too wide) in paragraph at lines 30--30
  [][] [][][]\OT1/cmr/m/n/10 [Left to Right]Dog-3.8m-Polar;Dog-6.3m-Polar;Manneq
 uin-3.8m-Polar;Mannequin- 
  []
 
-)
+[6])
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
-
-Underfull \vbox (badness 1721) has occurred while \output is active []
-
- [6]
-[7] (./thesis.lot)
+ [7] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
@@ -623,117 +605,93 @@ Underfull \vbox (badness 1721) has occurred while \output is active []
 
 ] (./intro.tex
 Chapter 1.
-
-LaTeX Warning: Citation `krizhevsky2012imagenet' on page 1 undefined on input l
-ine 7.
-
-
-LaTeX Warning: Citation `bnIoffeS15' on page 1 undefined on input line 7.
-
-
-LaTeX Warning: Citation `reichert2013neuronal' on page 1 undefined on input lin
-e 9.
-
-
-LaTeX Warning: Citation `wind' on page 1 undefined on input line 9.
-
-
-LaTeX Warning: Citation `hirose2012complex' on page 1 undefined on input line 9
-.
-
-
-LaTeX Warning: Citation `wind' on page 1 undefined on input line 9.
-
-
-LaTeX Warning: Citation `polsarzhang2017complex' on page 1 undefined on input l
-ine 9.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.10 
-      [1
+l.13 A
+      ccording to literature, one of the advantages of $\mathbb{C}$-NNs can ...
+[1
 
 
 ]
-
-LaTeX Warning: Citation `hirose2012complex' on page 2 undefined on input line 1
-3.
-
-
-LaTeX Warning: Citation `Guberman' on page 2 undefined on input line 13.
-
-
-LaTeX Warning: Citation `polsarzhang2017complex' on page 2 undefined on input l
-ine 15.
-
-
-LaTeX Warning: Citation `hansch2010complex' on page 2 undefined on input line 1
-5.
-
-
-LaTeX Warning: Citation `wilmanski2016complex' on page 2 undefined on input lin
-e 15.
-
-
-LaTeX Warning: Citation `trabelsi2018deep' on page 2 undefined on input line 15
-.
-
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
- [2]) (./background.tex [3]
+ [2])
+(./background.tex [3]
 Chapter 2.
 
 LaTeX Warning: Reference `[rad]' on page 4 undefined on input line 14.
 
 Package epstopdf Info: Source file: <./figures/radarbasics.eps>
-(epstopdf)                    date: 2018-05-30 02:30:36
-(epstopdf)                    size: 597088 bytes
+(epstopdf)                    date: 2018-06-04 04:18:04
+(epstopdf)                    size: 56660 bytes
 (epstopdf)             Output file: <./figures/radarbasics-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2018-05-30 02:30:53
-(epstopdf)                    size: 18614 bytes
+(epstopdf)                    date: 2018-06-04 04:18:16
+(epstopdf)                    size: 19091 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figures/radarbasics-eps-
 converted-to.pdf ./figures/radarbasics.eps>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/radarbasics-eps-converted-to.pdf, id=403, 340.27126pt x 288.07625pt>
-
+<./figures/radarbasics-eps-converted-to.pdf, id=424, 341.275pt x 289.08pt>
 File: ./figures/radarbasics-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/radarbasics-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/radarbasics-eps-converted-to.pdf  used on in
 put line 19.
-(pdftex.def)             Requested size: 142.26378pt x 120.44173pt.
+(pdftex.def)             Requested size: 142.26378pt x 120.50851pt.
 [4
 
 ] [5 <./figures/radarbasics-eps-converted-to.pdf>]
-<./figures/up.png, id=423, 649.42625pt x 375.4025pt>
+<./figures/up.png, id=444, 649.42625pt x 375.4025pt>
 File: ./figures/up.png Graphic file (type png)
 <use ./figures/up.png>
 Package pdftex.def Info: ./figures/up.png  used on input line 56.
 (pdftex.def)             Requested size: 128.0374pt x 74.008pt.
-<./figures/down.png, id=424, 647.41875pt x 369.38pt>
+<./figures/down.png, id=445, 647.41875pt x 369.38pt>
 File: ./figures/down.png Graphic file (type png)
 <use ./figures/down.png>
 Package pdftex.def Info: ./figures/down.png  used on input line 57.
 (pdftex.def)             Requested size: 128.0374pt x 73.05179pt.
-<./figures/tri.png, id=425, 658.46pt x 375.4025pt>
+<./figures/tri.png, id=446, 658.46pt x 375.4025pt>
 File: ./figures/tri.png Graphic file (type png)
 <use ./figures/tri.png>
 Package pdftex.def Info: ./figures/tri.png  used on input line 58.
 (pdftex.def)             Requested size: 128.0374pt x 72.99411pt.
-<./figures/fmcv.png, id=426, 1166.3575pt x 758.835pt>
+<./figures/fmcv.png, id=447, 1166.3575pt x 758.835pt>
 File: ./figures/fmcv.png Graphic file (type png)
 <use ./figures/fmcv.png>
 Package pdftex.def Info: ./figures/fmcv.png  used on input line 66.
 (pdftex.def)             Requested size: 398.33858pt x 259.15837pt.
- [6 <./figures/up.png> <./figures/down.png> <./figures/tri.png>] [7 <./figures/
-fmcv.png>]
+ [6 <./figures/up.png> <./figures/down.png> <./figures/tri.png> <./figures/fmcv
+.png>]
+<./figures/type2.png, id=453, 1166.3575pt x 758.835pt>
+File: ./figures/type2.png Graphic file (type png)
+<use ./figures/type2.png>
+Package pdftex.def Info: ./figures/type2.png  used on input line 76.
+(pdftex.def)             Requested size: 398.33858pt x 259.15837pt.
+Package epstopdf Info: Source file: <./figures/cfield.eps>
+(epstopdf)                    date: 2018-06-04 04:32:07
+(epstopdf)                    size: 148372 bytes
+(epstopdf)             Output file: <./figures/cfield-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-06-04 04:32:10
+(epstopdf)                    size: 63734 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/cfield-eps-conve
+rted-to.pdf ./figures/cfield.eps>
+(epstopdf)             \includegraphics on input line 86.
+Package epstopdf Info: Output file is already uptodate.
+<./figures/cfield-eps-converted-to.pdf, id=455, 482.80376pt x 378.41376pt>
+File: ./figures/cfield-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figures/cfield-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/cfield-eps-converted-to.pdf  used on input l
+ine 86.
+(pdftex.def)             Requested size: 170.71652pt x 133.80371pt.
+ [7 <./figures/type2.png (PNG copy)>] [8 <./figures/cfield-eps-converted-to.pdf
+>]
 Package epstopdf Info: Source file: <./figures/crep2.eps>
 (epstopdf)                    date: 2018-05-29 02:45:40
 (epstopdf)                    size: 68550 bytes
@@ -742,89 +700,22 @@ Package epstopdf Info: Source file: <./figures/crep2.eps>
 (epstopdf)                    size: 11157 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figures/crep2-eps-conver
 ted-to.pdf ./figures/crep2.eps>
-(epstopdf)             \includegraphics on input line 107.
+(epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/crep2-eps-converted-to.pdf, id=438, 139.52126pt x 154.5775pt>
+<./figures/crep2-eps-converted-to.pdf, id=477, 139.52126pt x 154.5775pt>
 File: ./figures/crep2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/crep2-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/crep2-eps-converted-to.pdf  used on input li
-ne 107.
+ne 122.
 (pdftex.def)             Requested size: 142.26378pt x 157.61977pt.
- [8 <./figures/crep2-eps-converted-to.pdf>] [9]
 
-LaTeX Warning: Citation `trichotomy' on page 10 undefined on input line 179.
+Underfull \vbox (badness 1005) has occurred while \output is active []
 
-
-LaTeX Warning: Citation `trabelsi2018deep' on page 10 undefined on input line 1
-87.
-
-[10]) (./sota.tex [11]
+ [9 <./figures/crep2-eps-converted-to.pdf>] [10] [11]) (./sota.tex [12]
 Chapter 3.
+[13
 
-LaTeX Warning: Citation `hirose2012complex' on page 12 undefined on input line 
-3.
-
-
-LaTeX Warning: Citation `ArjovskySB15' on page 12 undefined on input line 7.
-
-
-LaTeX Warning: Citation `wisdom2016full' on page 12 undefined on input line 7.
-
-
-LaTeX Warning: Citation `danihelka2016associative' on page 12 undefined on inpu
-t line 7.
-
-
-LaTeX Warning: Citation `oyallon2015deep' on page 12 undefined on input line 7.
-
-
-
-LaTeX Warning: Citation `bruna2015theoretical' on page 12 undefined on input li
-ne 7.
-
-
-LaTeX Warning: Citation `worrall2017harmonic' on page 12 undefined on input lin
-e 7.
-
-
-LaTeX Warning: Citation `reichert2013neuronal' on page 12 undefined on input li
-ne 27.
-
-[12
-
-]
-
-LaTeX Warning: Citation `wilmanski2016complex' on page 13 undefined on input li
-ne 36.
-
-
-LaTeX Warning: Citation `gotcha' on page 13 undefined on input line 36.
-
-
-LaTeX Warning: Citation `hansch2009classification' on page 13 undefined on inpu
-t line 38.
-
-
-LaTeX Warning: Citation `hansch2009classification' on page 13 undefined on inpu
-t line 38.
-
-
-LaTeX Warning: Citation `hansch2010complex' on page 13 undefined on input line 
-38.
-
-
-LaTeX Warning: Citation `polsarzhang2017complex' on page 13 undefined on input 
-line 38.
-
-[13]
-
-LaTeX Warning: Citation `Guberman' on page 14 undefined on input line 40.
-
-
-LaTeX Warning: Citation `trabelsi2018deep' on page 14 undefined on input line 4
-3.
-
-) (./comparison.tex [14]
+] [14]) (./comparison.tex [15]
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -843,28 +734,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
 Missing character: There is no e in font msbm10!
-
-LaTeX Warning: Citation `lecun1989backpropagation' on page 15 undefined on inpu
-t line 6.
-
-
-LaTeX Warning: Citation `hubel1959receptive' on page 15 undefined on input line
- 6.
-
-
-LaTeX Warning: Citation `hubel1962receptive' on page 15 undefined on input line
- 6.
-
-
-LaTeX Warning: Citation `DeepLearning' on page 15 undefined on input line 8.
-
-
-LaTeX Warning: Citation `nature' on page 15 undefined on input line 8.
-
-[15
+[16
 
 ]
-<./figures/cnn.png, id=512, 1383.1675pt x 585.18625pt>
+<./figures/cnn.png, id=599, 1383.1675pt x 585.18625pt>
 File: ./figures/cnn.png Graphic file (type png)
 <use ./figures/cnn.png>
 Package pdftex.def Info: ./figures/cnn.png  used on input line 13.
@@ -874,12 +747,6 @@ Overfull \hbox (14.22636pt too wide) in paragraph at lines 13--14
  [][] 
  []
 
-
-LaTeX Warning: Citation `bloggg' on page 16 undefined on input line 14.
-
-
-LaTeX Warning: Citation `bloggg' on page 16 undefined on input line 14.
-
 Missing character: There is no e in font msbm10!
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -897,26 +764,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 22.
 
-
-LaTeX Warning: Citation `nature' on page 16 undefined on input line 29.
-
-Missing character: There is no e in font msbm10!
-[16 <./figures/cnn.png>]
-
-LaTeX Warning: Citation `nature' on page 17 undefined on input line 32.
-
-
-LaTeX Warning: Citation `recent_advances' on page 17 undefined on input line 32
-.
-
-
+[17 <./figures/cnn.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
-
-
-LaTeX Warning: Citation `recent_advances' on page 17 undefined on input line 47
-.
 
 Package epstopdf Info: Source file: <./figures/convRiverTrailBlog.eps>
 (epstopdf)                    date: 2018-05-16 20:53:24
@@ -929,7 +780,7 @@ Package epstopdf Info: Source file: <./figures/convRiverTrailBlog.eps>
 og-eps-converted-to.pdf ./figures/convRiverTrailBlog.eps>
 (epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/convRiverTrailBlog-eps-converted-to.pdf, id=518, 274.02374pt x 164.6
+<./figures/convRiverTrailBlog-eps-converted-to.pdf, id=612, 274.02374pt x 164.6
 15pt>
 File: ./figures/convRiverTrailBlog-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -937,175 +788,32 @@ File: ./figures/convRiverTrailBlog-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures/convRiverTrailBlog-eps-converted-to.pdf  use
 d on input line 52.
 (pdftex.def)             Requested size: 170.71652pt x 102.55757pt.
-
-LaTeX Warning: Citation `bloggg' on page 17 undefined on input line 53.
-
-
-LaTeX Warning: Citation `bloggg' on page 17 undefined on input line 53.
-
-[17]
-
-LaTeX Warning: Citation `Guberman' on page 18 undefined on input line 69.
-
-<./figures/cConvOperation.png, id=528, 517.935pt x 630.355pt>
+Missing character: There is no e in font msbm10!
+[18]
+<./figures/cConvOperation.png, id=626, 517.935pt x 630.355pt>
 File: ./figures/cConvOperation.png Graphic file (type png)
 <use ./figures/cConvOperation.png>
 Package pdftex.def Info: ./figures/cConvOperation.png  used on input line 81.
 (pdftex.def)             Requested size: 284.52756pt x 346.30196pt.
-
-LaTeX Warning: Citation `trabelsi2018deep' on page 18 undefined on input line 8
-2.
-
-
-LaTeX Warning: Citation `trabelsi2018deep' on page 18 undefined on input line 8
-2.
-
-
-LaTeX Warning: Citation `bnIoffeS15' on page 18 undefined on input line 90.
-
-
-LaTeX Warning: Citation `bnIoffeS15' on page 18 undefined on input line 91.
-
-
-LaTeX Warning: Citation `LeCun1998' on page 18 undefined on input line 91.
-
-
-LaTeX Warning: Citation `recent_advances' on page 18 undefined on input line 92
-.
-
+ [19 <./figures/convRiverTrailBlog-eps-converted-to.pdf>]
 Missing character: There is no e in font msbm10!
-[18 <./figures/convRiverTrailBlog-eps-converted-to.pdf>]
-
-LaTeX Warning: Citation `recent_advances' on page 19 undefined on input line 96
-.
-
-[19 <./figures/cConvOperation.png>]
+ [20 <./figures/cConvOperation.png>]
 Missing character: There is no e in font msbm10!
-
-
-LaTeX Warning: Citation `bnIoffeS15' on page 20 undefined on input line 102.
-
-
-LaTeX Warning: Citation `trabelsi2018deep' on page 20 undefined on input line 1
-21.
-
-
-LaTeX Warning: Citation `bnIoffeS15' on page 20 undefined on input line 121.
-
-
-LaTeX Warning: Citation `trabelsi2018deep' on page 20 undefined on input line 1
-21.
-
 
 Underfull \vbox (badness 1584) has occurred while \output is active []
 
+ [21]
 Missing character: There is no e in font msbm10!
- [20]
 
-LaTeX Warning: Citation `krizhevsky2012imagenet' on page 21 undefined on input 
-line 169.
-
-
-LaTeX Warning: Citation `nair2010rectified' on page 21 undefined on input line 
-169.
-
-[21]
-<./figures/relu.png, id=564, 1195.46625pt x 251.94125pt>
-File: ./figures/relu.png Graphic file (type png)
-<use ./figures/relu.png>
-Package pdftex.def Info: ./figures/relu.png  used on input line 188.
-(pdftex.def)             Requested size: 398.33858pt x 83.94817pt.
-
-
-LaTeX Warning: Citation `trabelsi2018deep' on page 22 undefined on input line 1
-99.
-
-
-LaTeX Warning: Citation `hansch2010complex' on page 22 undefined on input line 
-199.
-
-
-LaTeX Warning: Citation `polsarzhang2017complex' on page 22 undefined on input 
-line 199.
-
-
-LaTeX Warning: Citation `sarroff2015learning' on page 22 undefined on input lin
-e 199.
-
+[22] [23]
 Missing character: There is no e in font msbm10!
-[22 <./figures/relu.png>]
-
-LaTeX Warning: Citation `kim2003approximation' on page 23 undefined on input li
-ne 206.
-
-
-LaTeX Warning: Citation `trabelsi2018deep' on page 23 undefined on input line 2
-19.
-
-
-LaTeX Warning: Citation `Guberman' on page 23 undefined on input line 229.
-
-
-LaTeX Warning: Citation `kim2003approximation' on page 23 undefined on input li
-ne 241.
-
-
-LaTeX Warning: Reference `tanhz' on page 23 undefined on input line 243.
-
-[23]
-
-LaTeX Warning: Citation `recent_advances' on page 24 undefined on input line 26
-4.
-
-
-LaTeX Warning: Citation `glorot2010understanding' on page 24 undefined on input
- line 264.
-
-
-LaTeX Warning: Citation `recent_advances' on page 24 undefined on input line 26
-8.
-
-
-LaTeX Warning: Citation `he2015delving' on page 24 undefined on input line 268.
-
-
+ [24] [25]
 Missing character: There is no e in font msbm10!
-[24] [25]
-
-LaTeX Warning: Citation `Guberman' on page 26 undefined on input line 354.
-
+ [26] [27]
 Missing character: There is no e in font msbm10!
-[26]
-
-LaTeX Warning: Citation `Guberman' on page 27 undefined on input line 388.
-
-
-LaTeX Warning: Citation `polsarzhang2017complex' on page 27 undefined on input 
-line 389.
-
-
-LaTeX Warning: Citation `trabelsi2018deep' on page 27 undefined on input line 3
-90.
-
-[27]
-
-LaTeX Warning: Citation `hansch2009classification' on page 28 undefined on inpu
-t line 410.
-
-
-LaTeX Warning: Citation `polsarzhang2017complex' on page 28 undefined on input 
-line 410.
-
-
-LaTeX Warning: Citation `hansch2010complex' on page 28 undefined on input line 
-410.
-
+ [28] [29]) (./methodology.tex
 Missing character: There is no e in font msbm10!
-[28]
-
-LaTeX Warning: Citation `nature' on page 29 undefined on input line 416.
-
-) (./methodology.tex [29]
+ [30]
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
@@ -1117,65 +825,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-[30
+[31
 
 ]
-
-LaTeX Warning: Citation `chollet2015keras' on page 31 undefined on input line 2
-5.
-
-
-LaTeX Warning: Citation `theano' on page 31 undefined on input line 25.
-
-<./figures/mnistt.png, id=655, 1917.1625pt x 364.36125pt>
+<./figures/mnistt.png, id=790, 1917.1625pt x 364.36125pt>
 File: ./figures/mnistt.png Graphic file (type png)
 <use ./figures/mnistt.png>
 Package pdftex.def Info: ./figures/mnistt.png  used on input line 37.
 (pdftex.def)             Requested size: 398.33858pt x 75.70084pt.
-
-LaTeX Warning: Citation `mnistimage' on page 31 undefined on input line 37.
-
-
-LaTeX Warning: Citation `mnistimage' on page 31 undefined on input line 37.
-
-
-Package caption Warning: \label without proper reference on input line 74.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `table:datadist' on page 31 undefined on input line 44
-.
-
-[31 <./figures/mnistt.png>]
+ [32 <./figures/mnistt.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 81.
+(hyperref)                removing `math shift' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 81.
+(hyperref)                removing `math shift' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 81.
+(hyperref)                removing `math shift' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 81.
+(hyperref)                removing `math shift' on input line 85.
 
-
-LaTeX Warning: Citation `trabelsi2018deep' on page 32 undefined on input line 8
-2.
-
-[32]
-
-LaTeX Warning: Citation `glorot2010understanding' on page 33 undefined on input
- line 91.
-
-
-LaTeX Warning: Citation `trabelsi2018deep' on page 33 undefined on input line 9
-1.
-
+[33]
 Package epstopdf Info: Source file: <./figures/1.eps>
 (epstopdf)                    date: 2018-06-01 07:13:16
 (epstopdf)                    size: 2056501 bytes
@@ -1184,13 +859,13 @@ Package epstopdf Info: Source file: <./figures/1.eps>
 (epstopdf)                    size: 32640 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figures/1-eps-converted-
 to.pdf ./figures/1.eps>
-(epstopdf)             \includegraphics on input line 108.
+(epstopdf)             \includegraphics on input line 112.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/1-eps-converted-to.pdf, id=678, 462.72874pt x 734.745pt>
+<./figures/1-eps-converted-to.pdf, id=819, 462.72874pt x 734.745pt>
 File: ./figures/1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/1-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/1-eps-converted-to.pdf  used on input line 1
-08.
+12.
 (pdftex.def)             Requested size: 142.26378pt x 225.8963pt.
 Package epstopdf Info: Source file: <./figures/23.eps>
 (epstopdf)                    date: 2018-06-01 07:13:33
@@ -1200,13 +875,13 @@ Package epstopdf Info: Source file: <./figures/23.eps>
 (epstopdf)                    size: 42061 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figures/23-eps-converted
 -to.pdf ./figures/23.eps>
-(epstopdf)             \includegraphics on input line 110.
+(epstopdf)             \includegraphics on input line 114.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/23-eps-converted-to.pdf, id=679, 593.21625pt x 734.745pt>
+<./figures/23-eps-converted-to.pdf, id=820, 593.21625pt x 734.745pt>
 File: ./figures/23-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/23-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/23-eps-converted-to.pdf  used on input line 
-110.
+114.
 (pdftex.def)             Requested size: 192.05609pt x 237.88118pt.
 Package epstopdf Info: Source file: <./figures/ARCH.eps>
 (epstopdf)                    date: 2018-06-01 07:29:58
@@ -1216,21 +891,21 @@ Package epstopdf Info: Source file: <./figures/ARCH.eps>
 (epstopdf)                    size: 20000 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figures/ARCH-eps-convert
 ed-to.pdf ./figures/ARCH.eps>
-(epstopdf)             \includegraphics on input line 112.
+(epstopdf)             \includegraphics on input line 116.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/ARCH-eps-converted-to.pdf, id=680, 332.24126pt x 534.99875pt>
+<./figures/ARCH-eps-converted-to.pdf, id=821, 332.24126pt x 534.99875pt>
 File: ./figures/ARCH-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/ARCH-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/ARCH-eps-converted-to.pdf  used on input lin
-e 112.
+e 116.
 (pdftex.def)             Requested size: 142.26378pt x 229.0817pt.
-) (./experiments.tex [33] [34 <./figures/1-eps-converted-to.pdf> <./figures/23-
+) (./experiments.tex [34] [35 <./figures/1-eps-converted-to.pdf> <./figures/23-
 eps-converted-to.pdf> <./figures/ARCH-eps-converted-to.pdf>]
 Chapter 6.
 
 Package array Warning: Column ? is already defined on input line 3.
 
-<./figures/layers.png, id=706, 508.90125pt x 346.29375pt>
+<./figures/layers.png, id=847, 508.90125pt x 346.29375pt>
 File: ./figures/layers.png Graphic file (type png)
 <use ./figures/layers.png>
 Package pdftex.def Info: ./figures/layers.png  used on input line 10.
@@ -1238,7 +913,7 @@ Package pdftex.def Info: ./figures/layers.png  used on input line 10.
 
 Underfull \vbox (badness 2057) has occurred while \output is active []
 
- [35
+ [36
 
  <./figures/layers.png>]
 
@@ -1251,24 +926,22 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 53.
 See the caption package documentation for explanation.
 
-! Too many }'s.
-l.63 }
-      
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-[36]) (./conclusion.tex [37]
+) (./conclusion.tex [37] [38]
 Chapter 7.
-) (./appendix.tex [38
+) (./fut.tex [39
+
+]
+Chapter 8.
+) (./appendix.tex [40
 
 ]
 Appendix A.
-<./figures/bikepol.jpg, id=725, 865.20422pt x 1009.74423pt>
+<./figures/bikepol.jpg, id=870, 865.20422pt x 1009.74423pt>
 File: ./figures/bikepol.jpg Graphic file (type jpg)
 <use ./figures/bikepol.jpg>
 Package pdftex.def Info: ./figures/bikepol.jpg  used on input line 9.
 (pdftex.def)             Requested size: 213.39566pt x 249.0458pt.
-<./figures/conepol.jpg, id=726, 865.20422pt x 1009.74423pt>
+<./figures/conepol.jpg, id=871, 865.20422pt x 1009.74423pt>
 File: ./figures/conepol.jpg Graphic file (type jpg)
 <use ./figures/conepol.jpg>
 Package pdftex.def Info: ./figures/conepol.jpg  used on input line 9.
@@ -1278,12 +951,12 @@ Overfull \hbox (14.22635pt too wide) in paragraph at lines 9--9
  [][][] 
  []
 
-<./figures/dogpol.jpg, id=727, 865.20422pt x 1009.74423pt>
+<./figures/dogpol.jpg, id=872, 865.20422pt x 1009.74423pt>
 File: ./figures/dogpol.jpg Graphic file (type jpg)
 <use ./figures/dogpol.jpg>
 Package pdftex.def Info: ./figures/dogpol.jpg  used on input line 16.
 (pdftex.def)             Requested size: 213.39566pt x 249.0458pt.
-<./figures/manpol.jpg, id=728, 865.20422pt x 1009.74423pt>
+<./figures/manpol.jpg, id=873, 865.20422pt x 1009.74423pt>
 File: ./figures/manpol.jpg Graphic file (type jpg)
 <use ./figures/manpol.jpg>
 Package pdftex.def Info: ./figures/manpol.jpg  used on input line 16.
@@ -1293,18 +966,15 @@ Overfull \hbox (14.22635pt too wide) in paragraph at lines 16--16
  [][][] 
  []
 
+[41
 
-LaTeX Warning: Citation `mnistimage' on page 39 undefined on input line 16.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./figures/signpol.jpg, id=729, 865.20422pt x 1009.74423pt>
+ <./figures/bikepol.jpg> <./figures/conepol.jpg>]
+<./figures/signpol.jpg, id=878, 865.20422pt x 1009.74423pt>
 File: ./figures/signpol.jpg Graphic file (type jpg)
 <use ./figures/signpol.jpg>
 Package pdftex.def Info: ./figures/signpol.jpg  used on input line 23.
 (pdftex.def)             Requested size: 213.39566pt x 249.0458pt.
-<./figures/trolleypol.jpg, id=730, 865.20422pt x 1009.74423pt>
+<./figures/trolleypol.jpg, id=879, 865.20422pt x 1009.74423pt>
 File: ./figures/trolleypol.jpg Graphic file (type jpg)
 <use ./figures/trolleypol.jpg>
 Package pdftex.def Info: ./figures/trolleypol.jpg  used on input line 23.
@@ -1317,12 +987,12 @@ Overfull \hbox (14.22635pt too wide) in paragraph at lines 23--23
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figures/bikecart.jpg, id=731, 865.20422pt x 663.66254pt>
+<./figures/bikecart.jpg, id=880, 865.20422pt x 663.66254pt>
 File: ./figures/bikecart.jpg Graphic file (type jpg)
 <use ./figures/bikecart.jpg>
 Package pdftex.def Info: ./figures/bikecart.jpg  used on input line 31.
 (pdftex.def)             Requested size: 213.39566pt x 163.68735pt.
-<./figures/conecart.jpg, id=732, 865.20422pt x 663.66254pt>
+<./figures/conecart.jpg, id=881, 865.20422pt x 663.66254pt>
 File: ./figures/conecart.jpg Graphic file (type jpg)
 <use ./figures/conecart.jpg>
 Package pdftex.def Info: ./figures/conecart.jpg  used on input line 31.
@@ -1341,12 +1011,12 @@ tesian;Cone-3.8m-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figures/dogcart.jpg, id=733, 865.20422pt x 663.66254pt>
+<./figures/dogcart.jpg, id=882, 865.20422pt x 663.66254pt>
 File: ./figures/dogcart.jpg Graphic file (type jpg)
 <use ./figures/dogcart.jpg>
 Package pdftex.def Info: ./figures/dogcart.jpg  used on input line 38.
 (pdftex.def)             Requested size: 213.39566pt x 163.68735pt.
-<./figures/mancart.jpg, id=734, 865.20422pt x 663.66254pt>
+<./figures/mancart.jpg, id=883, 865.20422pt x 663.66254pt>
 File: ./figures/mancart.jpg Graphic file (type jpg)
 <use ./figures/mancart.jpg>
 Package pdftex.def Info: ./figures/mancart.jpg  used on input line 38.
@@ -1365,12 +1035,12 @@ sian;Mannequin-3.8m-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figures/signcart.jpg, id=735, 865.20422pt x 663.66254pt>
+<./figures/signcart.jpg, id=884, 865.20422pt x 663.66254pt>
 File: ./figures/signcart.jpg Graphic file (type jpg)
 <use ./figures/signcart.jpg>
 Package pdftex.def Info: ./figures/signcart.jpg  used on input line 45.
 (pdftex.def)             Requested size: 213.39566pt x 163.68735pt.
-<./figures/trolleycart.jpg, id=736, 865.20422pt x 663.66254pt>
+<./figures/trolleycart.jpg, id=885, 865.20422pt x 663.66254pt>
 File: ./figures/trolleycart.jpg Graphic file (type jpg)
 <use ./figures/trolleycart.jpg>
 Package pdftex.def Info: ./figures/trolleycart.jpg  used on input line 45.
@@ -1389,92 +1059,86 @@ tesian;Trolleu-3.8m-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./appendix2.tex [39
-
- <./figures/bikepol.jpg> <./figures/conepol.jpg>]
-[40 <./figures/dogpol.jpg> <./figures/manpol.jpg>] [41 <./figures/signpol.jpg> 
-<./figures/trolleypol.jpg> <./figures/bikecart.jpg> <./figures/conecart.jpg>]
-[42 <./figures/dogcart.jpg> <./figures/mancart.jpg> <./figures/signcart.jpg> <.
-/figures/trolleycart.jpg>]
+) (./appendix2.tex [42 <./figures/dogpol.jpg> <./figures/manpol.jpg>] [43 <./fi
+gures/signpol.jpg> <./figures/trolleypol.jpg> <./figures/bikecart.jpg> <./figur
+es/conecart.jpg>] [44 <./figures/dogcart.jpg> <./figures/mancart.jpg> <./figure
+s/signcart.jpg> <./figures/trolleycart.jpg>]
 Appendix B.
-<./figures/150bikepol.jpg, id=753, 865.20422pt x 577.1421pt>
+<./figures/150bikepol.jpg, id=899, 865.20422pt x 577.1421pt>
 File: ./figures/150bikepol.jpg Graphic file (type jpg)
 <use ./figures/150bikepol.jpg>
-Package pdftex.def Info: ./figures/150bikepol.jpg  used on input line 9.
+Package pdftex.def Info: ./figures/150bikepol.jpg  used on input line 10.
 (pdftex.def)             Requested size: 213.39566pt x 142.34775pt.
-<./figures/150conpol.jpg, id=754, 865.20422pt x 1009.74423pt>
+<./figures/150conpol.jpg, id=900, 865.20422pt x 1009.74423pt>
 File: ./figures/150conpol.jpg Graphic file (type jpg)
 <use ./figures/150conpol.jpg>
-Package pdftex.def Info: ./figures/150conpol.jpg  used on input line 9.
+Package pdftex.def Info: ./figures/150conpol.jpg  used on input line 10.
 (pdftex.def)             Requested size: 213.39566pt x 249.0458pt.
 
-Overfull \hbox (14.22635pt too wide) in paragraph at lines 9--9
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 10--10
  [][][] 
  []
 
-<./figures/150dogpol.jpg, id=755, 865.20422pt x 1009.74423pt>
+<./figures/150dogpol.jpg, id=901, 865.20422pt x 1009.74423pt>
 File: ./figures/150dogpol.jpg Graphic file (type jpg)
 <use ./figures/150dogpol.jpg>
-Package pdftex.def Info: ./figures/150dogpol.jpg  used on input line 16.
+Package pdftex.def Info: ./figures/150dogpol.jpg  used on input line 17.
 (pdftex.def)             Requested size: 213.39566pt x 249.0458pt.
-<./figures/150manpol.jpg, id=756, 865.20422pt x 1009.74423pt>
+<./figures/150manpol.jpg, id=902, 865.20422pt x 1009.74423pt>
 File: ./figures/150manpol.jpg Graphic file (type jpg)
 <use ./figures/150manpol.jpg>
-Package pdftex.def Info: ./figures/150manpol.jpg  used on input line 16.
+Package pdftex.def Info: ./figures/150manpol.jpg  used on input line 17.
 (pdftex.def)             Requested size: 213.39566pt x 249.0458pt.
 
-Overfull \hbox (14.22635pt too wide) in paragraph at lines 16--16
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 17--17
  [][][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./figures/150signpol.jpg, id=757, 865.20422pt x 1009.74423pt>
-File: ./figures/150signpol.jpg Graphic file (type jpg)
-<use ./figures/150signpol.jpg>
-Package pdftex.def Info: ./figures/150signpol.jpg  used on input line 23.
-(pdftex.def)             Requested size: 213.39566pt x 249.0458pt.
-<./figures/150trolleypol.jpg, id=758, 865.20422pt x 1009.74423pt>
-File: ./figures/150trolleypol.jpg Graphic file (type jpg)
-<use ./figures/150trolleypol.jpg>
-Package pdftex.def Info: ./figures/150trolleypol.jpg  used on input line 23.
-(pdftex.def)             Requested size: 213.39566pt x 249.0458pt.
-
-Overfull \hbox (14.22635pt too wide) in paragraph at lines 23--23
- [][][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./appendix3.tex [43
+[45
 
  <./figures/150bikepol.jpg> <./figures/150conpol.jpg>]
-[44 <./figures/150dogpol.jpg> <./figures/150manpol.jpg>] [45 <./figures/150sign
-pol.jpg> <./figures/150trolleypol.jpg>]
+<./figures/150signpol.jpg, id=907, 865.20422pt x 1009.74423pt>
+File: ./figures/150signpol.jpg Graphic file (type jpg)
+<use ./figures/150signpol.jpg>
+Package pdftex.def Info: ./figures/150signpol.jpg  used on input line 24.
+(pdftex.def)             Requested size: 213.39566pt x 249.0458pt.
+<./figures/150trolleypol.jpg, id=908, 865.20422pt x 1009.74423pt>
+File: ./figures/150trolleypol.jpg Graphic file (type jpg)
+<use ./figures/150trolleypol.jpg>
+Package pdftex.def Info: ./figures/150trolleypol.jpg  used on input line 24.
+(pdftex.def)             Requested size: 213.39566pt x 249.0458pt.
+
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 24--24
+ [][][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./appendix3.tex [46 <./figures/150dogpol.jpg> <./figures/150manpol.jpg>]
+[47 <./figures/150signpol.jpg> <./figures/150trolleypol.jpg>]
 Appendix C.
 
 Overfull \hbox (12.59288pt too wide) in paragraph at lines 3--3
 []\OT1/cmr/bx/n/14.4 Confusion ma-tri-ces from MNIST+P and radar datasets
  []
 
-<./figures/complex_mnist.png, id=772, 578.16pt x 433.62pt>
+<./figures/complex_mnist.png, id=917, 578.16pt x 433.62pt>
 File: ./figures/complex_mnist.png Graphic file (type png)
 <use ./figures/complex_mnist.png>
 Package pdftex.def Info: ./figures/complex_mnist.png  used on input line 9.
 (pdftex.def)             Requested size: 170.71652pt x 128.03589pt.
-<./figures/real_mnist.png, id=773, 578.16pt x 433.62pt>
+<./figures/real_mnist.png, id=918, 578.16pt x 433.62pt>
 File: ./figures/real_mnist.png Graphic file (type png)
 <use ./figures/real_mnist.png>
 Package pdftex.def Info: ./figures/real_mnist.png  used on input line 9.
 (pdftex.def)             Requested size: 170.71652pt x 128.03589pt.
-<./figures/300_real_cart.png, id=774, 578.16pt x 433.62pt>
+<./figures/300_real_cart.png, id=919, 578.16pt x 433.62pt>
 File: ./figures/300_real_cart.png Graphic file (type png)
 <use ./figures/300_real_cart.png>
 Package pdftex.def Info: ./figures/300_real_cart.png  used on input line 17.
 (pdftex.def)             Requested size: 170.71652pt x 128.03589pt.
-<./figures/300_complex_cart.png, id=775, 578.16pt x 433.62pt>
+<./figures/300_complex_cart.png, id=920, 578.16pt x 433.62pt>
 File: ./figures/300_complex_cart.png Graphic file (type png)
 <use ./figures/300_complex_cart.png>
 Package pdftex.def Info: ./figures/300_complex_cart.png  used on input line 17.
@@ -1483,12 +1147,12 @@ Package pdftex.def Info: ./figures/300_complex_cart.png  used on input line 17.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figures/300_real_polar.png, id=776, 578.16pt x 433.62pt>
+<./figures/300_real_polar.png, id=921, 578.16pt x 433.62pt>
 File: ./figures/300_real_polar.png Graphic file (type png)
 <use ./figures/300_real_polar.png>
 Package pdftex.def Info: ./figures/300_real_polar.png  used on input line 26.
 (pdftex.def)             Requested size: 170.71652pt x 128.03589pt.
-<./figures/300_complex_polar.png, id=777, 578.16pt x 433.62pt>
+<./figures/300_complex_polar.png, id=922, 578.16pt x 433.62pt>
 File: ./figures/300_complex_polar.png Graphic file (type png)
 <use ./figures/300_complex_polar.png>
 Package pdftex.def Info: ./figures/300_complex_polar.png  used on input line 26
@@ -1497,12 +1161,12 @@ Package pdftex.def Info: ./figures/300_complex_polar.png  used on input line 26
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figures/150_real_polar.png, id=778, 578.16pt x 433.62pt>
+<./figures/150_real_polar.png, id=923, 578.16pt x 433.62pt>
 File: ./figures/150_real_polar.png Graphic file (type png)
 <use ./figures/150_real_polar.png>
 Package pdftex.def Info: ./figures/150_real_polar.png  used on input line 34.
 (pdftex.def)             Requested size: 170.71652pt x 128.03589pt.
-<./figures/150_complex_polar.png, id=779, 578.16pt x 433.62pt>
+<./figures/150_complex_polar.png, id=924, 578.16pt x 433.62pt>
 File: ./figures/150_complex_polar.png Graphic file (type png)
 <use ./figures/150_complex_polar.png>
 Package pdftex.def Info: ./figures/150_complex_polar.png  used on input line 34
@@ -1511,43 +1175,63 @@ Package pdftex.def Info: ./figures/150_complex_polar.png  used on input line 34
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./thesis.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
- [46
+) (./thesis.bbl [48
 
  <./figures/complex_mnist.png> <./figures/real_mnist.png>]
-[47 <./figures/300_real_cart.png> <./figures/300_complex_cart.png> <./figures/3
+[49 <./figures/300_real_cart.png> <./figures/300_complex_cart.png> <./figures/3
 00_real_polar.png> <./figures/300_complex_polar.png> <./figures/150_real_polar.
 png> <./figures/150_complex_polar.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
+Overfull \hbox (18.82486pt too wide) in paragraph at lines 7--9
+[]\OT1/cmr/m/n/10 By hb - own work, cc by-sa 4.0, https://commons.wikimedia.org
+/w/index.php?curid=34938003. 
+ []
+
+
+Overfull \hbox (63.65828pt too wide) in paragraph at lines 11--13
+[]\OT1/cmr/m/n/10 By josef step-pan - own work, cc by-sa 4.0, https://commons.w
+ikimedia.org/w/index.php?curid=64810040. 
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 63--66
+[]\OT1/cmr/m/n/10 Nitzan Gu-ber-man.  On com-plex val-ued con-vo-lu-tional neu-
+ral net-works.  \OT1/cmr/m/it/10 CoRR\OT1/cmr/m/n/10 ,
+ []
+
+[50
+
+] [51]
+Underfull \hbox (badness 1005) in paragraph at lines 166--170
+[]\OT1/cmr/m/n/10 Simone Scar-da-pane, Steven Van Vaeren-bergh, Amir Hus-sain, 
+and Au-re-lio Uncini.
+ []
+
+[52])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
+ [53]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
  (./thesis.aux (./header.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: F2C8AA7A8E078EEE19D3CCC88998FCF3;3128.
 
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: 108BBA7A3FE974CD6E9939A6E3FB0593;3430
-(rerunfilecheck)             After:  3C84319277F92E51AAD58F8799D8378E;3442.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
- 8720 strings out of 494471
- 130077 string characters out of 6175119
- 218856 words of memory out of 5000000
- 11896 multiletter control sequences out of 15000+600000
+ 8783 strings out of 494471
+ 131206 string characters out of 6175119
+ 220512 words of memory out of 5000000
+ 11907 multiletter control sequences out of 15000+600000
  19761 words of font info for 82 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 42i,14n,40p,1906b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,60p,1906b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -1564,10 +1248,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (58 pages, 38202501 bytes).
+Output written on thesis.pdf (64 pages, 38405363 bytes).
 PDF statistics:
- 904 PDF objects out of 1000 (max. 8388607)
- 758 compressed objects within 8 object streams
- 228 named destinations out of 1000 (max. 500000)
- 598 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1076 PDF objects out of 1200 (max. 8388607)
+ 915 compressed objects within 10 object streams
+ 276 named destinations out of 1000 (max. 500000)
+ 579 words of extra memory for PDF output out of 10000 (max. 10000000)
 

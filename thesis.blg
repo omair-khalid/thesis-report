@@ -2,47 +2,78 @@ This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: header.aux
-I found no \bibdata command---while reading file thesis.aux
-I found no \bibstyle command---while reading file thesis.aux
-You've used 35 entries,
-            0 wiz_defined-function locations,
-            124 strings with 1079 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+The style file: plain.bst
+Database file #1: refs.bib
+I was expecting a `,' or a `}'---line 234 of file refs.bib
+ :  year={2009}
+ :             \begin{flushright}
+I'm skipping whatever remains of this entry
+Repeated entry---line 421 of file refs.bib
+ : @inproceedings{he2015delving
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 436 of file refs.bib
+ : @article{mnistimage
+ :                    ,
+I'm skipping whatever remains of this entry
+Database file #2: theano-short.bib
+Warning--to sort, need author or key in bloggg
+Warning--to sort, need author or key in mnistimage
+Warning--to sort, need author or key in cflied
+Warning--to sort, need author or key in gotcha
+Warning--empty author in bloggg
+Warning--empty journal in bloggg
+Warning--empty year in bloggg
+Warning--empty author in cflied
+Warning--empty journal in cflied
+Warning--empty year in cflied
+Warning--empty author in mnistimage
+Warning--empty journal in mnistimage
+Warning--empty year in mnistimage
+Warning--empty author in gotcha
+Warning--empty journal in gotcha
+Warning--empty year in gotcha
+Warning--empty journal in chollet2015keras
+Warning--can't use both author and editor fields in LeCun1998
+You've used 37 entries,
+            2118 wiz_defined-function locations,
+            688 strings with 10183 characters,
+and the built_in function-call counts, 12892 in all, are:
+= -- 1237
+> -- 639
+< -- 15
++ -- 254
+- -- 216
+* -- 880
+:= -- 2072
+add.period$ -- 106
+call.type$ -- 37
+change.case$ -- 214
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
+cite$ -- 55
+duplicate$ -- 529
+empty$ -- 992
+format.name$ -- 216
+if$ -- 2727
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
+int.to.str$ -- 37
+missing$ -- 41
+newline$ -- 180
+num.names$ -- 66
+pop$ -- 270
+preamble$ -- 1
+purify$ -- 181
 quote$ -- 0
-skip$ -- 0
+skip$ -- 400
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 681
+swap$ -- 144
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There were 2 error messages)
+type$ -- 140
+warning$ -- 18
+while$ -- 109
+width$ -- 39
+write$ -- 381
+(There were 3 error messages)

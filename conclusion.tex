@@ -1,10 +1,6 @@
-\chapter{Conclusion \& future work} \label{chap:experiments}
+\chapter{Conclusion} \label{chap:experiments}
+
+
 We began with the claim, substantiated by literature, that $\mathbb{C}$-CNNs can outperform $\mathbb{R}$-CNNs when the input is complex-valued data with physical meaning behind it. We explained how $\mathbb{C}$-CNNs and $\mathbb{R}$-CNNs are different, and what challenges are faced in designing $\mathbb{C}$-CNNs, one of which is choice of activation and loss functions. We proposed two comparable $\mathbb{R}$-CNN and $\mathbb{C}$-CNN networks to empirically test the performance of $\mathbb{R}$-CNNs with three activation functions ($z$ReLU(z), $\mathbb{C}$ReLU(z), tanh($z$)), and $\mathbb{R}$-CNN with ReLU activation function. $\mathbb{C}$-CNNs proved to be comparable in performance to $\mathbb{R}$-CNNs in experimentation with both the datasets (MNIST+P and Radar-150, Radar-300), with the $\mathbb{R}$-CNNs always surpassing, in test accuracy, the best result of the $\mathbb{C}$-CNNs. The complex-differentiability, or lack thereof, proved to be a hurdle in optimization for $\mathrm{tanh}(z)$ activation function, and the overall convergence characteristics of $\mathbb{C}$-CNNs were unstable. 
 
-We propose the following avenues to explore in order to further explored the results:
-\begin{itemize}
-	\item Experiment with other real life complex-valued datasets e.g.  Polarimetric SAR data, fMRI data, etc. to further explore the suitability od $\mathbb{C}$-CNNs
-	\item As the performance of the non-Holomorphic activation functions is unpredictable, one can experiment with more datasets and more activation functions in order to determine their suitability for certain problems.
-	\item Explore different architectures, with different real-valued complex loss function, and initialization schemes that can help in convergence of the $\mathbb{C}$-CNNs
-	 
-\end{itemize} 
+One of the possible reasons for $\mathbb{C}$-CNNs worse performance could be the absence of discriminatory information in the phase of the data. A quick visual inspection on the phase image of the radar datasets suggest a lack of structure in it. In the future work, data from sensors whose phases actually have meaningful information, such as PolSARs, fMRI sensors, and Polarimetric infrared cameras, should be utilized for further investigation.
